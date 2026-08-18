@@ -6,7 +6,7 @@
 
 - Blueprint kit under `blueprint/`
 - Public `AGENTS.md` map and ADR starter
-- Maintainer-local harness stays in gitignored `.cursor/` (including a private agent entry)
+- `.cursor/` gitignored (local Cursor files; not part of the published kit)
 
 ### Changed
 

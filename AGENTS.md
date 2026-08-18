@@ -31,4 +31,4 @@ Always: keep tracked files publishable.
 
 Ask first: push, PR, merge.
 
-Never: secrets; private backlog, tooling inventory, or Learned memory in tracked files.
+Never: secrets; private working notes in tracked files.
