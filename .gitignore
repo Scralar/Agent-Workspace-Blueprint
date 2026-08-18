@@ -1,0 +1,20 @@
+# Live Cursor harness (rules, skills, plans, TODO, MCP note, hooks).
+# The copyable kit is `blueprint/`.
+.cursor/
+
+# Secrets and local env
+.env
+.env.*
+!.env.example
+*.pem
+credentials.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Ephemeral QA
+.screenshots/
+*.log
