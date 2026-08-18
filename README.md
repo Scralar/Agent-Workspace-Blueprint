@@ -12,8 +12,8 @@ Details: [`blueprint/README.md`](blueprint/README.md).
 
 ## This repository
 
-**Tracked:** the blueprint kit, `AGENTS.md`, changelog, ADRs.
+**Tracked (public):** the blueprint kit, `AGENTS.md`, changelog, ADRs.
 
-**Untracked:** `.cursor/` (live rules, skills, plans, [`TODO`](.cursor/TODO.md), [`agent-mcp`](.cursor/agent-mcp.md)). That harness is for editing the blueprint here; it is not the artefact you copy.
+**Untracked:** `.cursor/` — maintainer harness for editing the kit here. Not the artefact you copy.
 
-Owner: Scralar. Work on `main`. British English (en-GB).
+Work on `main`. British English (en-GB).

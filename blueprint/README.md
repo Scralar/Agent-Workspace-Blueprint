@@ -14,4 +14,4 @@ This folder is the **base** to copy into future agent projects.
 
 ## This repo (meta)
 
-Edits to the canonical file happen **here**. The live Cursor harness (`.cursor/`, including TODO and the MCP note) is local and untracked. Changelog and ADRs for the kit live in the repo root / `docs/adr/`.
+Edits to the canonical file happen **here**. The live Cursor harness (`.cursor/`) is local and untracked. Public changelog and ADRs live in the repo root / `docs/adr/`.

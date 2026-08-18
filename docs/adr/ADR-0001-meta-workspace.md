@@ -14,20 +14,26 @@ We need a lean agent harness so sessions do not re-litigate conventions, without
 
 1. **Two-layer repo** — Tracked kit: `blueprint/`, `AGENTS.md`, `CHANGELOG.md`, `docs/adr/`. Live harness: entire `.cursor/` (gitignored).
 2. **TODO and builder MCP note** live at `.cursor/TODO.md` and `.cursor/agent-mcp.md` (not under `docs/`). They stay with the local harness.
-3. **Git** — Work on `main`. Commit as you go on tracked files. Never push or open a PR until Scralar asks in the current message. Never commit `.cursor/`.
+3. **Git** — Work on `main`. Commit as you go on tracked files. Never push or open a PR until user asks in the current message.
 4. **Verify** — `none yet` until the kit has a cheap check worth running.
-5. **Memory** — Continual Learning owns Learned sections on `AGENTS.md`. No `docs/agent-notes.md`.
+5. **Memory** — Continual Learning owns Learned sections on `.cursor/AGENTS.md` (see ADR-0002). No `docs/agent-notes.md`. Public `AGENTS.md` has no Learned sections.
 6. **Always-on rules** — Constitution + collaboration. Backlog hygiene is folded into the constitution.
+
+
 
 ## Alternatives
 
-| Option | Why not now |
-|--------|-------------|
-| Track `.cursor/` except plans/settings | Scralar asked to keep the live harness untracked |
+
+| Option                                           | Why not now                                                     |
+| ------------------------------------------------ | --------------------------------------------------------------- |
+| Track `.cursor/` except plans/settings           | Scralar asked to keep the live harness untracked                |
 | Also ship `blueprint/templates/` of rules/skills | Second home; the blueprint generates a tree adapted per project |
-| `docs/TODO.md` and `docs/agent-mcp.md` | Scralar asked those two files to live in `.cursor/` |
-| `dev` branch like a production app | No deploy; extra ceremony |
-| Single `DECISIONS.md` | One ADR folder is enough and matches the blueprint default |
+| `docs/TODO.md` and `docs/agent-mcp.md`           | Scralar asked those two files to live in `.cursor/`             |
+| `dev` branch like a production app               | No deploy; extra ceremony                                       |
+| Single `DECISIONS.md`                            | One ADR folder is enough and matches the blueprint default      |
+
+
+
 
 ## Consequences
 
@@ -35,3 +41,8 @@ We need a lean agent harness so sessions do not re-litigate conventions, without
 - Future projects copy `blueprint/`, not `.cursor/`.
 - Agents editing this repo must create/read `.cursor/` locally; it will not appear in git status as a file to commit.
 - Blueprint default paths (`docs/TODO.md`, `docs/agent-mcp.md`) are overridden **here** only until we change the blueprint itself.
+
+## Amendment 2026-08-18
+
+Public vs private agent entry: ADR-0002. Changelog and public `AGENTS.md` stay publishable.
+

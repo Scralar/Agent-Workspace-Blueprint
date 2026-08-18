@@ -4,10 +4,10 @@
 
 ### Added
 
-- Agent workspace framework for this meta-repo (`AGENTS.md`, local Cursor rules/skills, backlog, ADR starter)
-- Canonical blueprint kit under `blueprint/` (copied from Finstech, then the home for future edits)
-- Living builder MCP inventory at `.cursor/agent-mcp.md` (gitignored with the rest of `.cursor/`)
+- Blueprint kit under `blueprint/`
+- Public `AGENTS.md` map and ADR starter
+- Maintainer-local harness stays in gitignored `.cursor/` (including a private agent entry)
 
 ### Changed
 
-- Owner recorded as Scralar; ADR template left nameless (public repo)
+- ADR template is nameless; fill Owner from intake when writing an ADR
