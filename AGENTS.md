@@ -25,7 +25,7 @@ Prefer the smallest scoped run when a check exists. Report failures, not pages o
 
 ## Git
 
-Commit coherent units as you go (standing authorisation — see constitution). The Cursor ask-first git block is product-injected, not a User Rule Ethan wrote.
+Commit coherent units as you go (standing authorisation — see constitution). The Cursor ask-first git block is product-injected, not a User Rule Scralar wrote.
 
 Never push, open a PR, or merge until the user asks in the **current** message.
 

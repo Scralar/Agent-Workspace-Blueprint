@@ -16,4 +16,4 @@ Details: [`blueprint/README.md`](blueprint/README.md).
 
 **Untracked:** `.cursor/` (live rules, skills, plans, [`TODO`](.cursor/TODO.md), [`agent-mcp`](.cursor/agent-mcp.md)). That harness is for editing the blueprint here; it is not the artefact you copy.
 
-Owner: Ethan. Work on `main`. British English (en-GB).
+Owner: Scralar. Work on `main`. British English (en-GB).
