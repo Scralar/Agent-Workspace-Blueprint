@@ -2,9 +2,18 @@
 
 ## 2026-08-29
 
+### Added
+
+- Adoption guide for existing repos (`blueprint/adopt.md`) and a minimal tier for tiny repos with a per-stack Verify table (`blueprint/minimal.md`)
+- Optional hooks enforcement recipe (`blueprint/reference/hooks.md`): fences instead of signs for never-push and never-commit-private-files
+- `blueprint/extras/` shelf of optional modules, seeded with web design and workflow automation
+- Upstream feedback loop: projects bootstrapped from the kit propose proven, general improvements back to it (ADR-0004)
+- Markdown link check as the repo Verify command (`scripts/check-links.mjs`)
+
 ### Changed
 
-- Workspace facts live on public `AGENTS.md`. Maintainer preferences are gitignored `.cursor/user-preferences.md`
+- Shape folders tightened with researched practice: Verify treated as the highest-value line with per-stack examples, where-things-live map and security block in the sample `AGENTS.md`, git policy given one home, ADR index and supersession discipline, changelog scope defined per shape, MCP security and GitHub-CLI guidance, usage-based tool pruning
+- Byte-identical reference files deduplicated into shared `blueprint/reference/` (ADR-0003)
 - Blueprint restructured into three self-contained folders (`public/`, `private-solo/`, `private-team/`), each with the full tailored file set; `blueprint/README.md` is the chooser
 - Kit policy: write ADRs as you go when a decision meets the bar, without waiting to be asked
 
