@@ -1,6 +1,6 @@
 # Reference C — Cursor User Rule (optional, all machines)
 
-Up: [README.md](README.md)
+Shared by all repo shapes. Up: [../README.md](../README.md)
 
 Trigger: setting up User Rules so commit-as-you-go repos stop fighting the injection.
 

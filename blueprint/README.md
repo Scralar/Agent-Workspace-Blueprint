@@ -20,7 +20,7 @@ Everything you need lives inside **one** folder. Pick the folder for the repo's 
 | [private-solo/](private-solo/README.md) | Private repo, one maintainer. Working files tracked. |
 | [private-team/](private-team/README.md) | Private repo, collaborators or several parallel agents. |
 
-Each folder is self-contained: policy, philosophy, bootstrap, sessions, file recipes, skills, MCP guidance, references, and that shape's day-one tree, sample `AGENTS.md`, memory homes, and gitignore. If the repo's shape changes later (goes public, gains collaborators), switch folders and migrate what differs (tracking, memory homes, entry file).
+Each folder carries the full reading path: policy, philosophy, bootstrap, sessions, file recipes, skills, MCP guidance, and that shape's day-one tree, sample `AGENTS.md`, memory homes, and gitignore. Shape-agnostic leaf material lives once in [reference/](reference/). If the repo's shape changes later (goes public, gains collaborators), switch folders and migrate what differs (tracking, memory homes, entry file).
 
 ## New project
 

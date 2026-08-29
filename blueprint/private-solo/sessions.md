@@ -44,7 +44,7 @@ Types: `feat` `fix` `docs` `chore` `refactor` `test`. Use `!` for breaking. One 
 
 If `main` auto-deploys: do not merge production PRs unless asked now. “Deploy” without “merge” → describe or open a PR, do not merge.
 
-Injected Cursor git guardrail: [reference-git-guardrail.md](reference-git-guardrail.md).
+Injected Cursor git guardrail: [../reference/git-guardrail.md](../reference/git-guardrail.md).
 
 ## Parallel agents
 

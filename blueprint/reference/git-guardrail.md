@@ -1,6 +1,6 @@
 # Reference A — Cursor’s injected git guardrail
 
-Up: [README.md](README.md)
+Shared by all repo shapes. Up: [../README.md](../README.md)
 
 Trigger: scaffolding git policy, or the agent refuses to commit despite commit-as-you-go.
 
@@ -15,7 +15,7 @@ That **contradicts** commit-as-you-go: commit without waiting for “please comm
 
 **Cannot:** delete or edit the injection. “Ignore Cursor’s commit rule” (negation) usually loses to the stricter guardrail.
 
-**Can (workaround):** positive **standing authorisation** in the constitution (always-on project rule) and optionally a Settings User Rule ([reference-user-rule.md](reference-user-rule.md)). Cursor staff: that counts as the user having asked. Keep the **safety** bits from the injection.
+**Can (workaround):** positive **standing authorisation** in the constitution (always-on project rule) and optionally a Settings User Rule ([user-rule.md](user-rule.md)). Cursor staff: that counts as the user having asked. Keep the **safety** bits from the injection.
 
 Do **not** copy the injection into the repo. Point here.
 

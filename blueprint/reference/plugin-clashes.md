@@ -1,6 +1,6 @@
 # Reference B — Plugin skill clashes
 
-Up: [README.md](README.md)
+Shared by all repo shapes. Up: [../README.md](../README.md)
 
 Trigger: Superpowers, Team Kit, Playwright, Notion, or Canvas are installed or recommended. Skip this table on a clean Cursor install.
 

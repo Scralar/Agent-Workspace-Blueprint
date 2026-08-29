@@ -1,6 +1,6 @@
 # Blueprint — private repository, solo
 
-Up: [../README.md](../README.md). This folder is **self-contained**: everything you need for a private solo repo lives here.
+Up: [../README.md](../README.md). This folder carries the **full reading path** for a private solo repo. Shape-agnostic leaf material (references, extras) lives once at the `blueprint/` level and is linked where relevant.
 
 Use when the repo is private and one person maintains it. Nothing leaks, so working files are tracked: history survives machine moves and clones.
 
@@ -28,9 +28,9 @@ These are **steps**. Open a later file only when its trigger matches. Do not ing
 | [mcp-tooling.md](mcp-tooling.md) | MCP, browser, outbound, GitHub, tooling refresh |
 | [extras.md](extras.md) | Visual product, naming, scoped rules, plans hygiene |
 | [done.md](done.md) | Definition of done, do-not list |
-| [reference-git-guardrail.md](reference-git-guardrail.md) | Agent will not commit, or you are writing git policy |
-| [reference-plugin-clashes.md](reference-plugin-clashes.md) | Superpowers, Team Kit, Playwright, Notion, or Canvas are in play |
-| [reference-user-rule.md](reference-user-rule.md) | User wants a Settings User Rule on this machine |
+| [../reference/git-guardrail.md](../reference/git-guardrail.md) | Agent will not commit, or you are writing git policy |
+| [../reference/plugin-clashes.md](../reference/plugin-clashes.md) | Superpowers, Team Kit, Playwright, Notion, or Canvas are in play |
+| [../reference/user-rule.md](../reference/user-rule.md) | User wants a Settings User Rule on this machine |
 
 ## Day-one tree
 

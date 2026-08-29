@@ -6,7 +6,7 @@ Treat as policy unless you argue otherwise and the user agrees. Record intake ch
 
 | Topic | Default |
 |-------|---------|
-| **Commits** | After each coherent, verified logical unit, unless intake chose ask-first. Do not wait to be asked under commit-as-you-go. The constitution is **standing authorisation** to commit locally ([reference-git-guardrail.md](reference-git-guardrail.md)). |
+| **Commits** | After each coherent, verified logical unit, unless intake chose ask-first. Do not wait to be asked under commit-as-you-go. The constitution is **standing authorisation** to commit locally ([../reference/git-guardrail.md](../reference/git-guardrail.md)). |
 | **Push / PR** | Never until the user asks in the **current** message. |
 | **CHANGELOG** | Root `CHANGELOG.md`; daily `## YYYY-MM-DD` only (newest first). No `## Unreleased`. Notable changes only; not a dump of commit subjects. |
 | **Backlog** | Persistent TODO with priority sections. On this public shape it is **gitignored** (`.cursor/TODO.md`); a working backlog is not for publication. |
@@ -15,7 +15,7 @@ Treat as policy unless you argue otherwise and the user agrees. Record intake ch
 | **Commit messages** | `type(scope): summary` (Conventional Commits). |
 | **Branches** | Simpler repos may work on `main`; agree first. `dev` (or topics off `dev`) → PR → `main` when `main` is production. |
 | **Parallel agents** | Leave enough instruction that two agents do not collide. |
-| **Precedence** | Repo constitution (`AGENTS.md` + project rules) wins over Settings User Rules **and** Cursor plugin skills. Cursor also injects product git/PR blocks labelled `<user_rules>` that are **not** in Settings and **cannot be deleted** ([reference-git-guardrail.md](reference-git-guardrail.md)). Session overrides (“don’t commit”, “push now”) still win. |
+| **Precedence** | Repo constitution (`AGENTS.md` + project rules) wins over Settings User Rules **and** Cursor plugin skills. Cursor also injects product git/PR blocks labelled `<user_rules>` that are **not** in Settings and **cannot be deleted** ([../reference/git-guardrail.md](../reference/git-guardrail.md)). Session overrides (“don’t commit”, “push now”) still win. |
 | **Decisions** | Recommendation + options + short why. Challenge weak defaults. |
 | **ADRs** | Write them **as you go**: when a decision meets the bar ([file-recipes.md](file-recipes.md)), record the ADR in the same slice, without being asked. |
 | **Language** | British English (en-GB) in **chat replies** and in **work** (docs, commits, UI strings, comments) wherever possible, unless intake set another locale. Follow the product locale where the product is not en-GB by design. |

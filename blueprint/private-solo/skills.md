@@ -30,7 +30,7 @@ Triggers: implementation plan, roadmap, large multi-phase. Zero session context;
 
 ## Plugin skills
 
-Do **not** copy plugin `SKILL.md` into the repo. Invoke by name. The Marketplace `continual-learning` plugin is acceptable on this shape as the **sole** memory writer; keep it off when the repo `update-memory` skill is in use ([file-recipes.md](file-recipes.md)). Clash table: [reference-plugin-clashes.md](reference-plugin-clashes.md), and only if those plugins are installed or recommended.
+Do **not** copy plugin `SKILL.md` into the repo. Invoke by name. The Marketplace `continual-learning` plugin is acceptable on this shape as the **sole** memory writer; keep it off when the repo `update-memory` skill is in use ([file-recipes.md](file-recipes.md)). Clash table: [../reference/plugin-clashes.md](../reference/plugin-clashes.md), and only if those plugins are installed or recommended.
 
 ## UI / marketing (when the project is visual)
 
