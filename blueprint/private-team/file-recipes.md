@@ -6,7 +6,7 @@ Trigger: writing the files. Templates to adapt, not mandatory filenames.
 
 ## Constitution (always-on rule)
 
-Owner (intake name) · recorded commit policy and locale · standing commit authorisation if commit-as-you-go · push/PR never unasked · Always/Ask/Never · one-home pointers · session loop (including suggest a new chat) · Verify pointer · rules may change · must-not list. Visual products: light/dark, motion, `prefers-reduced-motion` (or a glob rule, not always-on, if the repo is mixed).
+Accountable owner · recorded commit policy, branch shape, and locale · standing commit authorisation if commit-as-you-go · push/PR never unasked · Always/Ask/Never · one-home pointers · session loop (including suggest a new chat) · Verify pointer · rules may change · must-not list. Visual products: light/dark, motion, `prefers-reduced-motion` (or a glob rule, not always-on, if the repo is mixed).
 
 Do **not** paste architecture, local-dev runbooks, or plugin manuals here. Link them.
 
@@ -14,13 +14,18 @@ Do **not** paste architecture, local-dev runbooks, or plugin manuals here. Link 
 
 **Imminent** · **Planned** · **Ideas** · **Discuss** · **Completed** as `- [x] YYYY-MM-DD: …` (never leave checked boxes in active sections).
 
+Home on this shape: tracked `docs/TODO.md`.
+
 Add when later/blocked/debt. Do **not** park this-turn requested work only in the TODO. Session todos = this chat; file TODO = persistent.
 
 ## Learned memory
 
-Memory homes come from the **variant**. Private-solo may keep Learned sections on `AGENTS.md`; public and team repos split personal preferences into a gitignored `.cursor/user-preferences.md` and keep only publishable facts tracked. Writer: a repo `update-memory` skill run from wrap-up (preferred), or the Marketplace Continual Learning plugin on private-solo only. Never both, and keep the plugin **off** wherever the root `AGENTS.md` must not receive personal preferences.
+- Personal preferences → each user's **gitignored** `.cursor/user-preferences.md`
+- Team workspace facts → Learned Workspace Facts on tracked `AGENTS.md`
 
-Whatever the home: ≤12 bullets per section; no secrets, one-offs, or copies of process/ADR/TODO. Constitution wins if a bullet contradicts it; prune the bullet. **No** `docs/agent-notes.md`; a short notes file only when there is no memory mechanism at all.
+Writer: a repo `update-memory` skill run from wrap-up (in session, no subagent). Keep the Marketplace Continual Learning plugin **off**: it would write one person's preferences into the shared file.
+
+Whatever the home: ≤12 bullets per section; no secrets, one-offs, or copies of process/ADR/TODO. Constitution wins if a bullet contradicts it; prune the bullet. **No** `docs/agent-notes.md`; a short local notes file only when there is no memory mechanism at all.
 
 Gitignore `.cursor/hooks/state/`.
 
@@ -32,13 +37,15 @@ Before acting: git status, terminals, backlog/plans. Prefer **Cursor IDE browser
 
 Same commit, today’s `## YYYY-MM-DD`. `### Added` / `### Changed` / `### Fixed` as useful. Notable only.
 
-## Cursor plans (when tracked)
+## Cursor plans
 
-Usually `.cursor/plans/`. Cursor Plan mode and write-plan output. **Private repo default:** version-controlled. **Public repo:** gitignored. Ship a short `README.md` in the folder stating which. Few active; archive or delete when done. Link process/ADR/TODO; no secrets.
+`.cursor/plans/` is **tracked** on this shape. Cursor Plan mode and write-plan output. Ship a short `README.md` in the folder stating that. Name an owner per plan; do not steal in-flight work. Few active; archive or delete when done. Link process/ADR/TODO; no secrets.
 
 ## ADRs
 
-Context, decision, alternatives, consequences. Include the user's name as author (from intake). Proposed → Accepted → freeze (typos / supersession / dated amendments). Skip trivial fixes. `ADR-0001-short-title.md` or one `DECISIONS.md` on tiny projects.
+Context, decision, alternatives, consequences. Include the user's name as author (from intake). Proposed → Accepted → freeze (typos / supersession / dated amendments). `ADR-0001-short-title.md` or one `DECISIONS.md` on tiny projects.
+
+Write ADRs **as you go**: when a decision is hard to reverse, cross-cutting, or options were argued, record it in the same slice, without waiting to be asked. Skip trivial fixes. Name ADR owners as people join.
 
 ## Docs map
 
@@ -46,7 +53,7 @@ One table of topic → home beats duplicated conventions. Put it where humans lo
 
 ## Project MCP note (living)
 
-Usually `docs/agent-mcp.md`. **This project only.** Do not paste plugin manuals.
+Home on this shape: tracked `docs/agent-mcp.md`. **This project only.** Do not paste plugin manuals.
 
 | Section | Purpose |
 |---------|---------|

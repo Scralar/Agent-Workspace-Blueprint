@@ -1,19 +1,51 @@
-# Variant: private, with collaborators
+# Blueprint — private repository, with collaborators
 
-Up: [../README.md](../README.md). Core files apply; this folder owns only what differs.
+Up: [../README.md](../README.md). This folder is **self-contained**: everything you need for a private repo shared by several humans or agents lives here.
 
-Use when the repo is private and more than one human or agent works in it. Everything from [private-solo](../private-solo/README.md) holds, with these changes.
+Use when the repo is private and more than one human or agent works in it. Working files are tracked as team truth, but **personal preferences stay per user and gitignored**: one person's preferences must not bind everyone via a tracked file.
 
-## Differences from private-solo
+## How to use
 
-| Topic | Team default |
-|-------|--------------|
-| Collaboration rule | **Required.** `.cursor/rules/collaboration.mdc`, `alwaysApply: true` (recipe: [../file-recipes.md](../file-recipes.md)). |
-| Personal preferences | Per user, **gitignored** `.cursor/user-preferences.md`. One person's preferences must not bind everyone via a tracked file. |
-| Workspace facts | Tracked. Learned Workspace Facts section on `AGENTS.md` (team truth). No personal preferences there. |
-| Branches | `dev` (or topics off `dev`) → PR → `main` is the likely shape ([../policy.md](../policy.md)). Agree at intake. |
-| Plans | Tracked in `.cursor/plans/`. Name an owner per plan; do not steal in-flight work. |
-| Owner | Record the accountable owner in the constitution; name plan/ADR owners as people join. |
+These are **steps**. Open a later file only when its trigger matches. Do not ingest the whole folder before acting.
+
+1. **Intake** ([bootstrap.md](bootstrap.md)) if anything is unknown: name, commit policy, branch shape, locale, cheapest verify command. Confirm the repo really is private with collaborators; otherwise switch to [../public/](../public/README.md) or [../private-solo/](../private-solo/README.md).
+2. Read [policy.md](policy.md) and [bootstrap.md](bootstrap.md). Skim [philosophy.md](philosophy.md). Open other files by trigger.
+3. **Research current tooling** ([mcp-tooling.md](mcp-tooling.md)) before locking a stack. This kit goes stale; the Marketplace does not.
+4. Propose a layout for *this* repo (keep / drop / replace). Challenge weak defaults. The day-one tree and sample `AGENTS.md` below are a starting shape, not a mandatory schema.
+5. Scaffold, commit locally, summarise, including plugins still to install.
+6. Keep the project MCP note current as the work changes.
+
+## Files
+
+| File | Open when |
+|------|-----------|
+| [policy.md](policy.md) | Working agreements (always, with bootstrap) |
+| [philosophy.md](philosophy.md) | Why the kit exists; one home per fact |
+| [bootstrap.md](bootstrap.md) | Intake, bootstrap order, rule types, budgets, self-check |
+| [sessions.md](sessions.md) | Session loop, git, parallel work, suggesting a new chat |
+| [file-recipes.md](file-recipes.md) | Writing TODO, ADRs, changelog, MCP note, memory, plans |
+| [skills.md](skills.md) | Adding or changing skills |
+| [mcp-tooling.md](mcp-tooling.md) | MCP, browser, outbound, GitHub, tooling refresh |
+| [extras.md](extras.md) | Visual product, naming, scoped rules, plans hygiene |
+| [done.md](done.md) | Definition of done, do-not list |
+| [reference-git-guardrail.md](reference-git-guardrail.md) | Agent will not commit, or you are writing git policy |
+| [reference-plugin-clashes.md](reference-plugin-clashes.md) | Superpowers, Team Kit, Playwright, Notion, or Canvas are in play |
+| [reference-user-rule.md](reference-user-rule.md) | User wants a Settings User Rule on this machine |
+
+## Day-one tree
+
+| Intent | Example | Notes |
+|--------|---------|-------|
+| Constitution | `.cursor/rules/project.mdc` | Tracked. `alwaysApply: true`. Record the accountable owner. |
+| Collaboration | `.cursor/rules/collaboration.mdc` | **Required.** `alwaysApply: true` (recipe: [file-recipes.md](file-recipes.md)). |
+| Entry | `AGENTS.md` | Short map with a Learned Workspace Facts section (sample below). |
+| User preferences | `.cursor/user-preferences.md` | **Gitignored, per user.** Personal durable preferences. |
+| TODO | `docs/TODO.md` | Tracked. |
+| Tooling inventory | `docs/agent-mcp.md` | Tracked. |
+| Changelog | `CHANGELOG.md` | Dated day sections. |
+| Skills | `.cursor/skills/` wrap-up, write-plan, update-memory | Tracked. |
+| Decision log | `docs/adr/` | Name ADR owners as people join. |
+| Plans | `.cursor/plans/` + `README.md` | Tracked. Name an owner per plan; do not steal in-flight work. |
 
 ## Gitignore starter
 
@@ -26,7 +58,7 @@ Use when the repo is private and more than one human or agent works in it. Every
 
 ## Memory homes
 
-- Personal preferences → each user's gitignored `.cursor/user-preferences.md`.
+- Personal preferences → each user's **gitignored** `.cursor/user-preferences.md`.
 - Team workspace facts → Learned Workspace Facts on tracked `AGENTS.md`, written by a repo `update-memory` skill from wrap-up.
 - Keep the Marketplace Continual Learning plugin **off**: it would write one person's preferences into the shared file.
 

@@ -16,7 +16,7 @@ Prefer a **well-known CLI** when the model already knows it and MCP would only a
 
 **GitHub:** GitHub MCP when listed and useful; `gh` is a fine default and the fallback if MCP is down or only `mcp_auth` appears. That is an outage, not a policy change. No PAT in git. No push/PR unasked.
 
-**Artefacts:** gitignore ephemeral QA, plugin hook state, `.cursor/settings.json`. **Plans:** track `.cursor/plans/` on private repos; gitignore on public. Optional committed visual baselines.
+**Artefacts:** gitignore ephemeral QA, plugin hook state, `.cursor/settings.json`. **Plans:** `.cursor/plans/` is tracked on this shape. Optional committed visual baselines.
 
 ## Research: do not trust example lists in this kit
 

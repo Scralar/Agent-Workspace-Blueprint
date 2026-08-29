@@ -12,7 +12,7 @@ Maintainer-only preferences (gitignored, not present in a fresh clone): `.cursor
 
 ## What this repo is
 
-A copyable kit for bootstrapping Cursor agent workspaces. Copy `blueprint/` into a new project and follow that file. The `.cursor/` tree in this repository is local maintainer state. It is not the kit.
+A copyable kit for bootstrapping Cursor agent workspaces. Copy `blueprint/` into a new project and follow the folder matching the repo's shape. The `.cursor/` tree in this repository is local maintainer state. It is not the kit.
 
 ## Verify
 

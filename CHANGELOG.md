@@ -5,8 +5,8 @@
 ### Changed
 
 - Workspace facts live on public `AGENTS.md`. Maintainer preferences are gitignored `.cursor/user-preferences.md`
-- Blueprint kit is a folder of section files (`blueprint/README.md` is the index), not one long markdown file
-- Blueprint variants: shared core plus `public/`, `private-solo/`, and `private-team/` folders owning the day-one tree, sample `AGENTS.md`, memory homes, and tracking policy
+- Blueprint restructured into three self-contained folders (`public/`, `private-solo/`, `private-team/`), each with the full tailored file set; `blueprint/README.md` is the chooser
+- Kit policy: write ADRs as you go when a decision meets the bar, without waiting to be asked
 
 ## 2026-08-18
 

@@ -9,7 +9,7 @@ Trigger: day-to-day work after bootstrap.
 1. Entry + constitution → Imminent / Discuss
 2. Collaboration scan (git / terminals / browser)
 3. **Tooling freshness:** MCP note missing, last-reviewed older than **~30 days**, *or* the project’s nature / a major aspect has **shifted** (see [mcp-tooling.md](mcp-tooling.md))
-4. Architectural? → ADR
+4. Architectural decision landed? → write the ADR **now**, in the same unit, without being asked ([file-recipes.md](file-recipes.md))
 5. Multi-phase? → write-plan (user approves unless they said run with it)
 6. Smallest correct diff → **Verify**
 7. Update the one homes that changed → **commit** (if commit-as-you-go)

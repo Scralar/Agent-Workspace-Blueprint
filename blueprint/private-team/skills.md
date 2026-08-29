@@ -14,7 +14,13 @@ Triggers: wrap up, tidy, commit all, close a chunk.
 
 Flow: prune diff → one-home docs (including MCP note if tools/scope changed) → Verify → **correction** → commit (if commit-as-you-go) → report hash → **do not push** → suggest a new chat if the slice is done.
 
-**Correction:** if the user corrected a durable preference this slice, update Learned (plugin) or the constitution if it is policy. If the same class of error happened twice, add a glob/description rule or a linter, not a longer always-on file. Do not hand-edit Learned sections when the plugin owns them. Do not revive `docs/agent-notes.md`.
+**Correction:** if the user corrected a durable preference this slice, update the memory homes via `update-memory` ([file-recipes.md](file-recipes.md)), or the constitution if it is policy. If the same class of error happened twice, add a glob/description rule or a linter, not a longer always-on file. Do not revive `docs/agent-notes.md`.
+
+## update-memory
+
+Triggers: wrap-up, or the user says remember this / update memory. In session, no subagent.
+
+Writes personal preferences to the current user's gitignored `.cursor/user-preferences.md` and team facts to `AGENTS.md` under **Learned Workspace Facts**. Never one person's preferences in the shared file.
 
 ## write-plan
 
@@ -24,7 +30,7 @@ Triggers: implementation plan, roadmap, large multi-phase. Zero session context;
 
 ## Plugin skills
 
-Do **not** copy plugin `SKILL.md` into the repo. Invoke by name. `continual-learning` is hook-driven and suits private-solo repos only (see the variant's memory homes). Clash table: [reference-plugin-clashes.md](reference-plugin-clashes.md), and only if those plugins are installed or recommended.
+Do **not** copy plugin `SKILL.md` into the repo. Invoke by name. Keep the Marketplace `continual-learning` plugin **off** on this shape; it would write one person's preferences into the shared `AGENTS.md` ([file-recipes.md](file-recipes.md)). Clash table: [reference-plugin-clashes.md](reference-plugin-clashes.md), and only if those plugins are installed or recommended.
 
 ## UI / marketing (when the project is visual)
 
