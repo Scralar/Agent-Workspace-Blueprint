@@ -9,7 +9,7 @@ This file is **public**. It is the map for anyone who clones this GitHub reposit
 3. [`blueprint/README.md`](blueprint/README.md)
 4. [`docs/adr/`](docs/adr/)
 
-Maintainer-only memory (gitignored, not present in a fresh clone): `.cursor/MEMORY.md`.
+Maintainer-only preferences (gitignored, not present in a fresh clone): `.cursor/user-preferences.md`.
 
 ## What this repo is
 
@@ -32,3 +32,10 @@ Always: keep tracked files publishable.
 Ask first: push, PR, merge.
 
 Never: secrets; private working notes in tracked files.
+
+## Workspace facts
+
+Publishable facts about this repo. `update-memory` may add bullets here. No personal preferences.
+
+- Work on `main`. There is no production deploy.
+- Future projects copy `blueprint/`. They do not copy this repo’s `.cursor/` tree.

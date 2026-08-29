@@ -4,7 +4,7 @@
 
 ### Changed
 
-- Public map points at maintainer-local `.cursor/MEMORY.md` (gitignored; not a second `AGENTS.md`)
+- Workspace facts live on public `AGENTS.md`. Maintainer preferences are gitignored `.cursor/user-preferences.md`
 
 ## 2026-08-18
 
