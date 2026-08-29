@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-29
+
+### Changed
+
+- Public map points at maintainer-local `.cursor/MEMORY.md` (gitignored; not a second `AGENTS.md`)
+
 ## 2026-08-18
 
 ### Added

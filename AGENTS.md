@@ -9,7 +9,7 @@ This file is **public**. It is the map for anyone who clones this GitHub reposit
 3. [`blueprint/README.md`](blueprint/README.md)
 4. [`docs/adr/`](docs/adr/)
 
-Maintainer-only entry (gitignored, not present in a fresh clone): `.cursor/AGENTS.md`.
+Maintainer-only memory (gitignored, not present in a fresh clone): `.cursor/MEMORY.md`.
 
 ## What this repo is
 
