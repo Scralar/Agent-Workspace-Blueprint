@@ -14,8 +14,9 @@ Trigger: day-to-day work after bootstrap.
 6. Smallest correct diff → **Verify**
 7. Update the one homes that changed → **commit** (if commit-as-you-go)
 8. Repeat; wrap-up at end of slice
-9. **Stop.** No push/PR unless asked
-10. **Suggest a new chat** when the slice is done, the next task is a different concern, the thread is long, or you are repeating mistakes. Be relatively persistent (remind rather than nag once and drop). The user decides.
+9. Way of working changed durably, in a way other projects could use? → propose upstreaming to the blueprint ([../extras/README.md](../extras/README.md)); never act on it silently
+10. **Stop.** No push/PR unless asked
+11. **Suggest a new chat** when the slice is done, the next task is a different concern, the thread is long, or you are repeating mistakes. Be relatively persistent (remind rather than nag once and drop). The user decides.
 
 Ask: context → recommendation → options → why. Challenge weak requests.
 
