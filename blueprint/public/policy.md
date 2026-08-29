@@ -2,13 +2,13 @@
 
 Up: [README.md](README.md)
 
-Treat as policy unless you argue otherwise and the user agrees. Record intake choices in the constitution (commit policy, locale, owner, verify command).
+Treat as policy unless you argue otherwise and the user agrees. Record intake choices in their homes: git/commit policy and the Verify command on `AGENTS.md`; owner and locale in the constitution.
 
 | Topic | Default |
 |-------|---------|
 | **Commits** | After each coherent, verified logical unit, unless intake chose ask-first. Do not wait to be asked under commit-as-you-go. The constitution is **standing authorisation** to commit locally ([../reference/git-guardrail.md](../reference/git-guardrail.md)). |
 | **Push / PR** | Never until the user asks in the **current** message. |
-| **CHANGELOG** | Root `CHANGELOG.md`; daily `## YYYY-MM-DD` only (newest first). No `## Unreleased`. Notable changes only; not a dump of commit subjects. |
+| **CHANGELOG** | Root `CHANGELOG.md`; daily `## YYYY-MM-DD` only (newest first). No `## Unreleased`. Notable changes only; not a dump of commit subjects. **Scope: the product or kit only.** Changes to this repo's own agent harness (`.cursor/`, rules, skills, memory) never appear here. |
 | **Backlog** | Persistent TODO with priority sections. On this public shape it is **gitignored** (`.cursor/TODO.md`); a working backlog is not for publication. |
 | **Tooling inventory** | Living, **project-specific** MCP note at `.cursor/agent-mcp.md` (**gitignored**). Do not copy another repo’s list. Recommend missing plugins; do not assume they are installed. Record **skill precedence** when plugins clash with repo rules. |
 | **Rule size** | Lean. Exceed for safety (production, multi-agent, legal). |

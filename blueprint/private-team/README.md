@@ -51,6 +51,7 @@ These are **steps**. Open a later file only when its trigger matches. Do not ing
 
 ```gitignore
 .cursor/user-preferences.md
+.cursor/tmp/
 .cursor/hooks/state/
 .cursor/settings.json
 .screenshots/
@@ -77,13 +78,19 @@ Start here every session.
 
 Personal preferences (gitignored, per user): `.cursor/user-preferences.md`.
 
+## Where things live
+{short table: source entry points, config, tests, docs homes. Editing the wrong file is the top agent failure; this map prevents it}
+
 ## Verify
 {exact commands from intake, with flags}
 Prefer the smallest scoped run. Report failures, not pages of passing output.
 
 ## Git
-{commit-as-you-go or ask-first, from intake}
+{commit-as-you-go or ask-first, from intake; branch shape; PR conventions}
 Never push, open a PR, or merge unless asked in the current message.
+
+## Security
+Secrets live in {home, e.g. gitignored `.env`; `.env.example` carries names only}. Never commit or print them. Protected paths: {list, or none}.
 
 ## Always / Ask first / Never
 Always: update the one home that changed; run Verify; leave notes another agent can use.

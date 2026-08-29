@@ -57,6 +57,7 @@ Meta repos that publish a framework (like the repo this kit lives in) may gitign
 .cursor/agent-mcp.md
 .cursor/user-preferences.md
 .cursor/plans/
+.cursor/tmp/
 .cursor/hooks/state/
 .cursor/settings.json
 
@@ -86,13 +87,19 @@ This file is public. Keep it publishable.
 3. `.cursor/TODO.md` — Imminent and Discuss (local; not in a fresh clone)
 4. Domain truth for the current task (link the real homes)
 
+## Where things live
+{short table: source entry points, config, tests, docs homes. Editing the wrong file is the top agent failure; this map prevents it}
+
 ## Verify
 {exact commands from intake, with flags}
 Prefer the smallest scoped run. Report failures, not pages of passing output.
 
 ## Git
-{commit-as-you-go or ask-first, from intake}
+{commit-as-you-go or ask-first, from intake; branch shape}
 Never push, open a PR, or merge unless asked in the current message.
+
+## Security
+Secrets live in {home, e.g. gitignored `.env`; `.env.example` carries names only}. Never commit or print them. Protected paths: {list, or none}.
 
 ## Always / Ask first / Never
 Always: keep tracked files publishable; update the one home that changed; run Verify.

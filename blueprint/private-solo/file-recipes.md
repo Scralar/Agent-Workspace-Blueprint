@@ -6,7 +6,7 @@ Trigger: writing the files. Templates to adapt, not mandatory filenames.
 
 ## Constitution (always-on rule)
 
-Owner (intake name) · recorded commit policy and locale · standing commit authorisation if commit-as-you-go · push/PR never unasked · Always/Ask/Never · one-home pointers · session loop (including suggest a new chat) · Verify pointer · rules may change · must-not list. Visual products: light/dark, motion, `prefers-reduced-motion` (or a glob rule, not always-on, if the repo is mixed).
+Owner (intake name) · recorded locale · standing commit authorisation if commit-as-you-go (the counter to Cursor's injected guardrail, [../reference/git-guardrail.md](../reference/git-guardrail.md)) · git policy and Verify live on `AGENTS.md`: point, do not restate · Always/Ask/Never · one-home pointers · session loop (including suggest a new chat) · rules may change · must-not list. Visual products: light/dark, motion, `prefers-reduced-motion` (or a glob rule, not always-on, if the repo is mixed).
 
 Do **not** paste architecture, local-dev runbooks, or plugin manuals here. Link them.
 
@@ -22,9 +22,9 @@ Add when later/blocked/debt. Do **not** park this-turn requested work only in th
 
 Learned User Preferences and Learned Workspace Facts live as sections on `AGENTS.md`. **One writer only:** a repo `update-memory` skill run from wrap-up (in session, no subagent), or the Marketplace Continual Learning plugin (hook-driven, zero setup). Never both.
 
-Whatever the home: ≤12 bullets per section; no secrets, one-offs, or copies of process/ADR/TODO. Constitution wins if a bullet contradicts it; prune the bullet. **No** `docs/agent-notes.md`; a short local notes file only when there is no memory mechanism at all.
+Whatever the home: ≤12 bullets per section; no secrets, one-offs, or copies of process/ADR/TODO. Constitution wins if a bullet contradicts it; prune the bullet. Prune test per bullet: would removing it cause mistakes? Anything an agent would rediscover in one session of reading the repo does not earn a bullet. **No** `docs/agent-notes.md`; a short local notes file only when there is no memory mechanism at all.
 
-Gitignore `.cursor/hooks/state/`.
+Gitignore `.cursor/hooks/state/` and `.cursor/tmp/` (session scratch scripts).
 
 ## Collaboration rule
 
@@ -32,7 +32,7 @@ Before acting: git status, terminals, backlog/plans. Prefer **Cursor IDE browser
 
 ## Changelog
 
-Same commit, today’s `## YYYY-MM-DD`. `### Added` / `### Changed` / `### Fixed` as useful. Notable only.
+Same commit, today’s `## YYYY-MM-DD`. `### Added` / `### Changed` / `### Fixed` as useful. Notable only, agent-harness changes included (the harness is tracked machinery on this shape).
 
 ## Cursor plans
 
@@ -43,6 +43,12 @@ Same commit, today’s `## YYYY-MM-DD`. `### Added` / `### Changed` / `### Fixed
 Context, decision, alternatives, consequences. Include the user's name as author (from intake). Proposed → Accepted → freeze (typos / supersession / dated amendments). `ADR-0001-short-title.md` or one `DECISIONS.md` on tiny projects.
 
 Write ADRs **as you go**: when a decision is hard to reverse, cross-cutting, or options were argued, record it in the same slice, without waiting to be asked. Skip trivial fixes.
+
+Keep the folder `README.md` as an index (number, title, status). Lifecycle: Proposed → Accepted → Superseded, linked both ways when superseding. Before changing an area, check the index for ADRs that bind it; when you meet an undocumented convention worth keeping, draft the missing ADR.
+
+## Production guardrail (deploy-on-push repos)
+
+When a branch auto-deploys, add a short always-on rule naming the protected branch: no checkout, commit, merge, or push to it unless the owner asks in the current message; the default route is topic branch → PR. Absolute wording, no exceptions inside the rule. This is a legitimate place to spend always-on budget.
 
 ## Docs map
 

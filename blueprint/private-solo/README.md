@@ -49,6 +49,7 @@ These are **steps**. Open a later file only when its trigger matches. Do not ing
 ## Gitignore starter
 
 ```gitignore
+.cursor/tmp/
 .cursor/hooks/state/
 .cursor/settings.json
 .screenshots/
@@ -76,13 +77,19 @@ Start here every session.
 3. `docs/TODO.md` — Imminent and Discuss
 4. Domain truth for the current task (link the real homes)
 
+## Where things live
+{short table: source entry points, config, tests, docs homes. Editing the wrong file is the top agent failure; this map prevents it}
+
 ## Verify
 {exact commands from intake, with flags}
 Prefer the smallest scoped run. Report failures, not pages of passing output.
 
 ## Git
-{commit-as-you-go or ask-first, from intake}
+{commit-as-you-go or ask-first, from intake; branch shape}
 Never push, open a PR, or merge unless asked in the current message.
+
+## Security
+Secrets live in {home, e.g. gitignored `.env`; `.env.example` carries names only}. Never commit or print them. Protected paths: {list, or none}.
 
 ## Always / Ask first / Never
 Always: update the one home that changed; run Verify for the touched area.

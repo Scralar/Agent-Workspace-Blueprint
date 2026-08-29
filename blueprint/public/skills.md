@@ -6,7 +6,7 @@ Trigger: adding workflows the agent should load on demand.
 
 Repo skills: `.cursor/skills/<name>/SKILL.md` (`name` + `description`). This blueprint is for Cursor. Other harnesses use different skill directories; adapt if you copy the idea.
 
-Keep `SKILL.md` short. Description includes “use when…” with **sharp triggers**. Extra checklists go in sibling files the skill tells the agent to read. Don’t restate the constitution.
+Keep `SKILL.md` short. Write the description in the third person, starting “Use when…”, naming **trigger conditions only**: do not summarise the workflow, or the model may skip reading the skill. Keyword-rich, under ~500 characters. Set `disable-model-invocation: true` on ritual-only skills (like update-memory) so they run only when invoked. Extra checklists go in sibling files the skill tells the agent to read. Don’t restate the constitution.
 
 ## wrap-up
 

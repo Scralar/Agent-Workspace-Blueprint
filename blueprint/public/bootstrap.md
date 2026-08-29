@@ -12,7 +12,7 @@ Ask in the first message if unknown. Recommend + options + why. Record answers i
 | Repo shape | Confirm this folder fits: **public**, anyone can clone. If the repo is actually private, switch to [../private-solo/](../private-solo/README.md) or [../private-team/](../private-team/README.md). Check with `gh repo view --json isPrivate` or ask. |
 | Commit policy | **Commit as you go** after each coherent verified unit. Alternative: ask-first. |
 | Locale | **en-GB** in chat and in work, unless the product locale differs by design. |
-| Cheapest verify command | Required. Exact command(s) with flags. If none exist yet, write `none yet` in Verify and add a real command as soon as the repo can be checked. |
+| Cheapest verify command | Required, and the highest-value line in the workspace. Exact command(s) with flags; per-stack examples in [../minimal.md](../minimal.md). If none exist yet, write `none yet` in Verify and add the cheapest real check in the first slice that allows one. |
 
 ## Order
 
@@ -43,7 +43,7 @@ Both live in this folder's [README.md](README.md), together with the memory home
 
 The tree is a starting shape. Drop, merge, rename, or add files when the project is simpler, a monorepo, docs-only, or the user wants a different map. Do not create empty ceremony folders. Backlog hygiene may be its own rule (`.cursor/rules/todo.mdc`) or fold into the constitution if both would be tiny.
 
-Whatever the shape, keep the `AGENTS.md` **invariants**: short map, pointers not copies, a Verify block with real commands, git/push policy, Always/Ask/Never. Do not pad with architecture essays, style guides, or command encyclopaedias. Do not auto-generate a repo dump (`/init` style).
+Whatever the shape, keep the `AGENTS.md` **invariants**: short map, where-things-live table, pointers not copies, a Verify block with real commands, git/push policy, a security block, Always/Ask/Never. Do not pad with architecture essays, style guides, or command encyclopaedias. Do not auto-generate a repo dump (`/init` style): committing unedited LLM-generated boilerplate measurably hurts agents; write these files by hand for this repo. Monorepos: nested `AGENTS.md` is supported by most harnesses (nearest file wins); root carries universal rules, package files carry local invariants.
 
 **Add later, not empty:** production guardrails, scoped domain rules, design skills, brief, runbooks.
 
@@ -68,7 +68,7 @@ Anti-pattern: runbooks inside always-on rules.
 - [ ] Intake recorded (name, repo shape confirmed, commit policy, locale, Verify command)
 - [ ] Always-on files are constraints and pointers, not manuals
 - [ ] Rule types are the narrowest that still work
-- [ ] `AGENTS.md` adapted to this project, with a real Verify block, **publishable throughout**
+- [ ] `AGENTS.md` adapted to this project, with a real Verify block, where-things-live map, and security block, **publishable throughout**
 - [ ] Constitution + backlog hygiene + collaboration (or a justified skip/merge)
 - [ ] TODO + changelog
 - [ ] Memory homes set per [README.md](README.md); private working files gitignored; hook state gitignored
