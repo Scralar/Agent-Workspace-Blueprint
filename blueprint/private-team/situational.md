@@ -1,4 +1,4 @@
-# 8. Extras by project type
+# Situational guidance by project type
 
 Up: [README.md](README.md)
 

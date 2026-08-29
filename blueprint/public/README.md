@@ -26,7 +26,7 @@ These are **steps**. Open a later file only when its trigger matches. Do not ing
 | [file-recipes.md](file-recipes.md) | Writing TODO, ADRs, changelog, MCP note, memory, plans |
 | [skills.md](skills.md) | Adding or changing skills |
 | [mcp-tooling.md](mcp-tooling.md) | MCP, browser, outbound, GitHub, tooling refresh |
-| [extras.md](extras.md) | Visual product, naming, scoped rules, plans hygiene |
+| [situational.md](situational.md) | Visual product, naming, scoped rules, plans hygiene |
 | [done.md](done.md) | Definition of done, do-not list |
 | [../reference/git-guardrail.md](../reference/git-guardrail.md) | Agent will not commit, or you are writing git policy |
 | [../reference/plugin-clashes.md](../reference/plugin-clashes.md) | Superpowers, Team Kit, Playwright, Notion, or Canvas are in play |
@@ -63,6 +63,11 @@ Meta repos that publish a framework (like the repo this kit lives in) may gitign
 
 # Ephemeral QA
 .screenshots/
+
+# Secrets
+.env
+.env.*
+!.env.example
 ```
 
 ## Memory homes
@@ -77,7 +82,7 @@ If it is not safe on GitHub, it is not a workspace fact.
 ## Sample `AGENTS.md`
 
 ```markdown
-# Agent entry — {project}
+# Agent entry: {project}
 
 This file is public. Keep it publishable.
 

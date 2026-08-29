@@ -1,4 +1,4 @@
-# 8. Extras by project type
+# Situational guidance by project type
 
 Up: [README.md](README.md)
 
@@ -8,7 +8,7 @@ Trigger: the project is visual, named for users, repeating a mistake, or plannin
 
 **Scoped rules:** After the same mistake twice. Narrow globs or a description. Must/must-not. Link out for depth.
 
-**Plans:** Multi-phase only. ADR = why; plan = how. Few active. Home: `.cursor/plans/`, **tracked** on this shape, with a short `README.md` in the folder. Archive completed plans to `.cursor/plans/archive/` or delete when the slice ships.
+**Plans:** Multi-phase only. ADR = why; plan = how. Few active. Home: `.cursor/plans/`, **gitignored** on this public shape; plans stay local. Archive completed plans to `.cursor/plans/archive/` or delete when the slice ships.
 
 **Sandbox:** Dev-only visual playground; skip if not a UI project.
 

@@ -14,6 +14,7 @@
 
 - Shape folders tightened with researched practice: Verify treated as the highest-value line with per-stack examples, where-things-live map and security block in the sample `AGENTS.md`, git policy given one home, ADR index and supersession discipline, changelog scope defined per shape, MCP security and GitHub-CLI guidance, usage-based tool pruning
 - Byte-identical reference files deduplicated into shared `blueprint/reference/` (ADR-0003)
+- Kit validated by bootstrapping a scratch project from each shape plus an adoption dry-run; the stumbles found are fixed: intake answers now recorded per home, `.env` added to gitignore starters, branch shape asked at intake, `master` vs `main` addressed, `disable-model-invocation` guidance corrected, MCP-research deferral allowed in the self-check, and the per-shape `extras.md` renamed to `situational.md` to clear the clash with the new `extras/` shelf
 - Blueprint restructured into three self-contained folders (`public/`, `private-solo/`, `private-team/`), each with the full tailored file set; `blueprint/README.md` is the chooser
 - Kit policy: write ADRs as you go when a decision meets the bar, without waiting to be asked
 

@@ -1,8 +1,8 @@
-# 4. Sessions, git, parallel work
+# Sessions, git, parallel work
 
 Up: [README.md](README.md)
 
-Trigger: day-to-day work after bootstrap.
+Trigger: day-to-day work after bootstrap; also read once during bootstrap when writing the constitution's session loop.
 
 ## Session loop
 
@@ -27,6 +27,8 @@ Ask: context → recommendation → options → why. Challenge weak requests.
 ```
 feat/* ──► dev ──PR──► main (production)
 ```
+
+That diagram is for repos where `main` is production. Simpler repos may work on `main` alone; use the branch shape agreed at intake.
 
 | Action | Default |
 |--------|---------|

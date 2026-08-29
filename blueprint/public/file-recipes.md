@@ -1,4 +1,4 @@
-# 5. File recipes
+# File recipes
 
 Up: [README.md](README.md)
 
@@ -33,6 +33,8 @@ Gitignore `.cursor/hooks/state/` and `.cursor/tmp/` (session scratch scripts).
 
 Before acting: git status, terminals, backlog/plans. Prefer **Cursor IDE browser** (`browser_tabs` → new tab → lock → work → unlock → close yours). User’s Chrome/DevTools (`list_pages` → `new_page`) only if they already have Chrome in play or asked.
 
+When committing: stage only your paths; mention foreign dirty files in chat; never revert others' WIP, kill foreign processes, or force-push shared branches. Leave notes another agent can continue from.
+
 ## Changelog
 
 Same commit, today’s `## YYYY-MM-DD`. `### Added` / `### Changed` / `### Fixed` as useful. Notable **and publishable** only. Scope: the product or kit; this repo's own agent harness never appears here.
@@ -51,7 +53,7 @@ Keep the folder `README.md` as an index (number, title, status). Lifecycle: Prop
 
 ## Production guardrail (deploy-on-push repos)
 
-When a branch auto-deploys, add a short always-on rule naming the protected branch: no checkout, commit, merge, or push to it unless the owner asks in the current message; the default route is topic branch → PR. Absolute wording, no exceptions inside the rule. This is a legitimate place to spend always-on budget.
+When a branch auto-deploys, add a short always-on rule naming the protected branch: no checkout, commit, merge, or push to it unless the owner asks in the current message; the default route is topic branch → PR. Absolute wording, no exceptions inside the rule. This is a legitimate place to spend always-on budget. Add the rule as soon as the deploy branch is named, not when the first deploy happens: "will eventually auto-deploy" already qualifies.
 
 ## Docs map
 

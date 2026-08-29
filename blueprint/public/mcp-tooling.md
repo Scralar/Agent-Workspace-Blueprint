@@ -1,4 +1,4 @@
-# 7. MCP and tooling
+# MCP and tooling
 
 Up: [README.md](README.md)
 

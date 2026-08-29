@@ -1,4 +1,4 @@
-# 1. Working agreements (policy)
+# Working agreements (policy)
 
 Up: [README.md](README.md)
 

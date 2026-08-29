@@ -7,7 +7,7 @@ Use when the repo is small and simple: a game plugin, a template pack, a script 
 ## Sample minimal `AGENTS.md`
 
 ```markdown
-# Agent entry — {project}
+# Agent entry: {project}
 
 {One line: what this repo is.}
 

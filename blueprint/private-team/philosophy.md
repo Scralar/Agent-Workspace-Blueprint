@@ -1,4 +1,4 @@
-# 2. Philosophy
+# Philosophy
 
 Up: [README.md](README.md)
 

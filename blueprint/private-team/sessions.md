@@ -1,8 +1,8 @@
-# 4. Sessions, git, parallel work
+# Sessions, git, parallel work
 
 Up: [README.md](README.md)
 
-Trigger: day-to-day work after bootstrap.
+Trigger: day-to-day work after bootstrap; also read once during bootstrap when writing the constitution's session loop.
 
 ## Session loop
 

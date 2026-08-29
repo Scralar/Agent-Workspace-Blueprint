@@ -40,12 +40,14 @@ Each folder carries the full reading path: policy, philosophy, bootstrap, sessio
 
 1. Copy this whole `blueprint/` folder into the new repo, usually `.cursor/brief/`.
 2. Ask the agent to follow the path above (intake → research tooling → propose layout → scaffold).
-3. Keep the folder in the new repo if later sessions should re-read policy. Do not treat this GitHub repo’s live `.cursor/` as the copy source.
+3. Keep the folder in the new repo if later sessions should re-read policy, and note where it came from so it can be re-synced. Tracking the copy is fine on any shape (the kit is publishable); gitignore it if you prefer a lean tree. Do not treat this GitHub repo’s live `.cursor/` as the copy source.
 
 ## The kit improves itself
 
 When a project changes its way of working in a manner that would help other projects, the agent proposes upstreaming it to this kit: use-case material to [extras/](extras/README.md), core changes to the shape folders. Bar and consent rules: [extras/README.md](extras/README.md). Propose, never act silently.
 
 ## This repo (meta)
+
+If you are reading a copy inside another project, ignore this section; it applies only to the canonical kit repository.
 
 Edits to the canonical kit happen **here**. The three shape folders are deliberate near-copies: a dedicated path per repo shape beats hunting through shared files. When you change a shared idea in the core files, change it in **all three** folders in the same commit. Shape-agnostic leaves (`reference/`, `extras/`, `adopt.md`, `minimal.md`) live once. The live Cursor harness (`.cursor/`) is local and untracked. Public changelog and ADRs live in the repo root / `docs/adr/`.

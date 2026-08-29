@@ -1,4 +1,4 @@
-# 6. Skills
+# Skills
 
 Up: [README.md](README.md)
 
@@ -6,7 +6,7 @@ Trigger: adding workflows the agent should load on demand.
 
 Repo skills: `.cursor/skills/<name>/SKILL.md` (`name` + `description`). This blueprint is for Cursor. Other harnesses use different skill directories; adapt if you copy the idea.
 
-Keep `SKILL.md` short. Write the description in the third person, starting “Use when…”, naming **trigger conditions only**: do not summarise the workflow, or the model may skip reading the skill. Keyword-rich, under ~500 characters. Set `disable-model-invocation: true` on ritual-only skills (like update-memory) so they run only when invoked. Extra checklists go in sibling files the skill tells the agent to read. Don’t restate the constitution.
+Keep `SKILL.md` short. Write the description in the third person, starting “Use when…”, naming **trigger conditions only**: do not summarise the workflow, or the model may skip reading the skill. Keyword-rich, under ~500 characters. Set `disable-model-invocation: true` only on skills the **user** should trigger with `/name`; it hides the skill from the model entirely, so never set it on a skill another skill's flow invokes (wrap-up invokes update-memory). Extra checklists go in sibling files the skill tells the agent to read. Don’t restate the constitution.
 
 ## wrap-up
 
@@ -34,6 +34,4 @@ Do **not** copy plugin `SKILL.md` into the repo. Invoke by name. The Marketplace
 
 ## UI / marketing (when the project is visual)
 
-- `frontend-design`: distinctive UI; existing design systems win
-- `web-design-guidelines`: Vercel Web Interface Guidelines
-- `design-inspiration`: adapt patterns; don’t drop foreign runtimes wholesale
+See [../extras/web-design.md](../extras/web-design.md). The skills named there (`frontend-design`, `web-design-guidelines`, `design-inspiration`) are Marketplace plugin skills: invoke if installed, recommend otherwise, never copy into the repo.
