@@ -24,7 +24,7 @@ Triggers: implementation plan, roadmap, large multi-phase. Zero session context;
 
 ## Plugin skills
 
-Do **not** copy plugin `SKILL.md` into the repo. Invoke by name. `continual-learning` is hook-driven. Clash table: [reference-plugin-clashes.md](reference-plugin-clashes.md), and only if those plugins are installed or recommended.
+Do **not** copy plugin `SKILL.md` into the repo. Invoke by name. `continual-learning` is hook-driven and suits private-solo repos only (see the variant's memory homes). Clash table: [reference-plugin-clashes.md](reference-plugin-clashes.md), and only if those plugins are installed or recommended.
 
 ## UI / marketing (when the project is visual)
 

@@ -10,7 +10,7 @@ Treat as policy unless you argue otherwise and the user agrees. Record intake ch
 | **Push / PR** | Never until the user asks in the **current** message. |
 | **CHANGELOG** | Root `CHANGELOG.md`; daily `## YYYY-MM-DD` only (newest first). No `## Unreleased`. Notable changes only; not a dump of commit subjects. |
 | **Backlog** | Persistent TODO with priority sections. |
-| **Tooling inventory** | Living, **project-specific** MCP note (usually `docs/agent-mcp.md`). Do not copy another repo’s list. Recommend missing plugins; do not assume they are installed. Record **skill precedence** when plugins clash with repo rules. |
+| **Tooling inventory** | Living, **project-specific** MCP note (home per variant: `docs/agent-mcp.md` on private repos, `.cursor/agent-mcp.md` on public). Do not copy another repo’s list. Recommend missing plugins; do not assume they are installed. Record **skill precedence** when plugins clash with repo rules. |
 | **Rule size** | Lean. Exceed for safety (production, multi-agent, legal). |
 | **Commit messages** | `type(scope): summary` (Conventional Commits). |
 | **Branches** | `dev` (or topics off `dev`) → PR → `main` when `main` is production. Simpler repos may work on `main`; agree first. |

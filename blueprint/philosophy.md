@@ -15,8 +15,8 @@ Without a light framework, agents re-debate architecture, lose “later” work,
 | Why | ADRs (or `DECISIONS.md` on tiny projects) |
 | Domain how | Process / package README |
 | Deferred work | Persistent TODO |
-| Learned preferences / facts | `AGENTS.md` via Continual Learning |
-| Session scratch | Skip if Continual Learning is on; else a short notes file |
+| Learned preferences / facts | Memory homes per variant (preferences may be private; facts tracked) |
+| Session scratch | Skip when memory homes exist; else a short notes file |
 | Builder tools | Living project MCP note (day one) |
 | Multi-phase how | Plans (few, temporary) |
 | Product story | Brief (optional) |

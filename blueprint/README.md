@@ -18,20 +18,31 @@ Copy this **folder** into a new project (typical home: `.cursor/brief/`) or foll
 
 These are **steps**. Open a later file only when its trigger matches. Do not ingest the whole folder before acting.
 
-1. **Intake** ([bootstrap.md](bootstrap.md)) if anything below is unknown: name, visibility, commit policy, locale, cheapest verify command.
-2. Read [policy.md](policy.md) and [bootstrap.md](bootstrap.md). Skim [philosophy.md](philosophy.md). Open other files by trigger.
-3. **Research current tooling** ([mcp-tooling.md](mcp-tooling.md)) before locking a stack. This kit goes stale; the Marketplace does not.
-4. Propose a layout for *this* repo (keep / drop / replace). Challenge weak defaults. The example tree and the sample `AGENTS.md` are a starting shape, not a mandatory schema.
-5. Scaffold, commit locally, summarise, including plugins still to install.
-6. Keep the project MCP note current as the work changes.
+1. **Intake** ([bootstrap.md](bootstrap.md)) if anything below is unknown: name, variant, commit policy, locale, cheapest verify command.
+2. Pick the **variant** folder for the repo's shape (below). It owns the day-one tree, sample `AGENTS.md`, memory homes, and git-tracking policy.
+3. Read [policy.md](policy.md) and [bootstrap.md](bootstrap.md). Skim [philosophy.md](philosophy.md). Open other files by trigger.
+4. **Research current tooling** ([mcp-tooling.md](mcp-tooling.md)) before locking a stack. This kit goes stale; the Marketplace does not.
+5. Propose a layout for *this* repo (keep / drop / replace). Challenge weak defaults. The variant tree and sample `AGENTS.md` are a starting shape, not a mandatory schema.
+6. Scaffold, commit locally, summarise, including plugins still to install.
+7. Keep the project MCP note current as the work changes.
 
-## Files
+## Variants
+
+| Folder | Use when |
+|--------|----------|
+| [public/](public/README.md) | Anyone can clone the repo. Tracked files must stay publishable. |
+| [private-solo/](private-solo/README.md) | Private repo, one maintainer. Working files tracked. |
+| [private-team/](private-team/README.md) | Private repo, collaborators or several parallel agents. |
+
+The core files below apply to **every** variant; variant folders hold only what differs (tree, sample entry, memory homes, tracking policy). Do not copy core content into a variant; link it. If the repo's shape changes later (goes public, gains collaborators), switch variant and migrate the differing files.
+
+## Files (core)
 
 | File | Open when |
 |------|-----------|
 | [policy.md](policy.md) | Working agreements (always, with bootstrap) |
 | [philosophy.md](philosophy.md) | Why the kit exists; one home per fact |
-| [bootstrap.md](bootstrap.md) | Intake, day-one tree, sample `AGENTS.md` |
+| [bootstrap.md](bootstrap.md) | Intake, bootstrap order, rule types, budgets, self-check |
 | [sessions.md](sessions.md) | Session loop, git, parallel work, suggesting a new chat |
 | [file-recipes.md](file-recipes.md) | Writing TODO, ADRs, changelog, MCP note, plans folder |
 | [skills.md](skills.md) | Adding or changing skills |

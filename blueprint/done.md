@@ -4,7 +4,7 @@ Up: [README.md](README.md)
 
 ## Definition of done
 
-Verify command run for the touched area · smallest correct diff · one-home docs updated (MCP note if tooling or **scope** changed) · ADR if the bar was met · changelog if notable · backlog updated · correction recorded if it was a durable lesson · Learned via plugin not a notes file · UI gates if UI · committed under the recorded policy · not pushed unless asked.
+Verify command run for the touched area · smallest correct diff · one-home docs updated (MCP note if tooling or **scope** changed) · ADR if the bar was met · changelog if notable · backlog updated · correction recorded if it was a durable lesson · memory in the variant's homes, not a notes file · UI gates if UI · committed under the recorded policy · not pushed unless asked.
 
 ## Do not
 

@@ -18,9 +18,9 @@ Add when later/blocked/debt. Do **not** park this-turn requested work only in th
 
 ## Learned memory
 
-Continual Learning installed → **no** `docs/agent-notes.md`. Hook may run `continual-learning` (`disable-model-invocation: true`; not every wrap-up). Only those two Learned headings; ≤12 bullets each; no secrets, one-offs, or copies of process/ADR/TODO. Constitution wins if a Learned bullet contradicts it; prune the bullet.
+Memory homes come from the **variant**. Private-solo may keep Learned sections on `AGENTS.md`; public and team repos split personal preferences into a gitignored `.cursor/user-preferences.md` and keep only publishable facts tracked. Writer: a repo `update-memory` skill run from wrap-up (preferred), or the Marketplace Continual Learning plugin on private-solo only. Never both, and keep the plugin **off** wherever the root `AGENTS.md` must not receive personal preferences.
 
-Otherwise a short notes file is fine. Prune it; not a second TODO.
+Whatever the home: ≤12 bullets per section; no secrets, one-offs, or copies of process/ADR/TODO. Constitution wins if a bullet contradicts it; prune the bullet. **No** `docs/agent-notes.md`; a short notes file only when there is no memory mechanism at all.
 
 Gitignore `.cursor/hooks/state/`.
 
