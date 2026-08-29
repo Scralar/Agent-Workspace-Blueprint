@@ -5,6 +5,7 @@
 ### Changed
 
 - Workspace facts live on public `AGENTS.md`. Maintainer preferences are gitignored `.cursor/user-preferences.md`
+- Blueprint kit is a folder of section files (`blueprint/README.md` is the index), not one long markdown file
 
 ## 2026-08-18
 

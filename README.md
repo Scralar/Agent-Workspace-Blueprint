@@ -4,8 +4,8 @@ A copyable kit for bootstrapping Cursor agent workspaces. Point a new project at
 
 ## Use in a new project
 
-1. Copy [`blueprint/agent-workspace-blueprint.md`](blueprint/agent-workspace-blueprint.md) into the new repo (typical path: `.cursor/brief/agent-workspace-blueprint.md`).
-2. Ask the agent to set up the project from that file.
+1. Copy the [`blueprint/`](blueprint/) folder into the new repo (typical path: `.cursor/brief/`).
+2. Ask the agent to follow [`blueprint/README.md`](blueprint/README.md).
 3. Adapt intake (owner, visibility, commit policy, locale, verify command). Do not paste another repo’s MCP list.
 
 Details: [`blueprint/README.md`](blueprint/README.md).

@@ -5,9 +5,8 @@ This file is **public**. It is the map for anyone who clones this GitHub reposit
 ## Read order
 
 1. This file
-2. [`blueprint/agent-workspace-blueprint.md`](blueprint/agent-workspace-blueprint.md)
-3. [`blueprint/README.md`](blueprint/README.md)
-4. [`docs/adr/`](docs/adr/)
+2. [`blueprint/README.md`](blueprint/README.md)
+3. [`docs/adr/`](docs/adr/)
 
 Maintainer-only preferences (gitignored, not present in a fresh clone): `.cursor/user-preferences.md`.
 
@@ -38,4 +37,4 @@ Never: secrets; private working notes in tracked files.
 Publishable facts about this repo. `update-memory` may add bullets here. No personal preferences.
 
 - Work on `main`. There is no production deploy.
-- Future projects copy `blueprint/`. They do not copy this repo’s `.cursor/` tree.
+- Future projects copy the `blueprint/` folder. They do not copy this repo’s `.cursor/` tree.

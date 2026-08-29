@@ -1,0 +1,51 @@
+# 4. Sessions, git, parallel work
+
+Up: [README.md](README.md)
+
+Trigger: day-to-day work after bootstrap.
+
+## Session loop
+
+1. Entry + constitution → Imminent / Discuss
+2. Collaboration scan (git / terminals / browser)
+3. **Tooling freshness:** MCP note missing, last-reviewed older than **~30 days**, *or* the project’s nature / a major aspect has **shifted** (see [mcp-tooling.md](mcp-tooling.md))
+4. Architectural? → ADR
+5. Multi-phase? → write-plan (user approves unless they said run with it)
+6. Smallest correct diff → **Verify**
+7. Update the one homes that changed → **commit** (if commit-as-you-go)
+8. Repeat; wrap-up at end of slice
+9. **Stop.** No push/PR unless asked
+10. **Suggest a new chat** when the slice is done, the next task is a different concern, the thread is long, or you are repeating mistakes. Be relatively persistent (remind rather than nag once and drop). The user decides.
+
+Ask: context → recommendation → options → why. Challenge weak requests.
+
+**Autonomous** (“run with it”): proceed unless secrets, production merge, destructive git, or legal. Still follow the recorded commit policy; still no push unasked.
+
+## Git
+
+```
+feat/* ──► dev ──PR──► main (production)
+```
+
+| Action | Default |
+|--------|---------|
+| Commit | As you go, unless intake chose ask-first |
+| Push / open PR | Only when asked |
+| Merge / push production | Only when owner asks in the current message |
+| Force-push | Never unless they explicitly demand and understand |
+
+PowerShell:
+
+```powershell
+git commit -m "type(scope): summary" -m "Optional body."
+```
+
+Types: `feat` `fix` `docs` `chore` `refactor` `test`. Use `!` for breaking. One concern per commit. Never commit secrets.
+
+If `main` auto-deploys: do not merge production PRs unless asked now. “Deploy” without “merge” → describe or open a PR, do not merge.
+
+Injected Cursor git guardrail: [reference-git-guardrail.md](reference-git-guardrail.md).
+
+## Parallel agents
+
+Own your files; don’t revert others’ WIP; don’t kill foreign servers; don’t steal Imminent work. Browser: own tab only (IDE browser first). Stage your paths; mention foreign dirt. No force-push of shared branches.
