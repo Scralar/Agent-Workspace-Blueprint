@@ -9,7 +9,7 @@
 
 ### Changed
 
-- Root `README.md` and `AGENTS.md` rewritten for humans and other editors; Cursor-only paths are called out
+- Root `README.md` rewritten as a public-kit landing page: positioning, thirty-second start, what you get, and what it is not. `AGENTS.md` remains the agent map; Cursor-only paths are called out
 - Default use is to point an agent at the live `blueprint/` on GitHub; a local copy is optional (ADR-0007)
 - `docs/` slimmed to a short map plus ADRs; `docs/community.md` removed as a second copy of the root process files
 - Shape `mcp-tooling.md` research steps and extras README now distinguish short proven modules from longer dated catalogues
