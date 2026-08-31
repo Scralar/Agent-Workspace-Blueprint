@@ -1,6 +1,6 @@
 # ADR-0006 — Public community surface
 
-- **Status:** Accepted
+- **Status:** Accepted, amended by ADR-0007
 - **Date:** 2026-08-31
 - **Owner:** Scralar
 
@@ -22,7 +22,7 @@ ADR-0001 listed the published tree as the kit, `AGENTS.md`, `README.md`, `CHANGE
 
 5. **Public-shape bootstrap** asks for a licence (or a written reason there is none). That is a consumer-repo check, not a copy of this repo's community files.
 
-6. **`docs/README.md` is the map for published writing** (ADRs plus how to use the root process files). The canonical community files stay at the repo root. `docs/community.md` explains them; it does not replace them.
+6. **`docs/README.md` only lists what is under `docs/`** (ADRs). The canonical community files stay at the repo root and are not re-explained in `docs/` (ADR-0007).
 
 ## Alternatives
 

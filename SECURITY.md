@@ -1,7 +1,5 @@
 # Security
 
-How this file fits with issues and contributing: [`docs/community.md`](docs/community.md).
-
 This repository is a documentation kit. There is no production service and no user data store.
 
 ## What to report

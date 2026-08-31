@@ -22,7 +22,7 @@ Use when the repo already exists, with or without a partial agent harness. The g
 | Changelog missing, buried, or unformatted | Root `CHANGELOG.md`, dated day sections, scoped per the shape's policy. |
 | README contradicting ADRs or rules | Fix the stale one **now**; agents trust the first file they read. |
 | Plan sprawl, `tmp/` scratch | Archive completed plans, delete dead ones, gitignore `.cursor/tmp/`. |
-| A copied blueprint snapshot (e.g. `.cursor/brief/`) | Keep or refresh it from the canonical kit; note the source so it can be re-synced. |
+| A copied blueprint snapshot (e.g. `.cursor/brief/`) | Optional. Prefer pointing later sessions at the live kit URL. If you keep the snapshot, note the source so it can be refreshed. |
 | Duplicated facts across files | Pick the one home, link from the rest, in the same change. |
 
 ## 3. Finish like a bootstrap

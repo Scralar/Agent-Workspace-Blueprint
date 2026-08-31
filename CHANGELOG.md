@@ -10,7 +10,8 @@
 ### Changed
 
 - Root `README.md` and `AGENTS.md` rewritten for humans and other editors; Cursor-only paths are called out
-- `docs/README.md` and `docs/community.md` added so the docs folder explains itself and how to use the root process files without moving them
+- Default use is to point an agent at the live `blueprint/` on GitHub; a local copy is optional (ADR-0007)
+- `docs/` slimmed to a short map plus ADRs; `docs/community.md` removed as a second copy of the root process files
 - Shape `mcp-tooling.md` research steps and extras README now distinguish short proven modules from longer dated catalogues
 
 ## 2026-08-29

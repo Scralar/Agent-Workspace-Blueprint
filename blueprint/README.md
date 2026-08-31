@@ -37,11 +37,11 @@ Each folder carries the full reading path: policy, philosophy, bootstrap, sessio
 | [reference/user-rule.md](reference/user-rule.md) | User wants a Settings User Rule on this machine |
 | [reference/hooks.md](reference/hooks.md) | User wants hard enforcement of never-rules, not advice |
 
-## New project
+## Follow the kit
 
-1. Copy this whole `blueprint/` folder into the new repo, usually `.cursor/brief/`.
-2. Ask the agent to follow the path above (intake → research tooling → propose layout → scaffold).
-3. Keep the folder in the new repo if later sessions should re-read policy, and note where it came from so it can be re-synced. Tracking the copy is fine on any shape (the kit is publishable); gitignore it if you prefer a lean tree. Do not treat this GitHub repo’s live `.cursor/` as the copy source.
+**Default:** the agent is already reading this folder from GitHub. Follow the path above (intake → research tooling → propose layout → scaffold) **in the consumer repo**. Do not scaffold inside this kit repository.
+
+**Optional:** copy this folder into the consumer repo (for example `.cursor/brief/`) for offline use or a pinned revision. Note the source URL (`https://github.com/Scralar/Agent-Workspace-Blueprint/tree/main/blueprint`) so it can be refreshed. Do not copy this GitHub repository's live `.cursor/` tree.
 
 ## The kit improves itself
 
@@ -49,6 +49,6 @@ When a project changes its way of working in a manner that would help other proj
 
 ## This repo (meta)
 
-If you are reading a copy inside another project, ignore this section; it applies only to the canonical kit repository.
+If you are reading a local snapshot inside another project, ignore this section; it applies only to the canonical kit repository.
 
 Edits to the canonical kit happen **here**. The three shape folders are deliberate near-copies: a dedicated path per repo shape beats hunting through shared files. When you change a shared idea in the core files, change it in **all three** folders in the same commit. Shape-agnostic leaves (`reference/`, `extras/`, `adopt.md`, `minimal.md`) live once. The live Cursor harness (`.cursor/`) is local and untracked. Public changelog and ADRs live in the repo root / `docs/adr/`. Community files (`LICENSE`, `CONTRIBUTING.md`, `COLLABORATORS.md`, `.github/`) describe this GitHub repository; do not copy them into a consumer project unless that project wants the same licence and process.

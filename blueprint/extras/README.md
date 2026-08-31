@@ -31,6 +31,6 @@ Passes the bar when it is all three:
 - **Proven**: survived real use, not a one-session experiment
 - **Publishable**: no secrets, no personal preferences
 
-If it passes: **propose, never act silently.** Tell the user what changed and why it generalises, then with their consent either edit the blueprint repo directly (when it lives on this machine) or draft an issue or PR against its GitHub home. Editing another repo and opening PRs are outbound actions; the kit's ask-first rule applies. New use-case material lands here in `extras/`; changes to core behaviour belong in the shape folders and need stronger evidence.
+If it passes: **propose, never act silently.** Tell the user what changed and why it generalises, then with their consent either edit the blueprint repository (if it is already a local clone) or draft an issue or PR against [its GitHub home](https://github.com/Scralar/Agent-Workspace-Blueprint). Editing another repo and opening PRs are outbound actions; the kit's ask-first rule applies. New use-case material lands here in `extras/`; changes to core behaviour belong in the shape folders and need stronger evidence.
 
 If it fails the bar, it stays local, which is fine. Most changes should.

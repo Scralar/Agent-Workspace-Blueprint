@@ -1,34 +1,28 @@
 # Agent entry — Agent Workspace Blueprint
 
-This file is **public**. It is the map for anyone (human or agent) who clones this GitHub repository. Do not put private or internal working notes here.
-
-Humans start at [`README.md`](README.md). Other editors: Claude Code reads [`CLAUDE.md`](CLAUDE.md) (this file). Codex and similar read this file. Cursor-only paths (`.cursor/`) may not exist in your harness; adapt.
+Public map for this GitHub repository. Humans: [`README.md`](README.md). Claude Code: [`CLAUDE.md`](CLAUDE.md) (this file). Cursor-only paths may not exist in your harness; adapt.
 
 ## Read order
 
 1. This file
 2. [`blueprint/README.md`](blueprint/README.md) when changing the kit
-3. [`docs/README.md`](docs/README.md) when the question is "where does this published writing live?"
-4. [`docs/adr/`](docs/adr/) when a decision needs why
-5. [`CONTRIBUTING.md`](CONTRIBUTING.md) when proposing a change
+3. [`docs/adr/`](docs/adr/) when a decision needs why
+4. [`CONTRIBUTING.md`](CONTRIBUTING.md) when proposing a change
 
 ## What this repo is
 
-A copyable kit for bootstrapping agent workspaces. Copy `blueprint/` into a new project and follow its choose-your-path README. The `.cursor/` tree in *this* repository is local maintainer state. It is not the kit. A fresh clone does not contain it.
+The live kit is [`blueprint/`](blueprint/). Consumer agents should follow that folder **on GitHub**, not copy this repository. A local snapshot of `blueprint/` is optional. This repository's `.cursor/` tree is maintainer state and is not in a fresh clone.
 
 ## Where things live
 
 | What | Where |
 |------|-------|
-| The kit (the product) | `blueprint/` (chooser: `blueprint/README.md`) |
-| Published docs map | `docs/README.md` |
-| Why (ADRs) | `docs/adr/` |
-| Community how-to | `docs/community.md` |
-| Kit history | `CHANGELOG.md` (kit changes only, never a local editor harness) |
+| The kit | `blueprint/` |
+| Why | `docs/adr/` |
 | Verify | `scripts/check-links.mjs` |
-| How to contribute | `CONTRIBUTING.md` |
-| Who can merge | `COLLABORATORS.md` |
-| Licence | `LICENSE` (MIT) |
+| Contribute | `CONTRIBUTING.md` |
+| Merge access | `COLLABORATORS.md` |
+| Licence | `LICENSE` |
 
 ## Verify
 
@@ -36,26 +30,22 @@ A copyable kit for bootstrapping agent workspaces. Copy `blueprint/` into a new 
 node scripts/check-links.mjs
 ```
 
-Checks that relative markdown links resolve and shape folders carry no stale reference copies. Run it after edits to `blueprint/` or `docs/`. Report failures, not pages of passing output.
+After edits to `blueprint/` or `docs/`. Report failures only.
 
 ## Git
 
-Work on `main`. Conventional Commits. Never commit secrets. Never commit `.cursor/`.
-
-On a clone or fork: do not push to this repository's `main` unless [`COLLABORATORS.md`](COLLABORATORS.md) says you have write access. Open a pull request instead. Do not force-push shared branches.
+Work on `main`. Conventional Commits. Never commit secrets or `.cursor/`. Open a pull request unless [`COLLABORATORS.md`](COLLABORATORS.md) lists you. Do not force-push shared branches.
 
 ## Always / Ask first / Never
 
-Always: keep tracked files publishable. No private backlog, personal preferences, or session scratch in git.
+Always: tracked files stay publishable.
 
-Ask first: merge to `main` if you are not listed in `COLLABORATORS.md`.
+Ask first: merge to `main` if you are not in `COLLABORATORS.md`.
 
-Never: secrets; private working notes in tracked files; inventing a second map beside this file.
+Never: secrets; private notes in tracked files.
 
 ## Workspace facts
 
-Publishable facts about this repo. No personal preferences.
-
 - Work on `main`. There is no production deploy.
-- Future projects copy the `blueprint/` folder. They do not copy this repository's `.cursor/` tree.
-- The kit is MIT-licensed. Community files at the repo root describe *this* GitHub project; they are not part of the folder you copy unless you want them.
+- Consumer agents follow the live `blueprint/` on this GitHub repository. They do not copy this repository's `.cursor/` tree.
+- A local snapshot of `blueprint/` is optional (offline or a pinned revision).

@@ -1,12 +1,12 @@
 # ADR-0001 — Published kit layout
 
-- **Status:** Accepted, amended by ADR-0006
+- **Status:** Accepted, amended by ADR-0006 and ADR-0007
 - **Date:** 2026-08-18
 - **Owner:** Scralar
 
 ## Context
 
-This repository publishes a copyable agent-workspace blueprint. It is public. People will clone it and copy `blueprint/` into their own projects. The published tree should describe the kit, not a maintainer’s local editor setup.
+This repository publishes an agent-workspace blueprint. It is public. Agents follow the live `blueprint/` tree; a local copy is optional. The published tree should describe the kit, not a maintainer's local editor setup.
 
 ## Decision
 
