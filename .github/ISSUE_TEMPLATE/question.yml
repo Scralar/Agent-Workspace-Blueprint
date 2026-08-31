@@ -1,0 +1,11 @@
+name: Question
+description: How to use or adapt the kit
+title: "[question] "
+body:
+  - type: textarea
+    id: ask
+    attributes:
+      label: Question
+      description: Say which editor you use (Cursor, Claude Code, Codex, other) if it matters.
+    validations:
+      required: true

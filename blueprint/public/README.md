@@ -44,6 +44,7 @@ These are **steps**. Open a later file only when its trigger matches. Do not ing
 | TODO | `.cursor/TODO.md` | **Gitignored.** Working backlog is not for publication. Use a tracked `docs/TODO.md` only if the project wants a public roadmap. |
 | Tooling inventory | `.cursor/agent-mcp.md` | **Gitignored.** |
 | Changelog | `CHANGELOG.md` | Publishable history only, not internal harness chatter. |
+| Licence | `LICENSE` | Required on this shape, or a note in `AGENTS.md` why there is none. |
 | Skills | `.cursor/skills/` wrap-up, write-plan, update-memory | Tracked when publishable. |
 | Decision log | `docs/adr/` | Kit/product decisions only. |
 | Plans | `.cursor/plans/` | **Gitignored.** Local only. |

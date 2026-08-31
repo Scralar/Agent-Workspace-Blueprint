@@ -5,9 +5,11 @@
 ### Added
 
 - Dated pick-and-choose tooling catalogue under `blueprint/extras/` (chooser plus MCP, skills, and hooks companions) so bootstrapping agents can select by job, then re-verify live (ADR-0005)
+- Public GitHub surface: MIT licence, contributing and collaborators files, code of conduct, security note, issue and pull-request templates, and a link-check workflow (ADR-0006)
 
 ### Changed
 
+- Root `README.md` and `AGENTS.md` rewritten for humans and other editors; Cursor-only paths are called out
 - Shape `mcp-tooling.md` research steps and extras README now distinguish short proven modules from longer dated catalogues
 
 ## 2026-08-29

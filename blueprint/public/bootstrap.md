@@ -77,4 +77,5 @@ Anti-pattern: runbooks inside always-on rules.
 - [ ] `.cursor/plans/` gitignored (public shape)
 - [ ] `.cursor/mcp.json` only if this repo needs stdio MCP; no secrets
 - [ ] ADR/decision starter; architecture + local dev somewhere agents will **see when relevant** (pointer, not always-on)
+- [ ] Licence file present (or a short note in `AGENTS.md` why this public repo has none)
 - [ ] Framework committed; user told what changed from this blueprint; push waits for their ask
