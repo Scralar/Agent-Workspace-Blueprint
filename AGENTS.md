@@ -8,8 +8,9 @@ Humans start at [`README.md`](README.md). Other editors: Claude Code reads [`CLA
 
 1. This file
 2. [`blueprint/README.md`](blueprint/README.md) when changing the kit
-3. [`docs/adr/`](docs/adr/) when a decision needs why
-4. [`CONTRIBUTING.md`](CONTRIBUTING.md) when proposing a change
+3. [`docs/README.md`](docs/README.md) when the question is "where does this published writing live?"
+4. [`docs/adr/`](docs/adr/) when a decision needs why
+5. [`CONTRIBUTING.md`](CONTRIBUTING.md) when proposing a change
 
 ## What this repo is
 
@@ -20,7 +21,9 @@ A copyable kit for bootstrapping agent workspaces. Copy `blueprint/` into a new 
 | What | Where |
 |------|-------|
 | The kit (the product) | `blueprint/` (chooser: `blueprint/README.md`) |
-| Why | `docs/adr/` |
+| Published docs map | `docs/README.md` |
+| Why (ADRs) | `docs/adr/` |
+| Community how-to | `docs/community.md` |
 | Kit history | `CHANGELOG.md` (kit changes only, never a local editor harness) |
 | Verify | `scripts/check-links.mjs` |
 | How to contribute | `CONTRIBUTING.md` |

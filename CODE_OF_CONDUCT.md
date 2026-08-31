@@ -1,5 +1,7 @@
 # Code of conduct
 
+How this file fits with the rest of the process: [`docs/community.md`](docs/community.md).
+
 This project follows a short, public-repo version of the Contributor Covenant.
 
 ## Our pledge

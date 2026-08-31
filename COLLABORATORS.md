@@ -2,6 +2,8 @@
 
 Who can push to this repository, and how that list grows. GitHub handles only. No emails or private names.
 
+How this file fits with contributing, code owners, and security: [`docs/community.md`](docs/community.md).
+
 ## Write access
 
 | GitHub | Role |

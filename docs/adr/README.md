@@ -1,5 +1,7 @@
 # Architecture Decision Records
 
+Up: [../README.md](../README.md). Why the kit looks like this. Process for sending a change: [../community.md](../community.md).
+
 | ADR | Title | Status |
 |-----|-------|--------|
 | [ADR-0001](ADR-0001-published-kit-layout.md) | Published kit layout | Accepted |

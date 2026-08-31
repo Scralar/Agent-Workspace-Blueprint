@@ -30,7 +30,7 @@ The kit is a guidebook, not a rulebook. Adapt it. Do not copy this repository's 
 |------|------------|
 | [`blueprint/`](blueprint/) | The kit you copy |
 | [`AGENTS.md`](AGENTS.md) | Map for agents working *on this repo* |
-| [`docs/adr/`](docs/adr/) | Why the kit looks like this |
+| [`docs/`](docs/README.md) | Published why and community how-to (ADRs, how to use the process files) |
 | [`CHANGELOG.md`](CHANGELOG.md) | Kit history only (not local editor harness chatter) |
 | [`scripts/check-links.mjs`](scripts/check-links.mjs) | Verify: relative markdown links |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to propose a change |

@@ -9,7 +9,8 @@ Thanks for wanting to improve the kit. This file is for humans and for agents wo
 | How a *new* project bootstraps | `blueprint/` (all three shape folders in the same commit if the idea is shared) |
 | Optional use-case advice | `blueprint/extras/` (short modules) or the tooling catalogue |
 | Why a kit decision exists | `docs/adr/` |
-| This GitHub repo's welcome, licence, or process | Root files (`README.md`, `CONTRIBUTING.md`, …) |
+| How community files fit together | [`docs/community.md`](docs/community.md) (map). Do not invent a second contributing guide. |
+| This GitHub repo's welcome, licence, or process | Root files (`README.md`, this file, `COLLABORATORS.md`, …) |
 
 Do not add a second map. [`AGENTS.md`](AGENTS.md) is the agent entry. [`README.md`](README.md) is the human entry.
 

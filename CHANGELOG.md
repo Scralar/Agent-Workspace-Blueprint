@@ -10,6 +10,7 @@
 ### Changed
 
 - Root `README.md` and `AGENTS.md` rewritten for humans and other editors; Cursor-only paths are called out
+- `docs/README.md` and `docs/community.md` added so the docs folder explains itself and how to use the root process files without moving them
 - Shape `mcp-tooling.md` research steps and extras README now distinguish short proven modules from longer dated catalogues
 
 ## 2026-08-29
