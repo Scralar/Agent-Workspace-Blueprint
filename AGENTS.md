@@ -19,7 +19,9 @@ The live kit is [`blueprint/`](blueprint/). Consumer agents should follow that f
 |------|-------|
 | The kit | `blueprint/` |
 | Why | `docs/adr/` |
+| Wiki source | `docs/wiki/` (published to the GitHub wiki) |
 | Verify | `scripts/check-links.mjs` |
+| Publish wiki | `scripts/publish-wiki.mjs` |
 | Contribute | `CONTRIBUTING.md` |
 | Merge access | `COLLABORATORS.md` |
 | Licence | `LICENSE` |
@@ -30,7 +32,7 @@ The live kit is [`blueprint/`](blueprint/). Consumer agents should follow that f
 node scripts/check-links.mjs
 ```
 
-After edits to `blueprint/` or `docs/`. Report failures only.
+After edits to `blueprint/` or `docs/`. Report failures only. After `docs/wiki/` or `docs/adr/` changes, publish with `node scripts/publish-wiki.mjs`.
 
 ## Git
 
@@ -49,3 +51,4 @@ Never: secrets; private notes in tracked files.
 - Work on `main`. There is no production deploy.
 - Consumer agents follow the live `blueprint/` on this GitHub repository. They do not copy this repository's `.cursor/` tree.
 - A local snapshot of `blueprint/` is optional (offline or a pinned revision).
+- The GitHub wiki is a published view of `docs/`. Edit the repository, then run `node scripts/publish-wiki.mjs`.

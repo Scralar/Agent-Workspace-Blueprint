@@ -56,6 +56,7 @@ The kit is a guidebook, not a rulebook. Adapt it. Do not silently ignore product
 | -------------------------------------- | ---------------------------------- |
 | `[blueprint/](blueprint/)`             | You are using or changing the kit  |
 | `[AGENTS.md](AGENTS.md)`               | An agent is working on *this* repo |
+| `[Wiki](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki)` | Long-form guide (published from `docs/`) |
 | `[docs/adr/](docs/adr/)`               | You need why a kit decision exists |
 | `[CHANGELOG.md](CHANGELOG.md)`         | Kit history (not harness chatter)  |
 | `[CONTRIBUTING.md](CONTRIBUTING.md)`   | You want to send a change          |

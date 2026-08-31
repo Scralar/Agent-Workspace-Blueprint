@@ -1,6 +1,6 @@
 # ADR-0006 — Public community surface
 
-- **Status:** Accepted, amended by ADR-0007
+- **Status:** Accepted, amended by ADR-0007 and ADR-0008
 - **Date:** 2026-08-31
 - **Owner:** Scralar
 
@@ -18,7 +18,7 @@ ADR-0001 listed the published tree as the kit, `AGENTS.md`, `README.md`, `CHANGE
 
 3. **Root `README.md` is for humans.** `AGENTS.md` remains the agent map. Other harnesses read `AGENTS.md` and adapt Cursor-only paths; a one-line `CLAUDE.md` points at it.
 
-4. **GitHub listing** carries a short description and topics. The wiki stays off (docs live in the repo).
+4. **GitHub listing** carries a short description and topics. The wiki was left off here so docs stayed in the repo. ADR-0008 turns the wiki on as a **published view** of `docs/`; the repository remains the source of truth.
 
 5. **Public-shape bootstrap** asks for a licence (or a written reason there is none). That is a consumer-repo check, not a copy of this repo's community files.
 

@@ -8,7 +8,8 @@ Thanks for wanting to improve the kit. This file is for humans and for agents wo
 |--------------|--------|
 | How a *new* project bootstraps | `blueprint/` (all three shape folders in the same commit if the idea is shared) |
 | Optional use-case advice | `blueprint/extras/` (short modules) or the tooling catalogue |
-| Why a kit decision exists | `docs/adr/` |
+| Why a kit decision exists | `docs/adr/` (then publish the wiki) |
+| This wiki | `docs/wiki/`, then `node scripts/publish-wiki.mjs` |
 | This GitHub repo's welcome, licence, or process | Root files (`README.md`, this file, `COLLABORATORS.md`, …) |
 
 Do not add a second map. [`AGENTS.md`](AGENTS.md) is the agent entry. [`README.md`](README.md) is the human entry.
@@ -26,7 +27,8 @@ Propose first on large or controversial changes. Small docs and link fixes can g
 3. Use British English (en-GB) in docs and commit messages. No em dashes.
 4. Conventional Commits, for example `docs(kit): …` or `docs(repo): …`.
 5. Run `node scripts/check-links.mjs` and fix failures.
-6. Open a pull request against `main`. Fill in the template.
+6. If you changed `docs/wiki/` or `docs/adr/`, run `node scripts/publish-wiki.mjs` (write access). Edits made only on the Wiki tab may be overwritten.
+7. Open a pull request against `main`. Fill in the template.
 
 Maintainers squash or rebase at their discretion. Do not force-push `main`.
 

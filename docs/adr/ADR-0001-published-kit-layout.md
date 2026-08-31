@@ -1,6 +1,6 @@
 # ADR-0001 — Published kit layout
 
-- **Status:** Accepted, amended by ADR-0006 and ADR-0007
+- **Status:** Accepted, amended by ADR-0006, ADR-0007, and ADR-0008
 - **Date:** 2026-08-18
 - **Owner:** Scralar
 
@@ -10,7 +10,7 @@ This repository publishes an agent-workspace blueprint. It is public. Agents fol
 
 ## Decision
 
-1. **Published tree** — `blueprint/` (the kit), root `AGENTS.md` (map for clones), `README.md`, `CHANGELOG.md`, and `docs/adr/`. ADR-0006 adds root community files (`LICENSE`, `CONTRIBUTING.md`, `COLLABORATORS.md`, conduct, security, `.github/`) that describe *this* GitHub repository and are not part of the copied kit unless a consumer wants them.
+1. **Published tree** — `blueprint/` (the kit), root `AGENTS.md` (map for clones), `README.md`, `CHANGELOG.md`, and `docs/` (`adr/` plus `wiki/`). ADR-0006 adds root community files (`LICENSE`, `CONTRIBUTING.md`, `COLLABORATORS.md`, conduct, security, `.github/`) that describe *this* GitHub repository and are not part of the copied kit unless a consumer wants them. ADR-0008 publishes `docs/wiki/` and the ADRs to the GitHub wiki.
 2. **Local Cursor files** — `.cursor/` is gitignored. It is not part of the kit. A fresh clone does not contain it.
 3. **Branch** — work on `main`. There is no production deploy.
 4. **Verify** — none yet. Add a cheap check when the kit needs one.
