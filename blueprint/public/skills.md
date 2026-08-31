@@ -28,6 +28,8 @@ Triggers: implementation plan, roadmap, large multi-phase. Zero session context;
 
 **Prefer this repo skill** over Superpowers `writing-plans` (`docs/superpowers/plans/`) unless the project explicitly chose that tree.
 
+Picker for built-in, plugin, and vendor skills: [../extras/tooling-skills.md](../extras/tooling-skills.md).
+
 ## Plugin skills
 
 Do **not** copy plugin `SKILL.md` into the repo. Invoke by name. Keep the Marketplace `continual-learning` plugin **off** on this shape; the repo `update-memory` skill owns memory ([file-recipes.md](file-recipes.md)). Clash table: [../reference/plugin-clashes.md](../reference/plugin-clashes.md), and only if those plugins are installed or recommended.

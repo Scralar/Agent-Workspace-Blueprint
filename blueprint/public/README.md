@@ -31,6 +31,7 @@ These are **steps**. Open a later file only when its trigger matches. Do not ing
 | [../reference/git-guardrail.md](../reference/git-guardrail.md) | Agent will not commit, or you are writing git policy |
 | [../reference/plugin-clashes.md](../reference/plugin-clashes.md) | Superpowers, Team Kit, Playwright, Notion, or Canvas are in play |
 | [../reference/user-rule.md](../reference/user-rule.md) | User wants a Settings User Rule on this machine |
+| [../extras/tooling-catalogue.md](../extras/tooling-catalogue.md) | Picking MCP, skills, hooks, or plugins; then re-verify live |
 
 ## Day-one tree
 

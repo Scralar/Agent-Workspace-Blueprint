@@ -33,10 +33,11 @@ At **project start**, when the MCP note is **> ~30 days** old, and **whenever th
 
 Then:
 
-1. Search live: [Marketplace](https://cursor.com/marketplace), [MCP guide](https://cursor.com/guides/coding-agent-mcp), [cursor.directory](https://cursor.directory), vendor docs.
-2. Compare with what is actually installed.
-3. Update the MCP note (in use / recommended / deferred). Cite URLs + review date.
-4. Recommend installs (options + why). Do not install unasked. Do not enable write/pay scopes by default.
+1. Open the dated picker [../extras/tooling-catalogue.md](../extras/tooling-catalogue.md) (MCP / skills / hooks companions). It is a menu, not truth.
+2. Search live: [Marketplace](https://cursor.com/marketplace), [MCP guide](https://cursor.com/guides/coding-agent-mcp), [cursor.directory](https://cursor.directory), vendor docs.
+3. Compare with what is actually installed.
+4. Update the MCP note (in use / recommended / deferred). Cite URLs + review date.
+5. Recommend installs (options + why). Do not install unasked. Do not enable write/pay scopes by default.
 
 Prune on usage evidence, not just the calendar: note when each server was last actually used; a server idle for two weeks to a month is a removal candidate.
 

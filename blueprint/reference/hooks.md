@@ -1,6 +1,6 @@
 # Reference D — Hooks: fences instead of signs (optional)
 
-Shared by all repo shapes. Up: [../README.md](../README.md)
+Shared by all repo shapes. Up: [../README.md](../README.md). Event list and other recipes: [../extras/tooling-hooks.md](../extras/tooling-hooks.md).
 
 Trigger: the user wants hard enforcement, or a never-rule keeps being broken.
 

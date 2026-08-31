@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-31
+
+### Added
+
+- Dated pick-and-choose tooling catalogue under `blueprint/extras/` (chooser plus MCP, skills, and hooks companions) so bootstrapping agents can select by job, then re-verify live (ADR-0005)
+
+### Changed
+
+- Shape `mcp-tooling.md` research steps and extras README now distinguish short proven modules from longer dated catalogues
+
 ## 2026-08-29
 
 ### Added

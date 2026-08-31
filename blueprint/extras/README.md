@@ -9,9 +9,17 @@ Nothing here is needed to bootstrap. Open a module after bootstrap when the proj
 | [web-design.md](web-design.md) | The product has a user-facing UI |
 | [workflow-automation.md](workflow-automation.md) | The product is an orchestrated workflow (n8n and similar) |
 
+## Catalogues
+
+Dated pick-and-choose research, not proven conventions and not a default install list. Live Marketplace and vendor docs still win ([ADR-0005](../../docs/adr/ADR-0005-dated-tooling-catalogue.md)).
+
+| Catalogue | Open when |
+|-----------|-----------|
+| [tooling-catalogue.md](tooling-catalogue.md) | Choosing MCP, skills, hooks, plugins, or automations (bootstrap or stack shift). Companions: [tooling-mcp.md](tooling-mcp.md), [tooling-skills.md](tooling-skills.md), [tooling-hooks.md](tooling-hooks.md) |
+
 ## Module template
 
-One file per use case. Keep it under ~60 lines: a `Use when` line, the conventions that actually change agent behaviour, and a short do-not list. Link out for depth; never restate the core kit. No empty placeholder modules: a module exists only once someone has real experience to distil.
+One file per use case. Keep it under ~60 lines: a `Use when` line, the conventions that actually change agent behaviour, and a short do-not list. Link out for depth; never restate the core kit. No empty placeholder modules: a module exists only once someone has real experience to distil. Catalogues may be longer and must carry a last-researched date.
 
 ## Upstreaming — how this kit improves itself
 
