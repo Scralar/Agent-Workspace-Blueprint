@@ -1,6 +1,6 @@
 # ADR-0003 — Shared leaves beside self-contained shape folders
 
-- **Status:** Accepted
+- **Status:** Accepted, amended by ADR-0009
 - **Date:** 2026-08-29
 - **Owner:** Scralar
 
@@ -19,6 +19,7 @@ The kit also needs new material that is shape-agnostic by nature: a guide for ad
    - `adopt.md` — adopting an existing repo
    - `minimal.md` — minimal tier for tiny repos
    - `extras/` — optional add-on modules
+   - `docs.md` — docs hygiene and optional wiki (ADR-0009)
 
 3. **The test for where a file lives:** if two shape folders would carry different text, it belongs in each folder; if the text would be identical, it lives once and is linked.
 

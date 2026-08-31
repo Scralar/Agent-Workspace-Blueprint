@@ -45,3 +45,4 @@ Add pieces only when their trigger fires, not preemptively:
 - First hard-to-reverse decision → `DECISIONS.md` (one file beats an ADR folder here)
 - Rules outgrow `AGENTS.md`, or the same mistake happened twice → `.cursor/rules/`
 - Collaborators, production deploys, or a real product → switch to the full folder for the repo's shape ([README.md](README.md))
+- README becoming a dump, or humans asking for a Wiki tab → [docs.md](docs.md)

@@ -30,6 +30,7 @@ Each folder carries the full reading path: policy, philosophy, bootstrap, sessio
 |------|-----------|
 | [minimal.md](minimal.md) | The repo is tiny; also the per-stack Verify command table |
 | [adopt.md](adopt.md) | The repo already exists; migrate instead of scaffold |
+| [docs.md](docs.md) | Writing project docs, public vs private homes, or an optional wiki |
 | [extras/](extras/README.md) | After bootstrap, when the project matches a module (web design, workflow automation, …) |
 | [extras/tooling-catalogue.md](extras/tooling-catalogue.md) | Picking MCP, skills, hooks, or plugins; then re-verify live |
 | [reference/git-guardrail.md](reference/git-guardrail.md) | Agent will not commit, or you are writing git policy |

@@ -24,6 +24,7 @@ These sit beside the shape folders and apply to all of them.
 |------|-----------|
 | [`minimal.md`](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/main/blueprint/minimal.md) | Tiny repo; also the per-stack Verify table |
 | [`adopt.md`](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/main/blueprint/adopt.md) | Existing repo: migrate instead of scaffold |
+| [`docs.md`](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/main/blueprint/docs.md) | Writing docs, public vs private, optional wiki |
 | [`extras/`](https://github.com/Scralar/Agent-Workspace-Blueprint/tree/main/blueprint/extras) | After bootstrap, when the project matches a module |
 | [`extras/tooling-catalogue.md`](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/main/blueprint/extras/tooling-catalogue.md) | Picking MCP, skills, or hooks; then re-verify live |
 | [`reference/`](https://github.com/Scralar/Agent-Workspace-Blueprint/tree/main/blueprint/reference) | Git guardrail, plugin clashes, optional hooks fence |

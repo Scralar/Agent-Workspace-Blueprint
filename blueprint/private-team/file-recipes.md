@@ -57,6 +57,8 @@ When a branch auto-deploys, add a short always-on rule naming the protected bran
 
 ## Docs map
 
+Writing docs, public vs private homes, or an optional wiki: [../docs.md](../docs.md).
+
 One table of topic → home beats duplicated conventions. Put it where humans look (`README` or `docs/`). Point at it from `AGENTS.md`; do not copy it there.
 
 ## Project MCP note (living)

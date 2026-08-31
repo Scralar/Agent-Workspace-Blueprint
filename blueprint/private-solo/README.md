@@ -23,7 +23,7 @@ These are **steps**. Open a later file only when its trigger matches. Do not ing
 | [philosophy.md](philosophy.md) | Why the kit exists; one home per fact |
 | [bootstrap.md](bootstrap.md) | Intake, bootstrap order, rule types, budgets, self-check |
 | [sessions.md](sessions.md) | Session loop, git, parallel work, suggesting a new chat |
-| [file-recipes.md](file-recipes.md) | Writing TODO, ADRs, changelog, MCP note, memory, plans |
+| [file-recipes.md](file-recipes.md) | Writing TODO, ADRs, changelog, MCP note, memory, plans, docs |
 | [skills.md](skills.md) | Adding or changing skills |
 | [mcp-tooling.md](mcp-tooling.md) | MCP, browser, outbound, GitHub, tooling refresh |
 | [situational.md](situational.md) | Visual product, naming, scoped rules, plans hygiene |
@@ -31,6 +31,7 @@ These are **steps**. Open a later file only when its trigger matches. Do not ing
 | [../reference/git-guardrail.md](../reference/git-guardrail.md) | Agent will not commit, or you are writing git policy |
 | [../reference/plugin-clashes.md](../reference/plugin-clashes.md) | Superpowers, Team Kit, Playwright, Notion, or Canvas are in play |
 | [../reference/user-rule.md](../reference/user-rule.md) | User wants a Settings User Rule on this machine |
+| [../docs.md](../docs.md) | Writing project docs, public vs private homes, or an optional wiki |
 | [../extras/tooling-catalogue.md](../extras/tooling-catalogue.md) | Picking MCP, skills, hooks, or plugins; then re-verify live |
 
 ## Day-one tree

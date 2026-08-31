@@ -22,6 +22,8 @@ Without a light framework, agents re-debate architecture, lose “later” work,
 | Multi-phase how | Plans (few, temporary, tracked, owned) |
 | Product story | Brief (optional) |
 
+Writing project documentation or considering a wiki: [../docs.md](../docs.md).
+
 Do not invent empty `packages/`, `standards/`, or `runbooks/` folders.
 
 **Always-on vs on-demand.** `AGENTS.md` and `alwaysApply` rules pay a cost on every turn. Put universally true constraints there. Put procedures in skills. Put domain detail behind a pointer with a sharp trigger (“read `docs/process/…` before changing capture or matching”). Cursor rule types: always / glob / description / `@mention` ([bootstrap.md](bootstrap.md)).

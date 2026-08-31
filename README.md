@@ -42,6 +42,7 @@ Copying `blueprint/` into the project (for example `.cursor/brief/`) is optional
 | Three **shape folders** | Full reading path for that kind of repo: policy, bootstrap, sessions, file recipes, sample `AGENTS.md`, gitignore |
 | **Minimal** tier        | One file when a full harness would outweigh the code                                                              |
 | **Adopt** guide         | Migrate an existing repo instead of scaffolding over it                                                           |
+| **Docs and wiki**       | How to keep docs public vs private, write for humans and agents, and when (not) to enable a wiki                  |
 | **Extras**              | Short add-ons (web design, workflow automation) opened after bootstrap, not as a syllabus                         |
 | **Tooling catalogue**   | Dated pick-and-choose notes for MCP, skills, and hooks. Live Marketplace still wins                               |
 | **Reference**           | Git guardrail, plugin clashes, optional hooks fence                                                               |

@@ -20,3 +20,4 @@
 * [[ADR-0006-public-community-surface|ADR-0006]]
 * [[ADR-0007-live-kit-by-url|ADR-0007]]
 * [[ADR-0008-wiki-published-view|ADR-0008]]
+* [[ADR-0009-docs-hygiene-and-optional-wiki|ADR-0009]]

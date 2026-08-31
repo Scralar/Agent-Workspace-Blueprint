@@ -24,6 +24,7 @@ Use when the repo already exists, with or without a partial agent harness. The g
 | Plan sprawl, `tmp/` scratch | Archive completed plans, delete dead ones, gitignore `.cursor/tmp/`. |
 | A copied blueprint snapshot (e.g. `.cursor/brief/`) | Optional. Prefer pointing later sessions at the live kit URL. If you keep the snapshot, note the source so it can be refreshed. |
 | Duplicated facts across files | Pick the one home, link from the rest, in the same change. |
+| Wiki (or Notion) used as the source of truth | Move durable docs into the repo. Treat the other surface as a published view or turn it off ([docs.md](docs.md)). |
 
 ## 3. Finish like a bootstrap
 

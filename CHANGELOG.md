@@ -4,6 +4,7 @@
 
 ### Added
 
+- Docs and wiki guidance for consumer projects (`blueprint/docs.md`): public vs private homes, human vs agent doors, optional wiki as a published view (ADR-0009)
 - GitHub wiki as a published view of `docs/`: hand-written pages in `docs/wiki/`, ADRs copied at publish time, `scripts/publish-wiki.mjs` (ADR-0008)
 - Dated pick-and-choose tooling catalogue under `blueprint/extras/` (chooser plus MCP, skills, and hooks companions) so bootstrapping agents can select by job, then re-verify live (ADR-0005)
 - Public GitHub surface: MIT licence, contributing and collaborators files, code of conduct, security note, issue and pull-request templates, and a link-check workflow (ADR-0006)
