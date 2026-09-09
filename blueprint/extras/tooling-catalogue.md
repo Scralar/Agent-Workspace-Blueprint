@@ -45,6 +45,7 @@ Filesystem MCP, Memory MCP, and Sequential Thinking MCP are usually **redundant*
 | Click a real page | IDE browser | Playwright or Browserbase if you need a scripted/cloud browser | Installing three browser servers |
 | This product's database | Official vendor plugin (Supabase, Neon, Prisma, MongoDB, …) | Read-only role | Community Postgres wrappers; write on prod |
 | Tickets / wiki | Official Linear / Notion / Atlassian plugin | `gh` for GitHub Issues | Both Jira *and* Linear unless the org truly has both |
+| Attributed practitioner takes | SuperMe ([Marketplace](https://cursor.com/marketplace/superme)) after a live check | — | Using it as web search, or committing network transcripts |
 | Design-to-code | Figma plugin | Mobbin / Superdesign for references | Copying foreign runtimes wholesale |
 | Hard never-rule (no push, no secrets) | Hook ([tooling-hooks.md](tooling-hooks.md), [../reference/hooks.md](../reference/hooks.md)) | — | Another always-on rule that the model can ignore |
 | Repeatable workflow | Repo or plugin **skill** | Command (`disable-model-invocation`) | Pasting the same prompt every chat |
@@ -56,7 +57,7 @@ Install only the rows that match. Everything else stays deferred on the MCP note
 
 | Project | Usually enough | Add when the work appears | Leave off unless asked |
 |---------|----------------|---------------------------|------------------------|
-| Public docs / kit (this shape) | Exa or Context.dev; `gh`; IDE browser | GitHub MCP for structured PR batches | n8n, Unity, Remotion, Stripe, Playwright |
+| Public docs / kit (this shape) | Exa or Context.dev; `gh`; IDE browser | GitHub MCP for structured PR batches; SuperMe only if maintainers want ADR-time expert takes | n8n, Unity, Remotion, Stripe, Playwright |
 | Marketing / brochure site | Context7; Figma; IDE browser; [web-design.md](web-design.md) | Vercel / Netlify / Cloudflare; Resend | Production DB write; CRM write |
 | App with a database | Context7; official DB plugin (read-only first); Sentry | Prisma / Drizzle skills; PostHog | Filesystem MCP; Sequential Thinking |
 | Design-heavy UI | Figma; Mobbin or Superdesign; shadcn; IDE browser | Playwright for E2E; BrowserStack for devices | Random community UI MCPs |

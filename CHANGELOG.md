@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-09
+
+### Added
+
+- SuperMe listed as an optional MCP in the tooling catalogue (attributed practitioner takes; not a bootstrap default)
+
 ## 2026-08-31
 
 ### Added

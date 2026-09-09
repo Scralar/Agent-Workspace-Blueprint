@@ -67,6 +67,7 @@ Pick **one** search stack. Pair search with a fetch of the chosen URL, not a sec
 | **Atlassian** (Jira, Confluence, triage skills) | Jira/Confluence is the system of record | Write scopes on day one |
 | **Notion** | Team wiki / specs the assistant should search | A second backlog beside the repo TODO |
 | **Glean** | Company-wide search (docs, Slack, mail, experts) | Personal notes |
+| **SuperMe** | Attributed practitioner takes ([Marketplace](https://cursor.com/marketplace/superme)) | Web search; a second memory home; dumping transcripts into git |
 | **Guru**, **Slite**, **GitBook**, **Mintlify**, **Coda**, **Craft** | That tool *is* the wiki | All of them |
 | **Airtable** | Ops data lives in bases | Using it as a secret store |
 | **ChatPRD** | PRDs from code, implement-from-spec | Replacing the repo's ADR home |
