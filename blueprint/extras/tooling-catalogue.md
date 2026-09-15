@@ -42,7 +42,7 @@ Filesystem MCP, Memory MCP, and Sequential Thinking MCP are usually **redundant*
 | GitHub issue / PR / Action | `gh` | GitHub MCP (read-only) for batch structured work | Anthropic's archived GitHub reference server |
 | Current library docs | Context7 (Marketplace) | Vendor docs MCP; fetch a known URL | Training-data guesses |
 | Live web facts | One search MCP (Exa **or** Context.dev **or** Tavily) | Fetch/scrape only the chosen URL | Two search servers plus Firecrawl plus Bright Data at once |
-| Click a real page | IDE browser | Playwright or Browserbase if you need a scripted/cloud browser | Installing three browser servers |
+| Click a real page | IDE browser | Browser Use ([Marketplace](https://cursor.com/marketplace/browser-use)) for the user's Chrome or their cloud Chrome; Playwright or Browserbase for scripted/CI | Installing three browser servers for the same click |
 | This product's database | Official vendor plugin (Supabase, Neon, Prisma, MongoDB, …) | Read-only role | Community Postgres wrappers; write on prod |
 | Tickets / wiki | Official Linear / Notion / Atlassian plugin | `gh` for GitHub Issues | Both Jira *and* Linear unless the org truly has both |
 | Attributed practitioner takes | SuperMe ([Marketplace](https://cursor.com/marketplace/superme)) after a live check | — | Using it as web search, or committing network transcripts |

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-15
+
+### Changed
+
+- Browser Use called out in the tooling catalogue as an optional Chrome/CDP path (Marketplace plugin; not a bootstrap default; do not stack with the IDE browser and Playwright for the same click)
+
 ## 2026-09-09
 
 ### Added
