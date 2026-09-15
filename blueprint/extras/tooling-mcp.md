@@ -45,7 +45,7 @@ Pick **one** search stack. Pair search with a fetch of the chosen URL, not a sec
 | **Chrome DevTools for Agents** | The user's Chrome is already the target | Default path |
 | **Playwright** MCP | Scripted E2E, accessibility snapshots, CI-like flows | Plus Browserbase plus Browser Use for the same click |
 | **Browserbase** | Cloud browser, agent-controlled | Local verify of a localhost app you already have in the IDE browser |
-| **Browser Use** | User's Chrome via CDP, or Browser Use Cloud ([Marketplace](https://cursor.com/marketplace/browser-use)). First nav is `new_tab`; then `browser_exec` / `browser_screenshot` | Secrets in the page; plus IDE browser plus Playwright for the same click; simple `curl`/fetch of a public URL |
+| **Browser Use** | User's Chrome via CDP, or Browser Use Cloud ([Marketplace](https://cursor.com/marketplace/browser-use)). First nav is `new_tab`; then `browser_exec` / `browser_screenshot`. **Local Chrome does not work until remote debugging is on:** open `chrome://inspect/#remote-debugging`, tick Allow remote debugging for this browser instance, click Allow on the popup if Chrome 144+ shows one ([install.md](https://github.com/browser-use/browser-harness/blob/main/install.md)). Cloud browsers skip that step. | Secrets in the page; plus IDE browser plus Playwright for the same click; simple `curl`/fetch of a public URL |
 | **BrowserStack** | Real devices, browsers you do not own | Localhost-only checks |
 | **Meticulous** | Visual regression of an existing suite | Inventing a visual suite on a docs repo |
 

@@ -4,7 +4,7 @@
 
 ### Changed
 
-- Browser Use called out in the tooling catalogue as an optional Chrome/CDP path (Marketplace plugin; not a bootstrap default; do not stack with the IDE browser and Playwright for the same click)
+- Browser Use called out in the tooling catalogue as an optional Chrome/CDP path (Marketplace plugin; not a bootstrap default; do not stack with the IDE browser and Playwright for the same click). Local Chrome needs remote debugging enabled first (`chrome://inspect/#remote-debugging`)
 
 ## 2026-09-09
 
