@@ -6,7 +6,7 @@ Trigger: writing the files. Templates to adapt, not mandatory filenames.
 
 ## Constitution (always-on rule)
 
-Owner (intake name) · recorded locale · standing commit authorisation if commit-as-you-go (the counter to Cursor's injected guardrail, [../reference/git-guardrail.md](../reference/git-guardrail.md)) · git policy and Verify live on `AGENTS.md`: point, do not restate · Always/Ask/Never · one-home pointers · session loop (including suggest a new chat) · rules may change · must-not list · tracked files stay publishable. Visual products: light/dark, motion, `prefers-reduced-motion` (or a glob rule, not always-on, if the repo is mixed).
+Owner (intake name) · recorded locale · **commit as you go** as very strong default with **continuous standing local commit authorisation** in the constitution (counter to Cursor's injected guardrail, [../reference/git-guardrail.md](../reference/git-guardrail.md)); record ask-first on `AGENTS.md` only if intake opted out · git policy and Verify live on `AGENTS.md`: point, do not restate · Always/Ask/Never · one-home pointers · session loop (including suggest a new chat) · rules may change · must-not list · tracked files stay publishable. Visual products: light/dark, motion, `prefers-reduced-motion` (or a glob rule, not always-on, if the repo is mixed).
 
 Do **not** paste architecture, local-dev runbooks, or plugin manuals here. Link them.
 
@@ -28,6 +28,10 @@ If it is not safe on GitHub, it is not a workspace fact. Writer: a repo `update-
 Whatever the home: ≤12 bullets per section; no secrets, one-offs, or copies of process/ADR/TODO. Constitution wins if a bullet contradicts it; prune the bullet. Prune test per bullet: would removing it cause mistakes? Anything an agent would rediscover in one session of reading the repo does not earn a bullet. **No** `docs/agent-notes.md`; a short local notes file only when there is no memory mechanism at all.
 
 Gitignore `.cursor/hooks/state/` and `.cursor/tmp/` (session scratch scripts).
+
+## Code practices (glob rule)
+
+When the repo has application code: `alwaysApply: false` with globs for the main languages (e.g. `**/*.{ts,tsx,js,jsx,py,go,rs}`). Point at [../reference/coding-practices.md](../reference/coding-practices.md); repeat only project-specific overrides (naming, test layout, forbidden patterns). Skip if the repo is docs-only or [minimal.md](../minimal.md) tier with a **Code** line on `AGENTS.md`.
 
 ## Collaboration rule
 

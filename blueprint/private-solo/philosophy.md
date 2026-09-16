@@ -28,3 +28,5 @@ Do not invent empty `packages/`, `standards/`, or `runbooks/` folders.
 **Always-on vs on-demand.** `AGENTS.md` and `alwaysApply` rules pay a cost on every turn. Put universally true constraints there. Put procedures in skills. Put domain detail behind a pointer with a sharp trigger (“read `docs/process/…` before changing capture or matching”). Cursor rule types: always / glob / description / `@mention` ([bootstrap.md](bootstrap.md)).
 
 Agents may update project rules when it helps. Note that in chat. Do not invent **product** policy; ask first.
+
+**Code:** smallest correct diff, match existing conventions, split hand-written source before ~500 lines gets painful (~800 hard). Situation-aware detail: [../reference/coding-practices.md](../reference/coding-practices.md). Put that in a glob rule when the repo has real application code; do not bloat always-on rules with a style encyclopaedia.

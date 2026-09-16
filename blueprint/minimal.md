@@ -15,7 +15,10 @@ Use when the repo is small and simple: a game plugin, a template pack, a script 
 {cheapest real command, from the table below}
 
 ## Git
-{commit-as-you-go or ask-first}. Never push, open a PR, or merge unless asked in the current message. Conventional Commits.
+**Commit as you go** after each coherent verified unit (very strong kit default). Standing local commit authorisation; do not wait for “please commit”. Ask-first only if recorded here. Never push, open a PR, or merge unless asked in the current message. Conventional Commits.
+
+## Code
+Smallest correct diff; match existing style; no drive-by refactors. Hand-written source: split before ~500 lines gets painful (~800 hard). See kit [reference/coding-practices.md](reference/coding-practices.md) when using the full blueprint.
 
 ## Security
 No secrets in git. {Where env/config secrets live, if any.}

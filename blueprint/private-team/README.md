@@ -91,7 +91,7 @@ Personal preferences (gitignored, per user): `.cursor/user-preferences.md`.
 Prefer the smallest scoped run. Report failures, not pages of passing output.
 
 ## Git
-{commit-as-you-go or ask-first, from intake; branch shape; PR conventions}
+{commit-as-you-go (very strong default; standing local authorisation in constitution) or ask-first only if recorded at intake; branch shape; PR conventions}
 Never push, open a PR, or merge unless asked in the current message.
 
 ## Security

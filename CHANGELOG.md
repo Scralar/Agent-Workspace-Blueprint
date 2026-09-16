@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-16
+
+### Changed
+
+- **Commit as you go** documented as the very strong kit default across policy, bootstrap, sessions, constitution recipes, and [git-guardrail](blueprint/reference/git-guardrail.md); maintainer `AGENTS.md` aligned
+- **Coding practices** reference ([coding-practices](blueprint/reference/coding-practices.md)): file size budgets, situation-aware diff rules, glob-rule recipe, policy/philosophy/session hooks, minimal-tier `AGENTS.md` sample
+
 ## 2026-09-15
 
 ### Changed

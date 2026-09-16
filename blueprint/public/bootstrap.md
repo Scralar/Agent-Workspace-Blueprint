@@ -10,7 +10,7 @@ Ask in the first message if unknown. Recommend + options + why. Record answers i
 |-----|---------------------|
 | Name or team handle | Required. ADR author and owner. |
 | Repo shape | Confirm this folder fits: **public**, anyone can clone. If the repo is actually private, switch to [../private-solo/](../private-solo/README.md) or [../private-team/](../private-team/README.md). Check with `gh repo view --json isPrivate` or ask. |
-| Commit policy | **Commit as you go** after each coherent verified unit. Alternative: ask-first. Agree the branch shape too: `main` alone is fine until there is a production deploy. |
+| Commit policy | **Commit as you go** (very strong default): after each coherent verified unit, commit locally without waiting to be asked; constitution records standing authorisation ([../reference/git-guardrail.md](../reference/git-guardrail.md)). **Ask-first** only if the user explicitly opts out at intake and you record it on `AGENTS.md`. Agree the branch shape too: `main` alone is fine until there is a production deploy. |
 | Locale | **en-GB** in chat and in work, unless the product locale differs by design. |
 | Cheapest verify command | Required, and the highest-value line in the workspace. Exact command(s) with flags; per-stack examples in [../minimal.md](../minimal.md). If none exist yet, write `none yet` in Verify and add the cheapest real check in the first slice that allows one. |
 
@@ -59,7 +59,7 @@ After the framework commit, stop unless they asked for features in parallel.
 | Imminent backlog | ≈≤5 | n/a |
 | Open backlog | ~25 | prune |
 | Active plans | ≈≤3 | archive when done |
-| Source file | ~500 / hard ~800 | Split when painful |
+| Source file | ~500 / hard ~800 | Hand-written application code; split when painful ([../reference/coding-practices.md](../reference/coding-practices.md)) |
 
 Anti-pattern: runbooks inside always-on rules.
 
@@ -69,7 +69,7 @@ Anti-pattern: runbooks inside always-on rules.
 - [ ] Always-on files are constraints and pointers, not manuals
 - [ ] Rule types are the narrowest that still work
 - [ ] `AGENTS.md` adapted to this project, with a real Verify block, where-things-live map, and security block, **publishable throughout**
-- [ ] Constitution + backlog hygiene + collaboration (or a justified skip/merge)
+- [ ] Constitution + backlog hygiene + collaboration (or a justified skip/merge); **coding** glob rule or pointer when the repo has application code ([../reference/coding-practices.md](../reference/coding-practices.md))
 - [ ] TODO + changelog
 - [ ] Memory homes set per [README.md](README.md); private working files gitignored; hook state gitignored
 - [ ] wrap-up + write-plan + update-memory

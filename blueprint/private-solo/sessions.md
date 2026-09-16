@@ -11,8 +11,8 @@ Trigger: day-to-day work after bootstrap; also read once during bootstrap when w
 3. **Tooling freshness:** MCP note missing, last-reviewed older than **~30 days**, *or* the project’s nature / a major aspect has **shifted** (see [mcp-tooling.md](mcp-tooling.md))
 4. Architectural decision landed? → write the ADR **now**, in the same unit, without being asked ([file-recipes.md](file-recipes.md))
 5. Multi-phase? → write-plan (user approves unless they said run with it)
-6. Smallest correct diff → **Verify**
-7. Update the one homes that changed → **commit** (if commit-as-you-go)
+6. Smallest correct diff ([../reference/coding-practices.md](../reference/coding-practices.md)) → **Verify**
+7. Update the one homes that changed → **commit the unit** (default: commit-as-you-go; skip only if intake recorded ask-first or the user said not to commit this turn)
 8. Repeat; wrap-up at end of slice
 9. Way of working changed durably, in a way other projects could use? → propose upstreaming to the blueprint ([../extras/README.md](../extras/README.md)); never act on it silently
 10. **Stop.** No push/PR unless asked
@@ -32,7 +32,7 @@ That diagram is for repos where `main` is production. Simpler repos may work on 
 
 | Action | Default |
 |--------|---------|
-| Commit | As you go, unless intake chose ask-first |
+| Commit | **Commit as you go** (very strong default). Ask-first only if recorded at intake. |
 | Push / open PR | Only when asked |
 | Merge / push production | Only when owner asks in the current message |
 | Force-push | Never unless they explicitly demand and understand |

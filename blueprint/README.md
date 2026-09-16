@@ -6,7 +6,7 @@
 
 **A guidebook, not a rulebook.** Adapt, challenge, or replace defaults; mix pieces from different folders when the project genuinely needs it. Ask with recommendation + options + why. Never silently ignore production safety or parallel-agent hygiene.
 
-Optimise for short rules, frozen decisions where they matter, a living backlog, and **minimal ceremony**.
+Optimise for short rules, frozen decisions where they matter, a living backlog, **commit as you go** (very strong default; see [reference/git-guardrail.md](reference/git-guardrail.md)), and **minimal ceremony**.
 
 Do **not** implement product features until a workable agent framework exists unless the user says skip setup or proceed in parallel.
 
@@ -34,6 +34,7 @@ Each folder carries the full reading path: policy, philosophy, bootstrap, sessio
 | [extras/](extras/README.md) | After bootstrap, when the project matches a module (web design, workflow automation, …) |
 | [extras/tooling-catalogue.md](extras/tooling-catalogue.md) | Picking MCP, skills, hooks, or plugins; then re-verify live |
 | [reference/git-guardrail.md](reference/git-guardrail.md) | Agent will not commit, or you are writing git policy |
+| [reference/coding-practices.md](reference/coding-practices.md) | Application code, diffs, file size, tests, or style vs linters |
 | [reference/plugin-clashes.md](reference/plugin-clashes.md) | Superpowers, Team Kit, Playwright, Notion, or Canvas are in play |
 | [reference/user-rule.md](reference/user-rule.md) | User wants a Settings User Rule on this machine |
 | [reference/hooks.md](reference/hooks.md) | User wants hard enforcement of never-rules, not advice |

@@ -38,6 +38,8 @@ After edits to `blueprint/` or `docs/`. Report failures only. After `docs/wiki/`
 
 Work on `main`. Conventional Commits. Never commit secrets or `.cursor/`. Open a pull request unless [`COLLABORATORS.md`](COLLABORATORS.md) lists you. Do not force-push shared branches.
 
+**Commit as you go (very strong default):** after each coherent, verified logical unit, commit tracked work locally without waiting to be asked. The project constitution is standing authorisation (see [`blueprint/reference/git-guardrail.md`](blueprint/reference/git-guardrail.md)). Never push or open a PR unless asked in the current message.
+
 ## Always / Ask first / Never
 
 Always: tracked files stay publishable.

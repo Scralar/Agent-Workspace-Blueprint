@@ -90,7 +90,7 @@ Start here every session.
 Prefer the smallest scoped run. Report failures, not pages of passing output.
 
 ## Git
-{commit-as-you-go or ask-first, from intake; branch shape}
+{commit-as-you-go (very strong default; standing local authorisation in constitution) or ask-first only if recorded at intake; branch shape}
 Never push, open a PR, or merge unless asked in the current message.
 
 ## Security

@@ -6,12 +6,14 @@ Treat as policy unless you argue otherwise and the user agrees. Record intake ch
 
 | Topic | Default |
 |-------|---------|
-| **Commits** | After each coherent, verified logical unit, unless intake chose ask-first. Do not wait to be asked under commit-as-you-go. The constitution is **standing authorisation** to commit locally ([../reference/git-guardrail.md](../reference/git-guardrail.md)). |
+| **Commits** | **Commit as you go** is the very strong default. After each coherent, verified logical unit, commit locally unless intake recorded **ask-first**. Do not wait for “please commit”. Do not stop with verified tracked work uncommitted. The constitution must state **continuous standing authorisation** to commit locally ([../reference/git-guardrail.md](../reference/git-guardrail.md)). |
 | **Push / PR** | Never until the user asks in the **current** message. |
 | **CHANGELOG** | Root `CHANGELOG.md`; daily `## YYYY-MM-DD` only (newest first). No `## Unreleased`. Notable changes only; not a dump of commit subjects. **Scope: includes agent-harness changes** (rules, skills, memory homes); the harness is tracked working machinery on this shape. |
 | **Backlog** | Persistent TODO with priority sections, tracked at `docs/TODO.md`. |
 | **Tooling inventory** | Living, **project-specific** MCP note at `docs/agent-mcp.md` (tracked). Do not copy another repo’s list. Recommend missing plugins; do not assume they are installed. Record **skill precedence** when plugins clash with repo rules. |
 | **Rule size** | Lean. Exceed for safety (production, multi-agent, legal). |
+| **Code changes** | Smallest correct diff for the task; no unrelated refactors. Match repo conventions; linters/formatters in Verify win over agent taste ([../reference/coding-practices.md](../reference/coding-practices.md)). |
+| **Source file size** | Hand-written application source: soft ~500 / hard ~800 lines; split by cohesive responsibility when painful ([../reference/coding-practices.md](../reference/coding-practices.md)). |
 | **Commit messages** | `type(scope): summary` (Conventional Commits). |
 | **Branches** | Simpler repos may work on `main`; agree first. `dev` (or topics off `dev`) → PR → `main` when `main` is production. |
 | **Parallel agents** | Leave enough instruction that two agents do not collide. |
@@ -26,6 +28,6 @@ Treat as policy unless you argue otherwise and the user agrees. Record intake ch
 
 | | |
 |--|--|
-| **Always** | Follow the recorded commit policy. Update the one home that changed. Run the Verify command for the touched area (or the smallest scoped equivalent). Leave notes another agent can use. |
+| **Always** | **Commit as you go** after each verified unit unless intake recorded ask-first. Update the one home that changed. Run the Verify command for the touched area (or the smallest scoped equivalent). Leave notes another agent can use. |
 | **Ask first** | Push, open a PR, merge, or deploy to production. Send email, share Drive, create a Notion page. Install plugins or enable write/pay MCP scopes. Invent product policy. |
-| **Never** | Commit secrets. Force-push shared branches. Skip hooks. Edit git config. Revert others’ WIP. Kill foreign processes. Steal Imminent work. |
+| **Never** | Commit secrets. Force-push shared branches. Skip hooks. Edit git config. Revert others’ WIP. Kill foreign processes. Steal Imminent work. End a slice with verified tracked work uncommitted when commit-as-you-go applies. |

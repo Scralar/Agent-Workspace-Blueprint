@@ -103,7 +103,7 @@ Each consumer repo writes its own short skills. Typical set:
 
 | Skill | Trigger | Notes |
 |-------|---------|--------|
-| `wrap-up` | Wrap up, tidy, commit the slice | Verify, one-homes, no push unless asked |
+| `wrap-up` | Wrap up, tidy, **commit the slice** (commit-as-you-go default) | Verify, one-homes, no push unless asked |
 | `write-plan` | Multi-phase work | Zero session context; user approves unless they said run |
 | `update-memory` | Wrap-up or “remember this” | Private prefs vs publishable facts; **off** Marketplace Continual Learning if this exists |
 
