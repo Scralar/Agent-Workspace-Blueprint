@@ -37,6 +37,7 @@ From a clone:
 
 ```bash
 node scripts/check-links.mjs
+node scripts/check-en-gb.mjs
 ```
 
 After wiki-source or ADR edits, publish with:

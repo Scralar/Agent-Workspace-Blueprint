@@ -35,6 +35,7 @@ Each folder carries the full reading path: policy, philosophy, bootstrap, sessio
 | [extras/tooling-catalogue.md](extras/tooling-catalogue.md) | Picking MCP, skills, hooks, or plugins; then re-verify live |
 | [reference/git-guardrail.md](reference/git-guardrail.md) | Agent will not commit, or you are writing git policy |
 | [reference/coding-practices.md](reference/coding-practices.md) | Application code, diffs, file size, tests, or style vs linters |
+| [reference/locale-en-gb.md](reference/locale-en-gb.md) | British English in kit and repo docs; vendor UI strings exempt |
 | [reference/plugin-clashes.md](reference/plugin-clashes.md) | Superpowers, Team Kit, Playwright, Notion, or Canvas are in play |
 | [reference/user-rule.md](reference/user-rule.md) | User wants a Settings User Rule on this machine |
 | [reference/hooks.md](reference/hooks.md) | User wants hard enforcement of never-rules, not advice |

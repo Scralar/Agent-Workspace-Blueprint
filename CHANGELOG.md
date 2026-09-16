@@ -6,6 +6,11 @@
 
 - **Commit as you go** documented as the very strong kit default across policy, bootstrap, sessions, constitution recipes, and [git-guardrail](blueprint/reference/git-guardrail.md); maintainer `AGENTS.md` aligned
 - **Coding practices** reference ([coding-practices](blueprint/reference/coding-practices.md)): file size budgets, situation-aware diff rules, glob-rule recipe, policy/philosophy/session hooks, minimal-tier `AGENTS.md` sample
+- **British English:** [locale-en-gb](blueprint/reference/locale-en-gb.md) reference and `scripts/check-en-gb.mjs` in repo Verify and CI ([ADR-0010](docs/adr/ADR-0010-agent-working-defaults.md))
+
+### Added
+
+- ADR-0010: agent working defaults (commit-as-you-go, coding practices reference, en-GB check)
 
 ## 2026-09-15
 

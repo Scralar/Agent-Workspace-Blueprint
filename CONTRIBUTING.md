@@ -26,7 +26,7 @@ Propose first on large or controversial changes. Small docs and link fixes can g
 2. Edit tracked files only. Do not commit `.cursor/`, `.env`, or editor settings.
 3. Use British English (en-GB) in docs and commit messages. No em dashes.
 4. Conventional Commits, for example `docs(kit): …` or `docs(repo): …`.
-5. Run `node scripts/check-links.mjs` and fix failures.
+5. Run `node scripts/check-links.mjs` and `node scripts/check-en-gb.mjs`; fix failures.
 6. If you changed `docs/wiki/` or `docs/adr/`, run `node scripts/publish-wiki.mjs` (write access). Edits made only on the Wiki tab may be overwritten.
 7. Open a pull request against `main`. Fill in the template.
 

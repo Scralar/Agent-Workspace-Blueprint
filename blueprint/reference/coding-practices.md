@@ -1,8 +1,8 @@
-# Reference B — Coding practices and file size
+# Reference E — Coding practices and file size
 
 Shared by all repo shapes. Up: [../README.md](../README.md)
 
-Trigger: editing application source, choosing how large a change should be, splitting files, adding helpers or tests, or reviewing agent-written code.
+Trigger: editing application source, choosing how large a change should be, splitting files, adding helpers or tests, or reviewing agent-written code. Kit docs: British English ([locale-en-gb.md](locale-en-gb.md)).
 
 ## Situation-aware principles
 
@@ -10,7 +10,7 @@ Apply to **product and library code**. Docs-only, config-only, or question-only 
 
 | Principle | Do |
 |-----------|-----|
-| **Minimize scope** | Fix what the task needs. A five-line fix beats a hundred-line “cleanup”. |
+| **Minimise scope** | Fix what the task needs. A five-line fix beats a hundred-line “cleanup”. |
 | **Avoid over-engineering** | No premature abstraction, one-off micro-helpers, or heavy error handling for edges that cannot happen in practice. |
 | **Match conventions** | Read neighbouring files first. Reuse types, patterns, and naming. New code should look like the same author wrote it. |
 | **Comments** | Prefer self-explanatory code. Comment non-obvious business rules and deep technical constraints only. |

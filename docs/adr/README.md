@@ -13,6 +13,7 @@ Up: [../README.md](../README.md). Why the kit looks like this. Published to the 
 | [ADR-0007](ADR-0007-live-kit-by-url.md) | Follow the live kit by URL; copy is optional | Accepted |
 | [ADR-0008](ADR-0008-wiki-published-view.md) | GitHub wiki as a published view of `docs/` | Accepted, amended by ADR-0009 |
 | [ADR-0009](ADR-0009-docs-hygiene-and-optional-wiki.md) | Docs hygiene and optional wiki for consumer projects | Accepted |
+| [ADR-0010](ADR-0010-agent-working-defaults.md) | Agent working defaults (commits, code hygiene, en-GB) | Accepted |
 
 ## Template
 

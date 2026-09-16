@@ -20,7 +20,7 @@ The live kit is [`blueprint/`](blueprint/). Consumer agents should follow that f
 | The kit | `blueprint/` |
 | Why | `docs/adr/` |
 | Wiki source | `docs/wiki/` (published to the GitHub wiki) |
-| Verify | `scripts/check-links.mjs` |
+| Verify | `scripts/check-links.mjs`, `scripts/check-en-gb.mjs` |
 | Publish wiki | `scripts/publish-wiki.mjs` |
 | Contribute | `CONTRIBUTING.md` |
 | Merge access | `COLLABORATORS.md` |
@@ -30,9 +30,10 @@ The live kit is [`blueprint/`](blueprint/). Consumer agents should follow that f
 
 ```
 node scripts/check-links.mjs
+node scripts/check-en-gb.mjs
 ```
 
-After edits to `blueprint/` or `docs/`. Report failures only. After `docs/wiki/` or `docs/adr/` changes, publish with `node scripts/publish-wiki.mjs`.
+After edits to `blueprint/` or `docs/`. British English (en-GB) in publishable text; see [`blueprint/reference/locale-en-gb.md`](blueprint/reference/locale-en-gb.md). Report failures only. After `docs/wiki/` or `docs/adr/` changes, publish with `node scripts/publish-wiki.mjs`.
 
 ## Git
 

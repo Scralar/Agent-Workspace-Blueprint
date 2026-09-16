@@ -34,7 +34,7 @@ A change that would become the default for every future project should be **gene
 2. Edit tracked files only. Do not commit `.cursor/`, `.env`, or editor settings.
 3. British English (en-GB). No em dashes.
 4. Conventional Commits, for example `docs(kit): …` or `docs(repo): …`.
-5. Run `node scripts/check-links.mjs` and fix failures.
+5. Run `node scripts/check-links.mjs` and `node scripts/check-en-gb.mjs`; fix failures.
 6. Open a pull request against `main`.
 
 Who can merge: [`COLLABORATORS.md`](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/main/COLLABORATORS.md). Security reports: [`SECURITY.md`](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/main/SECURITY.md). Conduct: [`CODE_OF_CONDUCT.md`](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/main/CODE_OF_CONDUCT.md).

@@ -68,6 +68,7 @@ Verify:
 
 ```bash
 node scripts/check-links.mjs
+node scripts/check-en-gb.mjs
 ```
 
 ## Contributing

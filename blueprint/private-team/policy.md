@@ -20,7 +20,7 @@ Treat as policy unless you argue otherwise and the user agrees. Record intake ch
 | **Precedence** | Repo constitution (`AGENTS.md` + project rules) wins over Settings User Rules **and** Cursor plugin skills. Cursor also injects product git/PR blocks labelled `<user_rules>` that are **not** in Settings and **cannot be deleted** ([../reference/git-guardrail.md](../reference/git-guardrail.md)). Session overrides (“don’t commit”, “push now”) still win. |
 | **Decisions** | Recommendation + options + short why. Challenge weak defaults. |
 | **ADRs** | Write them **as you go**: when a decision meets the bar ([file-recipes.md](file-recipes.md)), record the ADR in the same slice, without being asked. |
-| **Language** | British English (en-GB) in **chat replies** and in **work** (docs, commits, UI strings, comments) wherever possible, unless intake set another locale. Follow the product locale where the product is not en-GB by design. |
+| **Language** | British English (en-GB) in **chat replies** and in **work** (docs, commits, UI strings, comments) wherever possible, unless intake set another locale. Follow the product locale where the product is not en-GB by design. Maintainer repos: run `check-en-gb` when present ([../reference/locale-en-gb.md](../reference/locale-en-gb.md)). |
 | **Punctuation** | No em dashes (—). No en dashes used as clause breaks. Use a comma, colon, parentheses, or a full stop. Hyphens in compounds (`git-config`) and markdown `---` separators are fine. Completed backlog rows: `- [x] YYYY-MM-DD: …` |
 | **Owner** | Record the accountable owner in the constitution. Name plan and ADR owners as people join. |
 
