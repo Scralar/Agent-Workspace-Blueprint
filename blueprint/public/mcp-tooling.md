@@ -42,4 +42,6 @@ Prune on usage evidence, not just the calendar: note when each server was last a
 
 Prefer official Marketplace / first-party vendor MCP. Community MCP is fine as a documented authoring aid (e.g. orchestrator node schemas).
 
+A shared gateway such as [Executor](https://executor.sh) is an optional catalogue row when several agents should share one tool catalogue and one policy layer. It is not the default MCP path ([ADR-0011](../../docs/adr/ADR-0011-executor-optional-gateway.md)).
+
 A destination API the **product workflow** already writes to is usually **not** an assistant MCP unless the user wants the assistant to operate it.

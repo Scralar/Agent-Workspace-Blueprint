@@ -15,6 +15,8 @@ Sending a change: [Contributing](https://github.com/Scralar/Agent-Workspace-Blue
 | [ADR-0007](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/ADR-0007-live-kit-by-url) | Follow the live kit by URL; copy is optional | Accepted |
 | [ADR-0008](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/ADR-0008-wiki-published-view) | GitHub wiki as a published view of `docs/` | Accepted, amended by ADR-0009 |
 | [ADR-0009](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/ADR-0009-docs-hygiene-and-optional-wiki) | Docs hygiene and optional wiki for consumer projects | Accepted |
+| [ADR-0010](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/ADR-0010-agent-working-defaults) | Agent working defaults (commits, code hygiene, en-GB) | Accepted |
+| [ADR-0011](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/ADR-0011-executor-optional-gateway) | Executor is an optional gateway, not the default MCP path | Accepted |
 
 ## New ADR
 

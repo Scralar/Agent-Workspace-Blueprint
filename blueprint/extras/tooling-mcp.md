@@ -1,6 +1,6 @@
 # Tooling catalogue — MCP
 
-Up: [tooling-catalogue.md](tooling-catalogue.md). Last researched: 2026-08-31.
+Up: [tooling-catalogue.md](tooling-catalogue.md). Last researched: 2026-08-31. Executor subsection: 2026-09-22 ([ADR-0011](../../docs/adr/ADR-0011-executor-optional-gateway.md)).
 
 MCP is the adapter layer: one server, any MCP client (Cursor, Claude Code, Codex, VS Code). In Cursor, prefer a **Marketplace plugin** (one-click + OAuth, often with skills and rules) over a hand-written `mcp.json` entry. Custom or self-hosted servers still go in `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (user).
 
@@ -165,7 +165,18 @@ Hooks that *fence* the agent are in [tooling-hooks.md](tooling-hooks.md). These 
 
 | Option | Pick when | Do not |
 |--------|-----------|--------|
-| **Composio**, **Merge**, **Zapier**, **Executor**, **Kody** | Many SaaS, one connection | Plus fifteen official servers for the same apps |
+| **Composio**, **Merge**, **Zapier**, **Kody** | Many SaaS, one connection | Plus fifteen official servers for the same apps; plus Executor for those same apps |
+| **Executor** | See the subsection below | As the default MCP path |
+
+### Executor (optional, not the default)
+
+Last researched: 2026-09-22. Verdict: [ADR-0011](../../docs/adr/ADR-0011-executor-optional-gateway.md).
+
+[Executor](https://executor.sh) ([source](https://github.com/UsefulSoftwareCo/executor), MIT) sits in front of MCP, OpenAPI, GraphQL, and other schema-described tools. One catalogue, shared by any MCP client, with per-tool allow, approve, or block. The agent writes TypeScript that runs in a JavaScript sandbox (code mode) instead of receiving one tool per API method. Local CLI or desktop app (Node.js 20+), Executor Cloud, or self-hosted Docker or Cloudflare.
+
+| Pick when | Do not | How |
+|-----------|--------|-----|
+| Several agents should share one catalogue and one policy layer, and you will not also install the official servers for those same apps | The default on a normal Cursor project. Marketplace plugins ship the skills and OAuth this kit already prefers, and code mode hides those tools. The sandbox still runs with the secrets you store there. Cloud sends tool traffic off the machine. Public since February 2026. Do not stack it with Composio, Merge, Zapier, or the official servers for the same apps | Local: `npm install -g executor`, then `executor install`. Connect with `npx add-mcp http://127.0.0.1:4788/mcp --transport http --name executor`, or `npx add-mcp "executor mcp" --name executor`. Restart the client before the tools appear. Docs: [executor.sh/docs](https://executor.sh/docs) |
 | **Sourcegraph**, **Tabnine Context Engine**, **Port**, **Atlan** | Org-wide code or catalog context | Personal repos |
 | **Langfuse**, **Braintrust**, **Arize** | You are building LLM apps and need traces/evals | Docs kits |
 | **Create Plugin**, **Manufact**, **Cursor SDK** | You are authoring plugins or headless agents | — |

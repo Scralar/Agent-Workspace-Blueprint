@@ -21,3 +21,5 @@
 * [[ADR-0007-live-kit-by-url|ADR-0007]]
 * [[ADR-0008-wiki-published-view|ADR-0008]]
 * [[ADR-0009-docs-hygiene-and-optional-wiki|ADR-0009]]
+* [[ADR-0010-agent-working-defaults|ADR-0010]]
+* [[ADR-0011-executor-optional-gateway|ADR-0011]]

@@ -2,7 +2,7 @@
 
 Up: [README.md](README.md). Companions: [tooling-mcp.md](tooling-mcp.md) · [tooling-skills.md](tooling-skills.md) · [tooling-hooks.md](tooling-hooks.md).
 
-**Last researched:** 2026-08-31. This is a **picker**, not a default stack and not a substitute for live research. Re-verify on [Marketplace](https://cursor.com/marketplace), [Cursor docs](https://cursor.com/docs), and the vendor page before recommending an install. Decision: [ADR-0005](../../docs/adr/ADR-0005-dated-tooling-catalogue.md).
+**Last researched:** 2026-08-31 (Executor row: 2026-09-22, [ADR-0011](../../docs/adr/ADR-0011-executor-optional-gateway.md)). This is a **picker**, not a default stack and not a substitute for live research. Re-verify on [Marketplace](https://cursor.com/marketplace), [Cursor docs](https://cursor.com/docs), and the vendor page before recommending an install. Decision: [ADR-0005](../../docs/adr/ADR-0005-dated-tooling-catalogue.md).
 
 Do not install unasked. Do not enable write, pay, or production scopes by default. Keep the set **tight**: each idle server still costs schema tokens and widens the audit surface. Dynamic discovery lowers the token cost of unused tools; it does not fix selection accuracy or security.
 
@@ -50,6 +50,7 @@ Filesystem MCP, Memory MCP, and Sequential Thinking MCP are usually **redundant*
 | Hard never-rule (no push, no secrets) | Hook ([tooling-hooks.md](tooling-hooks.md), [../reference/hooks.md](../reference/hooks.md)) | — | Another always-on rule that the model can ignore |
 | Repeatable workflow | Repo or plugin **skill** | Command (`disable-model-invocation`) | Pasting the same prompt every chat |
 | Isolated parallel research | Built-in `explore` subagent | Custom `.cursor/agents/` | A subagent for "format this file" |
+| Many agents, one shared tool catalogue | Official Marketplace plugin per app you actually use | [Executor](https://executor.sh) when those agents should share one policy layer ([ADR-0011](../../docs/adr/ADR-0011-executor-optional-gateway.md)) | Executor as the default MCP path; stacking it with Composio or the official servers for the same apps |
 
 ## Pick by project type
 
@@ -68,7 +69,7 @@ Install only the rows that match. Everything else stays deferred on the MCP note
 | Game / 3D | Unity or Meta Reality Labs plugin | NVIDIA / AMD skills if that hardware is the product | Frontend-design as the default aesthetic |
 | Video / motion | Remotion; Higgsfield or HeyGen if generative | — | Treating video MCP as a substitute for the render CLI |
 | Workflow automation | Platform is the artefact ([workflow-automation.md](workflow-automation.md)) | n8n / Zapier MCP only if the *assistant* should operate the graph | Duplicating the destination API as assistant MCP |
-| Enterprise many-SaaS | One gateway (Composio, Merge, or Zapier), not fifteen servers | Runlayer / Semgrep hooks | Co-loading email send + untrusted web fetch |
+| Enterprise many-SaaS | One gateway (Composio, Merge, Zapier, or Executor), not fifteen servers | Runlayer / Semgrep hooks | That gateway as the default on a small project; co-loading email send + untrusted web fetch |
 
 ## Live discovery (always re-check)
 

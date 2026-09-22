@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-22
+
+### Added
+
+- Executor recorded as an optional MCP gateway in the tooling catalogue, with an explicit verdict that it is not the default path ([ADR-0011](docs/adr/ADR-0011-executor-optional-gateway.md))
+
 ## 2026-09-16
 
 ### Changed
