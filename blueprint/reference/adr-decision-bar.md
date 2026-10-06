@@ -22,3 +22,7 @@ Write it in the same slice, without waiting to be asked.
 ## Litmus
 
 Would a later agent, in a new chat, do the wrong thing without this page, and fail to recover the answer by reading the code and the one homes? If they would recover it, skip the ADR.
+
+## Wrap-up
+
+Name the ADR this slice wrote, or one sentence on why none. Skipping is a normal outcome. The sentence is what stops a real decision from disappearing.

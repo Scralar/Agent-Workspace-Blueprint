@@ -15,7 +15,8 @@ Up: [../README.md](../README.md). Why the kit looks like this. Published to the 
 | [ADR-0009](ADR-0009-docs-hygiene-and-optional-wiki.md) | Docs hygiene and optional wiki for consumer projects | Accepted |
 | [ADR-0010](ADR-0010-agent-working-defaults.md) | Agent working defaults (commits, code hygiene, en-GB) | Accepted |
 | [ADR-0011](ADR-0011-executor-optional-gateway.md) | Executor is an optional gateway, not the default MCP path | Accepted |
-| [ADR-0012](ADR-0012-consumer-proven-references.md) | Consumer-proven references stay optional | Accepted |
+| [ADR-0012](ADR-0012-consumer-proven-references.md) | Consumer-proven references stay optional | Accepted, amended by ADR-0013 |
+| [ADR-0013](ADR-0013-session-defaults-after-consumer-references.md) | Session defaults after the consumer references | Accepted |
 
 ## Template
 

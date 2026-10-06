@@ -12,7 +12,7 @@ Keep `SKILL.md` short. Write the description in the third person, starting “Us
 
 Triggers: wrap up, tidy, commit all, close a chunk.
 
-Flow: prune diff → one-home docs (including MCP note if tools/scope changed) → Verify → **proof** (which tests ran, or why none; [../reference/testing-harness.md](../reference/testing-harness.md)) → **correction** → **upstream check** ([../extras/README.md](../extras/README.md)) → **commit the unit** (default commit-as-you-go) → report hash → **do not push** → suggest a new chat if the slice is done.
+Flow: prune diff → one-home docs (including MCP note if tools/scope changed) → Verify → **proof** (which tests ran, or why none; [../reference/testing-harness.md](../reference/testing-harness.md)) → **ADR** (name the ADR this slice wrote, or why none; [../reference/adr-decision-bar.md](../reference/adr-decision-bar.md)) → **correction** → **upstream check** ([../extras/README.md](../extras/README.md)) → **commit the unit** (default commit-as-you-go) → report hash → **do not push** → suggest a new chat if the slice is done.
 
 **Correction:** if the user corrected a durable preference this slice, update the Learned sections via the one memory writer ([file-recipes.md](file-recipes.md)), or the constitution if it is policy. If the same class of error happened twice, add a glob/description rule or a linter, not a longer always-on file. Do not hand-edit Learned sections when the plugin owns them. Do not revive `docs/agent-notes.md`.
 

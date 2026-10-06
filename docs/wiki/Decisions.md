@@ -17,7 +17,8 @@ Sending a change: [Contributing](https://github.com/Scralar/Agent-Workspace-Blue
 | [ADR-0009](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/ADR-0009-docs-hygiene-and-optional-wiki) | Docs hygiene and optional wiki for consumer projects | Accepted |
 | [ADR-0010](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/ADR-0010-agent-working-defaults) | Agent working defaults (commits, code hygiene, en-GB) | Accepted |
 | [ADR-0011](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/ADR-0011-executor-optional-gateway) | Executor is an optional gateway, not the default MCP path | Accepted |
-| [ADR-0012](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/ADR-0012-consumer-proven-references) | Consumer-proven references stay optional | Accepted |
+| [ADR-0012](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/ADR-0012-consumer-proven-references) | Consumer-proven references stay optional | Accepted, amended by ADR-0013 |
+| [ADR-0013](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/ADR-0013-session-defaults-after-consumer-references) | Session defaults after the consumer references | Accepted |
 
 ## New ADR
 

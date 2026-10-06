@@ -12,7 +12,7 @@ Do **not** paste architecture, local-dev runbooks, or plugin manuals here. Link 
 
 ## Git authorisation (optional always-on rule)
 
-Add a short `git.mdc` (`alwaysApply: true`) only when the constitution is long enough that agents miss the standing commit authorisation and follow Cursor's injected ask-first block. Its only job: continuous standing authorisation to commit locally, and that the constitution wins over that injected block. Link [../reference/git-guardrail.md](../reference/git-guardrail.md). Do not restate branch policy, push rules, or Verify. Skip it when the constitution is already short. It counts against the always-on budget.
+Add a short `git.mdc` (`alwaysApply: true`) only when the constitution is long enough that agents miss the standing commit authorisation and follow Cursor's injected ask-first block. Its only job: continuous standing authorisation to commit locally, and that the constitution wins over that injected block. Link [../reference/git-guardrail.md](../reference/git-guardrail.md). Do not restate branch policy, push rules, or Verify. Skip it when the constitution is already short. Keep it a pointer. There is no fixed count of always-on files ([bootstrap.md](bootstrap.md)).
 
 ## TODO
 
@@ -41,7 +41,7 @@ When the repo has application code: `alwaysApply: false` with globs for the main
 
 When the repo has application behaviour worth guarding. Skip for docs-only repos and for [minimal.md](../minimal.md).
 
-`alwaysApply: true`, and short: point at `docs/testing.md` (what Verify runs, same-slice tests, debugging closure). Do not paste a test catalogue into the rule. Recipe: [../reference/testing-harness.md](../reference/testing-harness.md). Counts against the always-on budget.
+`alwaysApply: true`, and short: point at `docs/testing.md` (what Verify runs, same-slice tests, debugging closure). Do not paste a test catalogue into the rule. Recipe: [../reference/testing-harness.md](../reference/testing-harness.md). Keep it a pointer. There is no fixed count of always-on files ([bootstrap.md](bootstrap.md)).
 
 ## Collaboration rule
 
@@ -67,7 +67,7 @@ Keep the folder `README.md` as an index (number, title, status). Lifecycle: Prop
 
 ## Production guardrail (deploy-on-push repos)
 
-When a branch auto-deploys, add a short always-on rule naming the protected branch: no checkout, commit, merge, or push to it unless the owner asks in the current message; the default route is topic branch → PR. Absolute wording, no exceptions inside the rule. This is a legitimate place to spend always-on budget. Add the rule as soon as the deploy branch is named, not when the first deploy happens: "will eventually auto-deploy" already qualifies.
+When a branch auto-deploys, add a short always-on rule naming the protected branch: no checkout, commit, merge, or push to it unless the owner asks in the current message; the default route is topic branch → PR. Absolute wording, no exceptions inside the rule. This earns its own always-on file. There is no fixed count of those files ([bootstrap.md](bootstrap.md)). Add the rule as soon as the deploy branch is named, not when the first deploy happens: "will eventually auto-deploy" already qualifies.
 
 ## Docs map
 

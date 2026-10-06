@@ -55,7 +55,7 @@ After the framework commit, stop unless they asked for features in parallel.
 |------|------|------|
 | Constitution | ~80–120 lines | Longer for production/visual QA |
 | `AGENTS.md` | ~40–80 lines | Map + Verify + constraints. Pointers for the rest. |
-| alwaysApply rules | ~1–3 files | Collaboration only if shared. Fold TODO hygiene if tiny. |
+| alwaysApply rules | No fixed count | One file per role the repo actually earns: constitution; collaboration only if shared; optional git, testing, or efficiency when that reference says so; production guardrail when a branch will auto-deploy. Each file is a pointer, soft ~80 lines (the constitution has its own row). Fold TODO hygiene into the constitution if both would be tiny. |
 | Imminent backlog | ≈≤5 | n/a |
 | Open backlog | ~25 | prune |
 | Active plans | ≈≤3 | archive when done |

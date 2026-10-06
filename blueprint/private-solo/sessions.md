@@ -7,7 +7,7 @@ Trigger: day-to-day work after bootstrap; also read once during bootstrap when w
 ## Session loop
 
 1. Entry + constitution → Imminent / Discuss
-2. Collaboration scan (git / terminals / browser)
+2. Collaboration scan. **Full scan** (git, terminals, browser, backlog and plans) before any edit, commit, or other mutating action. An explain-only turn still checks foreign dirty files and in-flight plans before suggesting commands.
 3. **Tooling freshness:** MCP note missing, last-reviewed older than **~30 days**, *or* the project’s nature / a major aspect has **shifted** (see [mcp-tooling.md](mcp-tooling.md))
 4. Architectural decision landed? → write the ADR **now**, in the same unit, without being asked ([file-recipes.md](file-recipes.md))
 5. Multi-phase? → write-plan (user approves unless they said run with it)

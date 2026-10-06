@@ -11,6 +11,9 @@
 
 - Hooks sample allows tracked `.cursor/plans/` on private shapes. The public shape still denies plans
 - Wrap-up and the definition of done ask which tests ran, or why none
+- Wrap-up names the ADR this slice wrote, or why none ([ADR-0013](docs/adr/ADR-0013-session-defaults-after-consumer-references.md))
+- Always-on rules have no fixed file count. A file is added when a role earns it, and each file stays a short pointer
+- Collaboration scan is full before edits and commits, and lighter on explain-only turns
 
 ### Fixed
 

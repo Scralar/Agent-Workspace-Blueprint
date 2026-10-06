@@ -9,7 +9,7 @@ Trigger: the repo has application behaviour worth guarding. Skip for docs-only r
 | Home | Role |
 |------|------|
 | `docs/testing.md` | The floor: what Verify runs, same-slice tests, debugging closure |
-| Optional `testing.mdc` | Always-on pointer at that doc. Recipe: the shape's file-recipes. Counts against the always-on budget |
+| Optional `testing.mdc` | Always-on pointer at that doc. Recipe: the shape's file-recipes. No fixed count of always-on files |
 | Optional `docs/testing-catalogue.md` | Which behaviours in *this* repo earn a test. Local. Not a kit file |
 
 Testing policy stays in `docs/testing.md`. It is not an ADR.

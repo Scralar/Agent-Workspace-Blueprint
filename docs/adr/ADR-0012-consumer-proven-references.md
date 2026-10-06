@@ -1,6 +1,6 @@
 # ADR-0012: Consumer-proven references stay optional
 
-- **Status:** Accepted
+- **Status:** Accepted, amended by [ADR-0013](ADR-0013-session-defaults-after-consumer-references.md)
 - **Date:** 2026-10-07
 - **Owner:** Scralar
 
@@ -23,11 +23,11 @@ These ideas are general and had survived real use. Baking all of them into every
    - [adr-decision-bar.md](../../blueprint/reference/adr-decision-bar.md) (Reference J)
    - [loopback-control-plane.md](../../blueprint/extras/loopback-control-plane.md) on the extras shelf
 
-3. **Optional recipes** in all three file-recipes: a short `git.mdc` when the constitution is too long for the standing commit authorisation to be seen, and a short `testing.mdc` when the repo has behaviour worth guarding. Both count against the always-on budget. Neither is added to the day-one tree.
+3. **Optional recipes** in all three file-recipes: a short `git.mdc` when the constitution is too long for the standing commit authorisation to be seen, and a short `testing.mdc` when the repo has behaviour worth guarding. Neither is added to the day-one tree. There is no fixed count of always-on files ([ADR-0013](ADR-0013-session-defaults-after-consumer-references.md)).
 
 4. **One small default:** wrap-up and the definition of done ask for one sentence on which tests ran, or why none. Docs-only work answers "why none".
 
-5. **Not in this decision:** requiring wrap-up to name an ADR, changing the ~1–3 always-on cap, and splitting the collaboration scan into full versus explain-only. Those stay open until the owner picks them.
+5. **Session-loop follow-ups** (wrap-up names the ADR, no fixed always-on count, tiered collaboration scan) are recorded in [ADR-0013](ADR-0013-session-defaults-after-consumer-references.md).
 
 ## Alternatives
 
@@ -41,4 +41,4 @@ These ideas are general and had survived real use. Baking all of them into every
 
 - Shape folders gain links, not second copies of the references.
 - Testing policy stays out of ADRs. The bar for that is Reference J.
-- A later ADR, or an amendment here, records the three open session-loop choices once the owner decides.
+- The three session-loop choices are in [ADR-0013](ADR-0013-session-defaults-after-consumer-references.md).
