@@ -23,3 +23,4 @@
 * [[ADR-0009-docs-hygiene-and-optional-wiki|ADR-0009]]
 * [[ADR-0010-agent-working-defaults|ADR-0010]]
 * [[ADR-0011-executor-optional-gateway|ADR-0011]]
+* [[ADR-0012-consumer-proven-references|ADR-0012]]

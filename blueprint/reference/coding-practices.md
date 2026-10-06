@@ -14,7 +14,7 @@ Apply to **product and library code**. Docs-only, config-only, or question-only 
 | **Avoid over-engineering** | No premature abstraction, one-off micro-helpers, or heavy error handling for edges that cannot happen in practice. |
 | **Match conventions** | Read neighbouring files first. Reuse types, patterns, and naming. New code should look like the same author wrote it. |
 | **Comments** | Prefer self-explanatory code. Comment non-obvious business rules and deep technical constraints only. |
-| **Tests** | Add when the user asks, or when they cover real behaviour worth guarding. Skip tests that only assert the obvious or mock everything. |
+| **Tests** | Add when the user asks, or when they cover real behaviour worth guarding. Skip tests that only assert the obvious or mock everything. Where the floor lives: [testing-harness.md](testing-harness.md). |
 
 Language formatters, linters, and typecheckers already in the repo **win** over agent taste. Run them via the project Verify command when they exist.
 

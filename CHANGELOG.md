@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-10-07
+
+### Added
+
+- Optional references from a private-team consumer, kept off the day-one tree ([ADR-0012](docs/adr/ADR-0012-consumer-proven-references.md)): testing harness, write-plan template, token and MCP efficiency, ADR decision bar, and a loopback control-plane extra
+- Optional `git.mdc` and `testing.mdc` recipes in file-recipes. Neither is required at bootstrap
+
+### Changed
+
+- Hooks sample allows tracked `.cursor/plans/` on private shapes. The public shape still denies plans
+- Wrap-up and the definition of done ask which tests ran, or why none
+
+### Fixed
+
+- Hooks prose no longer lists plans as files that always need guarding
+
 ## 2026-09-22
 
 ### Added

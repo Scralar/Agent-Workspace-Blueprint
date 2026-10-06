@@ -74,6 +74,7 @@ Anti-pattern: runbooks inside always-on rules.
 - [ ] Memory homes set per [README.md](README.md); private working files gitignored; hook state gitignored
 - [ ] wrap-up + write-plan + update-memory
 - [ ] Living MCP note (in use, recommended, deferred, skill precedence, last reviewed) after **current** research, or a dated deferral recorded in the note and TODO
+- [ ] Token load ([../reference/token-efficiency.md](../reference/token-efficiency.md)): bulky trees ignored, and no server listed in both the user and the project MCP config
 - [ ] `.cursor/plans/` gitignored (public shape)
 - [ ] `.cursor/mcp.json` only if this repo needs stdio MCP; no secrets
 - [ ] ADR/decision starter; architecture + local dev somewhere agents will **see when relevant** (pointer, not always-on)

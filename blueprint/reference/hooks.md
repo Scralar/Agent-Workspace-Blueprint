@@ -32,13 +32,18 @@ let raw = "";
 process.stdin.on("data", (c) => (raw += c));
 process.stdin.on("end", () => {
   const cmd = (JSON.parse(raw).command || "");
+  const staging = /git\s+(add|commit)/.test(cmd);
+  const underCursor = /(?:^|[\s"'])\.cursor(?:[\/\\]|\b)/.test(cmd);
+  // Private shapes also track plans/. Public shape: remove "plans" (plans are gitignored).
+  const allowed = /(?:^|[\s"'])\.cursor[\/\\](?:hooks|rules|skills|plans)(?:[\/\\]|\b)/.test(cmd);
+  const hookState = /(?:^|[\s"'])\.cursor[\/\\]hooks[\/\\]state(?:[\/\\]|\b)/.test(cmd);
   if (/git\s+push/.test(cmd)) {
     console.log(JSON.stringify({
       permission: "ask",
       user_message: "The agent wants to push. Approve only if you asked for it.",
       agent_message: "Push is gated by a hook. Only proceed if the user asked in the current message.",
     }));
-  } else if (/git\s+(add|commit)/.test(cmd) && /(^|[\s"'])\.cursor([\/\\]|\b)/.test(cmd) && !/hooks|rules|skills/.test(cmd)) {
+  } else if (staging && underCursor && (hookState || !allowed)) {
     console.log(JSON.stringify({
       permission: "deny",
       agent_message: "Blocked: this repo never stages private .cursor/ working files.",
@@ -49,6 +54,6 @@ process.stdin.on("end", () => {
 });
 ```
 
-Adapt the second branch to the repo's shape: on shapes that track rules and skills, only the private files (TODO, MCP note, preferences, plans, tmp) need guarding; on a repo that gitignores all of `.cursor/`, gitignore already does most of the work and the hook is belt and braces.
+Adapt the allowed prefixes to the repo's shape. Private-solo and private-team track `.cursor/plans/` as well as hooks, rules, and skills, so leave `plans` in the allow list (lifecycle: that shape's file-recipes, Cursor plans). The public shape gitignores plans: remove `plans`. Always deny preferences, the TODO, the MCP note, `tmp/`, and `hooks/state/` (scratch under an otherwise allowed folder). On a repo that gitignores all of `.cursor/`, gitignore already does most of the work and the hook is belt and braces.
 
 Notes: requires Node on PATH; `failClosed: true` blocks the action if the script crashes; exit code 2 also blocks. Verify in Cursor's Hooks settings tab after saving. Do not pile more policy into hooks; they are for the few absolute rules, not for style.

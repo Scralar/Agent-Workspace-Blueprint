@@ -6,7 +6,7 @@ Trigger: connecting tools, or the MCP note is missing / stale / the project shif
 
 Discover schemas before calling. `mcp_auth` once if `needsAuth` or an auth error, then retry. Native code tools for code; MCP for browser, mail, Drive, boards, vendor APIs the **assistant** should use.
 
-Prefer a **well-known CLI** when the model already knows it and MCP would only add schema weight (GitHub → `gh` is the usual example). MCP earns its place for multi-step stateful work (browser flows, schema exploration) and live structured data; CLIs win one-shot text operations. Keep the set **tight**: tool-selection accuracy degrades as tool counts grow, and every server widens the security and audit surface. Dynamic tool discovery lowers the token cost of idle servers; it does not fix either of those.
+Prefer a **well-known CLI** when the model already knows it and MCP would only add schema weight (GitHub → `gh` is the usual example). MCP earns its place for multi-step stateful work (browser flows, schema exploration) and live structured data; CLIs win one-shot text operations. Keep the set **tight**: tool-selection accuracy degrades as tool counts grow, and every server widens the security and audit surface. Dynamic tool discovery lowers the token cost of idle servers; it does not fix either of those. Duplicate servers and bulky trees: [../reference/token-efficiency.md](../reference/token-efficiency.md).
 
 **Browser:** IDE browser first. Chrome/DevTools second.
 

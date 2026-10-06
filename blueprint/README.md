@@ -31,7 +31,7 @@ Each folder carries the full reading path: policy, philosophy, bootstrap, sessio
 | [minimal.md](minimal.md) | The repo is tiny; also the per-stack Verify command table |
 | [adopt.md](adopt.md) | The repo already exists; migrate instead of scaffold |
 | [docs.md](docs.md) | Writing project docs, public vs private homes, or an optional wiki |
-| [extras/](extras/README.md) | After bootstrap, when the project matches a module (web design, workflow automation, …) |
+| [extras/](extras/README.md) | After bootstrap, when the project matches a module (web design, workflow automation, loopback control plane, …) |
 | [extras/tooling-catalogue.md](extras/tooling-catalogue.md) | Picking MCP, skills, hooks, or plugins; then re-verify live |
 | [reference/git-guardrail.md](reference/git-guardrail.md) | Agent will not commit, or you are writing git policy |
 | [reference/coding-practices.md](reference/coding-practices.md) | Application code, diffs, file size, tests, or style vs linters |
@@ -39,6 +39,10 @@ Each folder carries the full reading path: policy, philosophy, bootstrap, sessio
 | [reference/plugin-clashes.md](reference/plugin-clashes.md) | Superpowers, Team Kit, Playwright, Notion, or Canvas are in play |
 | [reference/user-rule.md](reference/user-rule.md) | User wants a Settings User Rule on this machine |
 | [reference/hooks.md](reference/hooks.md) | User wants hard enforcement of never-rules, not advice |
+| [reference/testing-harness.md](reference/testing-harness.md) | The repo has application behaviour worth guarding |
+| [reference/write-plan-template.md](reference/write-plan-template.md) | Multi-phase plan: phase gates and when to stop retrying |
+| [reference/token-efficiency.md](reference/token-efficiency.md) | MCP or context is bloated; bootstrap harness check |
+| [reference/adr-decision-bar.md](reference/adr-decision-bar.md) | Deciding whether this slice needs an ADR |
 
 ## Follow the kit
 

@@ -10,6 +10,10 @@ Accountable owner · recorded locale · **commit as you go** as very strong defa
 
 Do **not** paste architecture, local-dev runbooks, or plugin manuals here. Link them.
 
+## Git authorisation (optional always-on rule)
+
+Add a short `git.mdc` (`alwaysApply: true`) only when the constitution is long enough that agents miss the standing commit authorisation and follow Cursor's injected ask-first block. Its only job: continuous standing authorisation to commit locally, and that the constitution wins over that injected block. Link [../reference/git-guardrail.md](../reference/git-guardrail.md). Do not restate branch policy, push rules, or Verify. Skip it when the constitution is already short. It counts against the always-on budget.
+
 ## TODO
 
 **Imminent** · **Planned** · **Ideas** · **Discuss** · **Completed** as `- [x] YYYY-MM-DD: …` (never leave checked boxes in active sections).
@@ -33,6 +37,12 @@ Gitignore `.cursor/hooks/state/` and `.cursor/tmp/` (session scratch scripts).
 
 When the repo has application code: `alwaysApply: false` with globs for the main languages (e.g. `**/*.{ts,tsx,js,jsx,py,go,rs}`). Point at [../reference/coding-practices.md](../reference/coding-practices.md); repeat only project-specific overrides (naming, test layout, forbidden patterns). Skip if the repo is docs-only or [minimal.md](../minimal.md) tier with a **Code** line on `AGENTS.md`.
 
+## Testing (optional always-on rule)
+
+When the repo has application behaviour worth guarding. Skip for docs-only repos and for [minimal.md](../minimal.md).
+
+`alwaysApply: true`, and short: point at `docs/testing.md` (what Verify runs, same-slice tests, debugging closure). Do not paste a test catalogue into the rule. Recipe: [../reference/testing-harness.md](../reference/testing-harness.md). Counts against the always-on budget.
+
 ## Collaboration rule
 
 Before acting: git status, terminals, backlog/plans. Prefer **Cursor IDE browser** (`browser_tabs` → new tab → lock → work → unlock → close yours). User’s Chrome/DevTools (`list_pages` → `new_page`) only if they already have Chrome in play or asked.
@@ -45,13 +55,13 @@ Same commit, today’s `## YYYY-MM-DD`. `### Added` / `### Changed` / `### Fixed
 
 ## Cursor plans
 
-`.cursor/plans/` is **tracked** on this shape. Cursor Plan mode and write-plan output. Ship a short `README.md` in the folder stating that. Name an owner per plan; do not steal in-flight work. Few active; archive or delete when done. Link process/ADR/TODO; no secrets.
+`.cursor/plans/` is **tracked** on this shape. Cursor Plan mode and write-plan output. Ship a short `README.md` in the folder: what is tracked, who may edit an in-flight plan, where finished plans go, and links to an ADR or the backlog rather than copies. Name an owner per plan; do not steal in-flight work. Plan shape: [../reference/write-plan-template.md](../reference/write-plan-template.md). Few active; archive or delete when done. No secrets.
 
 ## ADRs
 
 Context, decision, alternatives, consequences. Include the user's name as author (from intake). Proposed → Accepted → freeze (typos / supersession / dated amendments). `ADR-0001-short-title.md` or one `DECISIONS.md` on tiny projects.
 
-Write ADRs **as you go**: when a decision is hard to reverse, cross-cutting, or options were argued, record it in the same slice, without waiting to be asked. Skip trivial fixes. Name ADR owners as people join.
+Write ADRs **as you go**: when a decision is hard to reverse, cross-cutting, or options were argued, record it in the same slice, without waiting to be asked. Skip trivial fixes. When and when not: [../reference/adr-decision-bar.md](../reference/adr-decision-bar.md). Name ADR owners as people join.
 
 Keep the folder `README.md` as an index (number, title, status). Lifecycle: Proposed → Accepted → Superseded, linked both ways when superseding. Before changing an area, check the index for ADRs that bind it; when you meet an undocumented convention worth keeping, draft the missing ADR.
 
@@ -79,4 +89,4 @@ Home on this shape: tracked `docs/agent-mcp.md`. **This project only.** Do not p
 
 Optional `.cursor/mcp.json` for project stdio servers. Secrets: `${env:NAME}` or `envFile` → gitignored `.env`. Ship `.env.example` with **names only**. Reload MCP after config changes.
 
-Recommend; never silent-install; never assume plugins are present.
+Recommend; never silent-install; never assume plugins are present. Token load: [../reference/token-efficiency.md](../reference/token-efficiency.md).

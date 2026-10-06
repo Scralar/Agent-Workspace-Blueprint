@@ -8,6 +8,7 @@ Nothing here is needed to bootstrap. Open a module after bootstrap when the proj
 |--------|-----------|
 | [web-design.md](web-design.md) | The product has a user-facing UI |
 | [workflow-automation.md](workflow-automation.md) | The product is an orchestrated workflow (n8n and similar) |
+| [loopback-control-plane.md](loopback-control-plane.md) | The product already has a loopback API the agent should call |
 
 ## Catalogues
 
