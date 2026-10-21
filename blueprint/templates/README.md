@@ -1,6 +1,6 @@
 # Templates
 
-Up: [../README.md](../README.md). Copy what the project needs; skip the rest. Every script is plain Node (20 or later), no dependencies, and has tests you can copy with it.
+Up: [../README.md](../README.md). Fetch what the project needs (`https://raw.githubusercontent.com/Scralar/Agent-Workspace-Blueprint/main/blueprint/templates/<path>`), copy it into the project and adapt it there; skip the rest. The project owns its copies; they do not track the blueprint. Every script is plain Node (20 or later), no dependencies, and has tests you can copy with it.
 
 | Template | Copy to | What it does |
 |----------|---------|--------------|

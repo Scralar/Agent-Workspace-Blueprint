@@ -17,7 +17,7 @@ Add a recurring item to `docs/TODO.md`. Then:
 3. Prune the backlog (Imminent about 5 items, open about 25) and memory bullets (about 12 per section).
 4. Review the tooling note: drop tools unused for a month; check that each remaining one is still maintained.
 5. Run the docs checks (links, en-GB, punctuation) and fix failures.
-6. Ask whether anything learned should go upstream to the blueprint.
+6. Note any lesson that would help other projects as blueprint feedback for Ethan in your reply. Do not edit the blueprint.
 
 ## Budgets
 

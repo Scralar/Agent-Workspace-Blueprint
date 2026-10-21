@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for wanting to improve the kit. This file is for people and for agents working on a fork or pull request.
+Thanks for wanting to improve the kit. This file is for people. Agents edit this repository only when Ethan explicitly asks to change the blueprint.
 
 ## What to change
 

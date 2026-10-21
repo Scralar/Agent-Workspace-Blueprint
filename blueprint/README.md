@@ -8,14 +8,17 @@ A guidebook, not a rulebook. Adapt it. Do not silently drop the safety rules.
 
 ## Start here
 
+**Read, copy, adapt; never change the kit.** Fetch only the files you need (raw URLs: `https://raw.githubusercontent.com/Scralar/Agent-Workspace-Blueprint/main/blueprint/<path>`). Do not clone, fork, vendor or edit this repository unless Ethan explicitly asks to change the blueprint. After setup the project follows its own `AGENTS.md`; do not re-read the blueprint in later sessions.
+
 1. **Intake.** Ask only what you cannot find: owner name, repo visibility (public or private), solo or team, locale (default en-GB), and the cheapest real Verify command.
 2. **Existing repo?** Read [reference/adopt.md](reference/adopt.md) first. Migrate, do not bulldoze.
 3. **Write `AGENTS.md`** from [AGENTS.template.md](AGENTS.template.md). Hand-write it for this repo. Never commit a generated repo dump.
-4. **Copy what you need** from [templates/](templates/README.md): CI, scripts, hooks, PR template. Wire the checks into Verify.
-5. **Commit** the setup (`docs(agent): add agent workspace`). Do not push unless asked.
-6. Stop. Build features only if the owner said to carry on.
+4. **Copy what you need** from [templates/](templates/README.md): fetch each file, write it into the project, adapt it there (CI, scripts, hooks, PR template). Wire the checks into Verify.
+5. **Provenance.** Add one line to the project's `AGENTS.md`: `Set up from Agent-Workspace-Blueprint at <commit>` (get the commit with `git ls-remote https://github.com/Scralar/Agent-Workspace-Blueprint main`). No other references to the blueprint in the project's rules, code or build.
+6. **Commit** the setup (`docs(agent): add agent workspace`). Do not push unless asked.
+7. Stop. Build features only if the owner said to carry on.
 
-Tiny repo (a script pack, a plugin)? Steps 1, 3 and 5 only, and keep `AGENTS.md` to Verify, git and security. Add the rest when it hurts.
+Tiny repo (a script pack, a plugin)? Steps 1, 3, 5 and 6 only, and keep `AGENTS.md` to Verify, git and security. Add the rest when it hurts.
 
 ## What to read when
 
@@ -48,6 +51,6 @@ Tiny repo (a script pack, a plugin)? Steps 1, 3 and 5 only, and keep `AGENTS.md`
 
 Test for anything tracked in a public repo: is it safe on GitHub? If not, it is not tracked.
 
-## The kit improves itself
+## Blueprint feedback
 
-When a project finds a better way of working that would help other projects (general, proven in real use, publishable), propose it upstream to [this repository](https://github.com/Scralar/Agent-Workspace-Blueprint). Propose, never act silently.
+When a project learns something that would help other projects (general, proven in real use, publishable), tell Ethan: a short "Blueprint feedback" note in your reply or the project's handoff. Do not edit the blueprint or open a PR against it.

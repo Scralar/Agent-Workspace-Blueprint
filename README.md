@@ -1,5 +1,7 @@
 # Agent Workspace Blueprint
 
+> **Read it, do not change it.** Agents setting up a project read only the files they need from this repo (raw GitHub or web fetch), copy the templates into the new project and adapt them there. Do not clone, fork, vendor or edit this repository unless Ethan explicitly asks to change the blueprint. After setup the project follows its own `AGENTS.md` and links back with one provenance line only. Suggest improvements to Ethan in your reply or handoff, not as a PR.
+
 ![Licence: MIT](https://img.shields.io/badge/Licence-MIT-blue.svg)
 ![Verify](https://github.com/Scralar/Agent-Workspace-Blueprint/actions/workflows/verify.yml/badge.svg)
 ![AGENTS.md](https://img.shields.io/badge/AGENTS.md-compatible-111.svg)
@@ -11,11 +13,11 @@ A short guidebook you point a coding agent at when starting or adopting a projec
 In the project you want to set up, paste this into the agent:
 
 ```text
-Follow https://github.com/Scralar/Agent-Workspace-Blueprint/tree/main/blueprint
-for this project. Start at blueprint/README.md.
+Read (do not clone) https://raw.githubusercontent.com/Scralar/Agent-Workspace-Blueprint/main/blueprint/README.md
+and follow it to set up this project.
 ```
 
-The agent reads the live kit, asks a few intake questions, writes a hand-made `AGENTS.md`, and copies the checks the project needs.
+The agent fetches the files it needs, asks a few intake questions, writes a hand-made `AGENTS.md`, and copies the checks the project needs into the project.
 
 ## What you get
 

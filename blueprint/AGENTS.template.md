@@ -2,6 +2,8 @@
 
 {One line: what this repo is and who uses it.}
 
+Set up from Agent-Workspace-Blueprint at {commit}. This file is the authority now; do not re-read the blueprint.
+
 Read this every session. Open other files only when their trigger matches.
 
 ## Read when
@@ -35,6 +37,10 @@ Secrets live in {gitignored `.env`}; `.env.example` holds names only. Nothing se
 - Always: definition of done (`{link to done list}`); one home per fact; British English; no em dashes.
 - Ask first: push, PR, merge, deploy, sending anything to people, paid or write scopes, launching cloud agents, product policy.
 - Never: secrets or personal data in git; force-push shared branches; skip hooks; revert other people's work.
+
+## Blueprint feedback
+
+Lessons that would help other projects go to Ethan as a short note in your reply or handoff. Do not edit the blueprint.
 
 ## Learned workspace facts
 

@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Read, copy, adapt: agents setting up a project fetch the files they need and copy templates into the project; they do not clone, fork, vendor or edit the blueprint unless Ethan explicitly asks. Projects keep one provenance line and follow their own `AGENTS.md`; lessons go to Ethan as blueprint feedback, not PRs
 - Restructured the kit around one lean core ([ADR-0014](docs/adr/ADR-0014-lean-core-and-shipping-scope.md)). The three shape folders are replaced by `blueprint/core/` (working rules, definition of done, branches and PRs, security, where docs live, upkeep) and a five-row shape table in `blueprint/README.md`
 - New `blueprint/AGENTS.template.md` for consumer projects: read-when table, Verify, git, security, Always / Ask first / Never
 - Definition of done now requires tests, CHANGELOG, debug notes and docs in the same change, with a debug note shape
