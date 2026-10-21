@@ -1,0 +1,49 @@
+# Verify on every PR into dev or main, and on pushes to dev. Read-only, no secrets.
+# Copy to .github/workflows/verify.yml. Replace the install and Verify commands for your stack.
+name: verify
+
+on:
+  pull_request:
+    branches: [dev, main]
+  push:
+    branches: [dev]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      # Date and time tests should not depend on the runner's zone.
+      TZ: Europe/London
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install
+        run: npm ci
+      - name: Verify (typecheck, lint, tests)
+        run: npm run verify
+
+  docs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Links
+        run: node scripts/check-links.mjs
+      - name: British English
+        run: node scripts/check-en-gb.mjs
+      - name: No em or en dashes
+        run: node scripts/check-punctuation.mjs

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeShellExecution": [
+      {
+        "command": "node .cursor/hooks/git-guard.mjs",
+        "matcher": "git\\s+(push|add|commit)|gh\\s+(pr|release)\\s",
+        "failClosed": true
+      }
+    ]
+  }
+}

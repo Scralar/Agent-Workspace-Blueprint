@@ -1,0 +1,136 @@
+# Release when a merge to main changes the version. Nothing else publishes.
+# Copy to .github/workflows/release.yml, then replace the Build and Upload steps for your product.
+# Guide: blueprint/shipping/release.md in Agent Workspace Blueprint.
+#
+# Repository variables (Settings, Variables): DEPLOY_ROLE_ARN, AWS_REGION, DEPLOY_BUCKET.
+# Secrets: none for deploy (OIDC). Name any build or signing secrets here.
+# The IAM role trust policy should allow only this repository's main branch
+# (token.actions.githubusercontent.com:sub = repo:OWNER/REPO:ref:refs/heads/main).
+# Pin third-party actions to a full commit SHA once the workflow handles secrets.
+name: release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Build only. Upload nothing, tag nothing.
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+# Never cancel a publish half way: a second run waits for the first.
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+env:
+  # The one home for the version (see scripts/check-version-sync.mjs).
+  VERSION_FILE: package.json
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      version: ${{ steps.decide.outputs.version }}
+      publish: ${{ steps.decide.outputs.publish }}
+      create_release: ${{ steps.decide.outputs.create_release }}
+    steps:
+      - name: Refuse branches other than main
+        if: github.ref != 'refs/heads/main'
+        run: |
+          echo "::error::Releases run only on main."
+          exit 1
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: decide
+        name: Decide whether this version publishes
+        env:
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: |
+          version="$(node -p "require('./${VERSION_FILE}').version")"
+          publish=true
+          if git rev-parse -q --verify "refs/tags/v${version}" >/dev/null; then
+            echo "Tag v${version} already exists, so the version did not change. Nothing to publish."
+            publish=false
+          fi
+          create_release=false
+          if [ "$publish" = true ] && [ "$DRY_RUN" != true ]; then
+            create_release=true
+          fi
+          echo "Version ${version}, publish=${publish}, dry_run=${DRY_RUN}, create_release=${create_release}"
+          {
+            echo "version=${version}"
+            echo "publish=${publish}"
+            echo "create_release=${create_release}"
+          } >> "$GITHUB_OUTPUT"
+
+  publish:
+    needs: gate
+    if: needs.gate.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      VERSION: ${{ needs.gate.outputs.version }}
+      DRY_RUN: ${{ needs.gate.outputs.create_release != 'true' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Verify
+        run: npm run verify
+      - name: Version copies agree
+        run: node scripts/check-version-sync.mjs
+      - name: Nothing secret will be baked in
+        run: node scripts/check-build-env.mjs
+      - name: Build
+        run: npm run build
+      - name: Keep the build for inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-${{ env.VERSION }}
+          path: dist/
+      - name: Assume the deploy role (OIDC)
+        if: env.DRY_RUN != 'true'
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+      - name: Upload
+        if: env.DRY_RUN != 'true'
+        env:
+          DEPLOY_BUCKET: ${{ vars.DEPLOY_BUCKET }}
+        run: aws s3 sync dist/ "s3://${DEPLOY_BUCKET}/v${VERSION}/"
+
+  release:
+    needs: [gate, publish]
+    if: needs.gate.outputs.create_release == 'true' && needs.publish.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      VERSION: ${{ needs.gate.outputs.version }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Release notes for this version
+        run: |
+          awk -v heading="## ${VERSION}" '$0 == heading { found = 1; next } /^## / { found = 0 } found' docs/release-notes.md > notes.md
+          if [ ! -s notes.md ]; then
+            echo "::error::docs/release-notes.md has no section ## ${VERSION}."
+            exit 1
+          fi
+      - name: Tag and create the GitHub Release
+        run: gh release create "v${VERSION}" --target "${GITHUB_SHA}" --title "v${VERSION}" --notes-file notes.md

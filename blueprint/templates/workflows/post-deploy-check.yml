@@ -1,0 +1,40 @@
+# After a successful release, fetch what users fetch and check it is the new version.
+# Copy to .github/workflows/post-deploy-check.yml.
+# Repository variable: PUBLIC_CHECK_URL (the update feed, health endpoint or download users hit).
+# If you restrict public access later (IP allowlist, auth), keep this check able to reach the URL.
+name: post-deploy-check
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [release]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CHECK_URL: ${{ vars.PUBLIC_CHECK_URL }}
+      VERSION_FILE: package.json
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the public artefact
+        run: |
+          expected="$(node -p "require('./${VERSION_FILE}').version")"
+          # Caches can lag behind the upload, so retry for a few minutes before failing.
+          for attempt in 1 2 3 4 5 6; do
+            if curl -fsSL --max-time 30 "$CHECK_URL" -o body.txt && grep -qF "$expected" body.txt; then
+              echo "OK: ${CHECK_URL} serves ${expected} (attempt ${attempt})."
+              exit 0
+            fi
+            sleep 30
+          done
+          echo "::error::${CHECK_URL} does not serve version ${expected}."
+          head -c 500 body.txt || true
+          exit 1
