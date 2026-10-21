@@ -1,4 +1,4 @@
-# ADR-0007 — Follow the live kit by URL
+# ADR-0007: Follow the live kit by URL
 
 - **Status:** Accepted
 - **Date:** 2026-08-31

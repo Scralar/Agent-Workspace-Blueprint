@@ -1,6 +1,6 @@
-# ADR-0011 — Executor is an optional gateway, not the default MCP path
+# ADR-0011: Executor is an optional gateway, not the default MCP path
 
-- **Status:** Accepted
+- **Status:** Superseded by [ADR-0014](ADR-0014-lean-core-and-shipping-scope.md) (2026-10-21)
 - **Date:** 2026-09-22
 - **Owner:** Scralar
 
@@ -12,11 +12,11 @@ The catalogue already named it in one cell beside Composio, Merge, and Zapier. T
 
 ## Decision
 
-1. **Executor is a catalogue option, not the default.** Direct Marketplace plugins and well-known CLIs stay the MCP path for a normal project. Record the option in [tooling-mcp.md](../../blueprint/extras/tooling-mcp.md) and the decision tree in [tooling-catalogue.md](../../blueprint/extras/tooling-catalogue.md). Each shape's `mcp-tooling.md` points here so a consumer agent sees the verdict without opening the whole catalogue.
+1. **Executor is a catalogue option, not the default.** Direct Marketplace plugins and well-known CLIs stay the MCP path for a normal project. Record the option in [tooling-mcp.md](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/extras/tooling-mcp.md) and the decision tree in [tooling-catalogue.md](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/extras/tooling-catalogue.md). Each shape's `mcp-tooling.md` points here so a consumer agent sees the verdict without opening the whole catalogue.
 
 2. **Pick it only for the many-agent case.** Several clients should share one catalogue and one policy layer, and the project will not also install the official servers for those same apps.
 
-3. **Do not promote it to a use-case module yet.** Extras modules are for conventions proven in real use ([extras README](../../blueprint/extras/README.md)). This row is dated research, same class as the rest of the catalogue ([ADR-0005](ADR-0005-dated-tooling-catalogue.md)).
+3. **Do not promote it to a use-case module yet.** Extras modules are for conventions proven in real use ([extras README](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/extras/README.md)). This row is dated research, same class as the rest of the catalogue ([ADR-0005](ADR-0005-dated-tooling-catalogue.md)).
 
 ## Alternatives
 

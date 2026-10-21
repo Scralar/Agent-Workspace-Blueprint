@@ -1,4 +1,4 @@
-# ADR-0004 — Upstream feedback loop
+# ADR-0004: Upstream feedback loop
 
 - **Status:** Accepted
 - **Date:** 2026-08-29

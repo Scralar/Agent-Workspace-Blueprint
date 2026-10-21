@@ -1,6 +1,6 @@
-# ADR-0003 — Shared leaves beside self-contained shape folders
+# ADR-0003: Shared leaves beside self-contained shape folders
 
-- **Status:** Accepted, amended by ADR-0009
+- **Status:** Superseded by [ADR-0014](ADR-0014-lean-core-and-shipping-scope.md) (2026-10-21)
 - **Date:** 2026-08-29
 - **Owner:** Scralar
 
@@ -15,11 +15,11 @@ The kit also needs new material that is shape-agnostic by nature: a guide for ad
 1. **Core stays per shape.** The numbered reading path (policy, philosophy, bootstrap, sessions, file recipes, skills, MCP guidance, extras-by-type, done) remains duplicated and tailored per folder, synced in the same commit, exactly as ADR-0002 decided. The reading-path argument still holds: a bootstrapping agent follows one folder without hopping.
 
 2. **Leaves are shared.** Files that are opened by trigger, sit at the end of a link, and do not vary by shape live **once** at the `blueprint/` level:
-   - `reference/` — git guardrail, plugin clashes, user rule, hooks recipe
-   - `adopt.md` — adopting an existing repo
-   - `minimal.md` — minimal tier for tiny repos
-   - `extras/` — optional add-on modules
-   - `docs.md` — docs hygiene and optional wiki (ADR-0009)
+   - `reference/`: git guardrail, plugin clashes, user rule, hooks recipe
+   - `adopt.md`: adopting an existing repo
+   - `minimal.md`: minimal tier for tiny repos
+   - `extras/`: optional add-on modules
+   - `docs.md`: docs hygiene and optional wiki (ADR-0009)
 
 3. **The test for where a file lives:** if two shape folders would carry different text, it belongs in each folder; if the text would be identical, it lives once and is linked.
 

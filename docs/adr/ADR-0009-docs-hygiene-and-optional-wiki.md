@@ -1,4 +1,4 @@
-# ADR-0009 — Docs hygiene and optional wiki for consumer projects
+# ADR-0009: Docs hygiene and optional wiki for consumer projects
 
 - **Status:** Accepted
 - **Date:** 2026-08-31
@@ -17,7 +17,7 @@ Research on 2026-08-31 (Diátaxis; GitHub's documentation guide; docs-as-code vs
 
 ## Decision
 
-1. **Shared leaf** [`blueprint/docs.md`](../../blueprint/docs.md) is the kit's docs and wiki guidance for every shape (ADR-0003: identical text lives once).
+1. **Shared leaf** [`blueprint/docs.md`](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/docs.md) is the kit's docs and wiki guidance for every shape (ADR-0003: identical text lives once).
 
 2. **The repository is the source of truth.** A wiki is optional. If used, it is a published view of repo docs, never a second home. Consumer projects are not required to enable a wiki.
 

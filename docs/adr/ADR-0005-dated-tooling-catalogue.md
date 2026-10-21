@@ -1,6 +1,6 @@
-# ADR-0005 — Dated tooling catalogue as a pick-and-choose extra
+# ADR-0005: Dated tooling catalogue as a pick-and-choose extra
 
-- **Status:** Accepted
+- **Status:** Superseded by [ADR-0014](ADR-0014-lean-core-and-shipping-scope.md) (2026-10-21)
 - **Date:** 2026-08-31
 - **Owner:** Scralar
 

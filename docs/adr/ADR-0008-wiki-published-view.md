@@ -1,6 +1,6 @@
-# ADR-0008 — GitHub wiki as a published view of `docs/`
+# ADR-0008: GitHub wiki as a published view of `docs/`
 
-- **Status:** Accepted, amended by ADR-0009
+- **Status:** Superseded by [ADR-0014](ADR-0014-lean-core-and-shipping-scope.md) (2026-10-21)
 - **Date:** 2026-08-31
 - **Owner:** Scralar
 
@@ -16,7 +16,7 @@ ADR-0006 turned the Wiki tab off so documentation stayed in git and in pull requ
 
 3. **Do not duplicate homes.** Wiki pages are short doors. They link to `README.md`, `AGENTS.md`, `CONTRIBUTING.md`, and `blueprint/`. They do not restate those files.
 
-4. **This is this GitHub repository's surface.** Consumer projects follow [`blueprint/docs.md`](../../blueprint/docs.md): a wiki is optional, and only as a published view of repo docs (ADR-0009).
+4. **This is this GitHub repository's surface.** Consumer projects follow [`blueprint/docs.md`](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/docs.md): a wiki is optional, and only as a published view of repo docs (ADR-0009).
 
 5. **Access stays at the GitHub default:** only people with write access can edit the wiki.
 

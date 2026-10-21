@@ -14,13 +14,13 @@ These ideas are general and had survived real use. Baking all of them into every
 
 ## Decision
 
-1. **Correct the hooks sample** in [hooks.md](../../blueprint/reference/hooks.md) so private shapes may stage `.cursor/plans/`. The public shape still drops `plans` from the allow list. Preferences, the TODO, the MCP note, `tmp/`, and `hooks/state/` stay denied.
+1. **Correct the hooks sample** in [hooks.md](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/reference/hooks.md) so private shapes may stage `.cursor/plans/`. The public shape still drops `plans` from the allow list. Preferences, the TODO, the MCP note, `tmp/`, and `hooks/state/` stay denied.
 
 2. **Add shared references, not new required day-one files:**
-   - [testing-harness.md](../../blueprint/reference/testing-harness.md) (Reference G)
-   - [write-plan-template.md](../../blueprint/reference/write-plan-template.md) (Reference H)
-   - [token-efficiency.md](../../blueprint/reference/token-efficiency.md) (Reference I)
-   - [adr-decision-bar.md](../../blueprint/reference/adr-decision-bar.md) (Reference J)
+   - [testing-harness.md](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/reference/testing-harness.md) (Reference G)
+   - [write-plan-template.md](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/reference/write-plan-template.md) (Reference H)
+   - [token-efficiency.md](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/reference/token-efficiency.md) (Reference I)
+   - [adr-decision-bar.md](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/reference/adr-decision-bar.md) (Reference J)
    - [loopback-control-plane.md](../../blueprint/extras/loopback-control-plane.md) on the extras shelf
 
 3. **Optional recipes** in all three file-recipes: a short `git.mdc` when the constitution is too long for the standing commit authorisation to be seen, and a short `testing.mdc` when the repo has behaviour worth guarding. Neither is added to the day-one tree. There is no fixed count of always-on files ([ADR-0013](ADR-0013-session-defaults-after-consumer-references.md)).

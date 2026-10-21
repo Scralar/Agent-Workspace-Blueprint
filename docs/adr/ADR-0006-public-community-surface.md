@@ -1,4 +1,4 @@
-# ADR-0006 — Public community surface
+# ADR-0006: Public community surface
 
 - **Status:** Accepted, amended by ADR-0007 and ADR-0008
 - **Date:** 2026-08-31

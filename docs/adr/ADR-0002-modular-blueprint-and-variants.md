@@ -1,6 +1,6 @@
-# ADR-0002 — Self-contained blueprint folders per repo shape
+# ADR-0002: Self-contained blueprint folders per repo shape
 
-- **Status:** Accepted
+- **Status:** Superseded by [ADR-0014](ADR-0014-lean-core-and-shipping-scope.md) (2026-10-21)
 - **Date:** 2026-08-29
 - **Owner:** Scralar
 
@@ -20,20 +20,20 @@ The Marketplace Continual Learning plugin writes Learned sections (including per
 
 ## Decision
 
-1. **One folder per repo shape, self-contained** — `blueprint/` holds a short chooser `README.md` and three folders: `public/`, `private-solo/`, `private-team/`. Each folder carries the **full** file set (policy, philosophy, bootstrap, sessions, file recipes, skills, MCP guidance, done, references) already tailored to that shape, plus its day-one tree, sample `AGENTS.md`, memory homes, and gitignore starter. A reader picks one folder and never leaves it.
+1. **One folder per repo shape, self-contained**: `blueprint/` holds a short chooser `README.md` and three folders: `public/`, `private-solo/`, `private-team/`. Each folder carries the **full** file set (policy, philosophy, bootstrap, sessions, file recipes, skills, MCP guidance, done, references) already tailored to that shape, plus its day-one tree, sample `AGENTS.md`, memory homes, and gitignore starter. A reader picks one folder and never leaves it.
 
-2. **Deliberate duplication, synced in the same commit** — The folders are near-copies. When a shared idea changes, all three folders change in the same commit. A dedicated path per shape is worth the triple maintenance; the chooser README records this rule.
+2. **Deliberate duplication, synced in the same commit**: The folders are near-copies. When a shared idea changes, all three folders change in the same commit. A dedicated path per shape is worth the triple maintenance; the chooser README records this rule.
 
-3. **Modular sections inside each folder** — Topic files opened by trigger, indexed by the folder `README.md`. No single long file.
+3. **Modular sections inside each folder**: Topic files opened by trigger, indexed by the folder `README.md`. No single long file.
 
-4. **Memory homes by repo shape** —
+4. **Memory homes by repo shape** , 
    - **Public:** publishable facts on tracked `AGENTS.md` under **Workspace facts**; personal preferences in gitignored `.cursor/user-preferences.md`
    - **Private solo:** Learned User Preferences and Learned Workspace Facts on tracked `AGENTS.md`
    - **Private team:** team facts on tracked `AGENTS.md`; personal preferences gitignored per user
 
-5. **Writer for learned memory** — Prefer a repo `update-memory` skill run from wrap-up (in session, no subagent). Keep the Marketplace Continual Learning plugin **off** wherever the root `AGENTS.md` must not receive personal preferences. On private-solo only, the plugin remains an acceptable sole writer; never run both.
+5. **Writer for learned memory**: Prefer a repo `update-memory` skill run from wrap-up (in session, no subagent). Keep the Marketplace Continual Learning plugin **off** wherever the root `AGENTS.md` must not receive personal preferences. On private-solo only, the plugin remains an acceptable sole writer; never run both.
 
-6. **ADRs are written as you go** — When a decision meets the bar (hard to reverse, cross-cutting, or options were argued), the agent records the ADR in the same slice, without being asked. This is kit policy in every folder and the working rule of this repo.
+6. **ADRs are written as you go**: When a decision meets the bar (hard to reverse, cross-cutting, or options were argued), the agent records the ADR in the same slice, without being asked. This is kit policy in every folder and the working rule of this repo.
 
 ## Alternatives
 

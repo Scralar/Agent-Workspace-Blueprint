@@ -16,13 +16,13 @@ These are cross-cutting kit decisions: they touch all three shape folders, share
 
 ## Decision
 
-1. **Commit as you go is the very strong default** at intake unless the user explicitly records ask-first on `AGENTS.md`. Expand [git-guardrail.md](../../blueprint/reference/git-guardrail.md) with expectations, anti-patterns (uncommitted slices, permission prompts), and precedence over the injection. Wire the default through policy, bootstrap, sessions, skills, file-recipes, and done checklists in all shapes.
+1. **Commit as you go is the very strong default** at intake unless the user explicitly records ask-first on `AGENTS.md`. Expand [git-guardrail.md](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/reference/git-guardrail.md) with expectations, anti-patterns (uncommitted slices, permission prompts), and precedence over the injection. Wire the default through policy, bootstrap, sessions, skills, file-recipes, and done checklists in all shapes.
 
-2. **Add [coding-practices.md](../../blueprint/reference/coding-practices.md)** (Reference E) for smallest correct diff, ~500/800 line budgets, tests/comments guidance, glob-rule recipe, and philosophy/policy hooks. Do not duplicate the full text in always-on rules.
+2. **Add [coding-practices.md](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/reference/coding-practices.md)** (Reference E) for smallest correct diff, ~500/800 line budgets, tests/comments guidance, glob-rule recipe, and philosophy/policy hooks. Do not duplicate the full text in always-on rules.
 
 3. **Add [locale-en-gb.md](../../blueprint/reference/locale-en-gb.md)** (Reference F) for en-GB habits and vendor-UI exemptions. Add `scripts/check-en-gb.mjs` to this repository’s Verify (with `check-links.mjs`) and CI. Consumer projects may copy the script or rely on policy only.
 
-4. **Lettering:** `coding-practices` is Reference E; existing B–D references unchanged.
+4. **Lettering:** `coding-practices` is Reference E; existing B to D references unchanged.
 
 ## Alternatives
 
