@@ -1,61 +1,53 @@
 # Agent workspace blueprint
 
-**Audience:** an LLM (or human) setting up a software project so later agent sessions can ship without re-learning conventions, losing deferred work, or colliding.
+**Audience:** an agent (or a person) setting up a software project so later agent sessions can ship without re-learning conventions, losing deferred work, or leaking secrets.
 
-**Harness:** Cursor Agent (project rules, `.cursor/skills/`, MCP, Plan mode). If you reuse these ideas in Claude Code, Codex, or another environment, adapt paths and drop Cursor-only sections. Do not assume `.cursor/` exists there.
+**Harness:** written for Cursor, usable anywhere that reads `AGENTS.md`. Cursor-only detail lives in [reference/cursor.md](reference/cursor.md).
 
-**A guidebook, not a rulebook.** Adapt, challenge, or replace defaults; mix pieces from different folders when the project genuinely needs it. Ask with recommendation + options + why. Never silently ignore production safety or parallel-agent hygiene.
+A guidebook, not a rulebook. Adapt it. Do not silently drop the safety rules.
 
-Optimise for short rules, frozen decisions where they matter, a living backlog, **commit as you go** (very strong default; see [reference/git-guardrail.md](reference/git-guardrail.md)), and **minimal ceremony**.
+## Start here
 
-Do **not** implement product features until a workable agent framework exists unless the user says skip setup or proceed in parallel.
+1. **Intake.** Ask only what you cannot find: owner name, repo visibility (public or private), solo or team, locale (default en-GB), and the cheapest real Verify command.
+2. **Existing repo?** Read [reference/adopt.md](reference/adopt.md) first. Migrate, do not bulldoze.
+3. **Write `AGENTS.md`** from [AGENTS.template.md](AGENTS.template.md). Hand-write it for this repo. Never commit a generated repo dump.
+4. **Copy what you need** from [templates/](templates/README.md): CI, scripts, hooks, PR template. Wire the checks into Verify.
+5. **Commit** the setup (`docs(agent): add agent workspace`). Do not push unless asked.
+6. Stop. Build features only if the owner said to carry on.
 
-## Choose your path
+Tiny repo (a script pack, a plugin)? Steps 1, 3 and 5 only, and keep `AGENTS.md` to Verify, git and security. Add the rest when it hurts.
 
-1. **Tiny repo** (small plugin, template pack, scripts, exercises)? → [minimal.md](minimal.md): one `AGENTS.md`, done. Come back only when the repo outgrows it.
-2. **Existing repo** with history or a partial harness? → [adopt.md](adopt.md) first, alongside the shape folder it maps to.
-3. **Otherwise**, pick the folder for the repo's shape and follow its `README.md` top to bottom. Do not mix folders for the core files.
+## What to read when
 
-| Folder | Use when |
-|--------|----------|
-| [public/](public/README.md) | Anyone can clone the repo. Tracked files must stay publishable. |
-| [private-solo/](private-solo/README.md) | Private repo, one maintainer. Working files tracked. |
-| [private-team/](private-team/README.md) | Private repo, collaborators or several parallel agents. |
+| Open | When |
+|------|------|
+| [core/working-rules.md](core/working-rules.md) | Every project. How the agent behaves, operating limits, plans |
+| [core/done.md](core/done.md) | Every change. Definition of done and the wrap-up |
+| [core/branches.md](core/branches.md) | Choosing a branch and PR model, or before any push |
+| [core/security.md](core/security.md) | Secrets, credentials, build-time variables |
+| [core/docs-homes.md](core/docs-homes.md) | Where each kind of fact lives, public vs private, memory, backlog |
+| [core/upkeep.md](core/upkeep.md) | Monthly check that the rules still match practice |
+| [shipping/release.md](shipping/release.md) | The project ships builds or deploys |
+| [shipping/user-facing.md](shipping/user-facing.md) | The project has end users: wording, errors, user guide, first-run tour |
+| [reference/cursor.md](reference/cursor.md) | Cursor rule types, the injected git rule, skills, MCP, hooks |
+| [reference/adr.md](reference/adr.md) | Deciding whether to write an ADR, and the template |
+| [reference/adopt.md](reference/adopt.md) | The repo already exists |
+| [reference/locale-en-gb.md](reference/locale-en-gb.md) | Spelling and punctuation |
+| [extras/](extras/) | Web UI, workflow automation, or a product with a loopback API |
+| [templates/](templates/README.md) | Copy-ready workflows, scripts, hooks and PR template |
 
-Each folder carries the full reading path: policy, philosophy, bootstrap, sessions, file recipes, skills, MCP guidance, and that shape's day-one tree, sample `AGENTS.md`, memory homes, and gitignore. If the repo's shape changes later (goes public, gains collaborators), switch folders and migrate what differs (tracking, memory homes, entry file).
+## Repo shape: the only differences
 
-## Shared files (all shapes)
+| | Public | Private, solo | Private, team |
+|---|---|---|---|
+| Backlog `docs/TODO.md`, plans `.cursor/plans/`, tooling note | Gitignored (under `.cursor/`) | Tracked | Tracked |
+| Personal preferences | Gitignored `.cursor/user-preferences.md` | May sit on `AGENTS.md` | Gitignored per person |
+| CHANGELOG covers the agent harness | No | Yes | Yes |
+| Collaboration rule (parallel agents) | If shared | Optional | Required |
+| Licence | Required | Optional | Optional |
 
-| File | Open when |
-|------|-----------|
-| [minimal.md](minimal.md) | The repo is tiny; also the per-stack Verify command table |
-| [adopt.md](adopt.md) | The repo already exists; migrate instead of scaffold |
-| [docs.md](docs.md) | Writing project docs, public vs private homes, or an optional wiki |
-| [extras/](extras/README.md) | After bootstrap, when the project matches a module (web design, workflow automation, loopback control plane, …) |
-| [extras/tooling-catalogue.md](extras/tooling-catalogue.md) | Picking MCP, skills, hooks, or plugins; then re-verify live |
-| [reference/git-guardrail.md](reference/git-guardrail.md) | Agent will not commit, or you are writing git policy |
-| [reference/coding-practices.md](reference/coding-practices.md) | Application code, diffs, file size, tests, or style vs linters |
-| [reference/locale-en-gb.md](reference/locale-en-gb.md) | British English in kit and repo docs; vendor UI strings exempt |
-| [reference/plugin-clashes.md](reference/plugin-clashes.md) | Superpowers, Team Kit, Playwright, Notion, or Canvas are in play |
-| [reference/user-rule.md](reference/user-rule.md) | User wants a Settings User Rule on this machine |
-| [reference/hooks.md](reference/hooks.md) | User wants hard enforcement of never-rules, not advice |
-| [reference/testing-harness.md](reference/testing-harness.md) | The repo has application behaviour worth guarding |
-| [reference/write-plan-template.md](reference/write-plan-template.md) | Multi-phase plan: phase gates and when to stop retrying |
-| [reference/token-efficiency.md](reference/token-efficiency.md) | MCP or context is bloated; bootstrap harness check |
-| [reference/adr-decision-bar.md](reference/adr-decision-bar.md) | Deciding whether this slice needs an ADR |
-
-## Follow the kit
-
-**Default:** the agent is already reading this folder from GitHub. Follow the path above (intake → research tooling → propose layout → scaffold) **in the consumer repo**. Do not scaffold inside this kit repository.
-
-**Optional:** copy this folder into the consumer repo (for example `.cursor/brief/`) for offline use or a pinned revision. Note the source URL (`https://github.com/Scralar/Agent-Workspace-Blueprint/tree/main/blueprint`) so it can be refreshed. Do not copy this GitHub repository's live `.cursor/` tree.
+Test for anything tracked in a public repo: is it safe on GitHub? If not, it is not tracked.
 
 ## The kit improves itself
 
-When a project changes its way of working in a manner that would help other projects, the agent proposes upstreaming it to this kit: use-case material to [extras/](extras/README.md), core changes to the shape folders. Bar and consent rules: [extras/README.md](extras/README.md). Propose, never act silently.
-
-## This repo (meta)
-
-If you are reading a local snapshot inside another project, ignore this section; it applies only to the canonical kit repository.
-
-Edits to the canonical kit happen **here**. The three shape folders are deliberate near-copies: a dedicated path per repo shape beats hunting through shared files. When you change a shared idea in the core files, change it in **all three** folders in the same commit. Shape-agnostic leaves (`reference/`, `extras/`, `adopt.md`, `minimal.md`) live once. The live Cursor harness (`.cursor/`) is local and untracked. Public changelog and ADRs live in the repo root / `docs/adr/`. The GitHub wiki is a published view of `docs/` (ADR-0008). Community files (`LICENSE`, `CONTRIBUTING.md`, `COLLABORATORS.md`, `.github/`) describe this GitHub repository; do not copy them into a consumer project unless that project wants the same licence and process.
+When a project finds a better way of working that would help other projects (general, proven in real use, publishable), propose it upstream to [this repository](https://github.com/Scralar/Agent-Workspace-Blueprint). Propose, never act silently.

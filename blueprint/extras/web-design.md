@@ -1,6 +1,6 @@
-# Extra — web design and visual products
+# Extra: web design and visual products
 
-Up: [README.md](README.md). Use when the product has a user-facing UI.
+Up: [../README.md](../README.md). Use when the product has a user-facing UI.
 
 ## Conventions
 

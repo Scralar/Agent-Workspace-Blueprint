@@ -1,1 +1,0 @@
-[MIT Licence](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/main/LICENSE) · Source of truth is the [repository](https://github.com/Scralar/Agent-Workspace-Blueprint), not this tab · [Security](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/main/SECURITY.md)

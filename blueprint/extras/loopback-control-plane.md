@@ -1,6 +1,6 @@
-# Extra — loopback control plane
+# Extra: loopback control plane
 
-Up: [README.md](README.md). Use when the product already exposes a loopback HTTP API (or another local port) that the agent should call.
+Up: [../README.md](../README.md). Use when the product already exposes a loopback HTTP API (or another local port) that the agent should call.
 
 Nothing here applies to a repo whose only tools are editor MCP servers.
 

@@ -1,6 +1,6 @@
-# Extra — workflow automation (n8n and similar)
+# Extra: workflow automation (n8n and similar)
 
-Up: [README.md](README.md). Use when the product is an orchestrated workflow: n8n, Make, or similar node-graph platforms.
+Up: [../README.md](../README.md). Use when the product is an orchestrated workflow: n8n, Make, or similar node-graph platforms.
 
 ## Conventions
 
