@@ -1,23 +1,21 @@
 # Architecture Decision Records
 
-Up: [../README.md](../README.md). Why the kit looks like this. Published to the [wiki Decisions page](https://github.com/Scralar/Agent-Workspace-Blueprint/wiki/Decisions). Sending a change: [`../../CONTRIBUTING.md`](../../CONTRIBUTING.md).
+Up: [../../README.md](../../README.md). Why the kit looks like this. Sending a change: [`../../CONTRIBUTING.md`](../../CONTRIBUTING.md). Template: [`../../blueprint/reference/adr.md`](../../blueprint/reference/adr.md).
 
 | ADR | Title | Status |
 |-----|-------|--------|
 | [ADR-0001](ADR-0001-published-kit-layout.md) | Published kit layout | Accepted, amended by ADR-0006, ADR-0007, and ADR-0008 |
-| [ADR-0002](ADR-0002-modular-blueprint-and-variants.md) | Self-contained blueprint folders per repo shape | Accepted, amended by ADR-0003 |
-| [ADR-0003](ADR-0003-shared-leaves-and-kit-surface.md) | Shared leaves beside self-contained shape folders | Accepted, amended by ADR-0009 |
+| [ADR-0002](ADR-0002-modular-blueprint-and-variants.md) | Self-contained blueprint folders per repo shape | Superseded by ADR-0014 |
+| [ADR-0003](ADR-0003-shared-leaves-and-kit-surface.md) | Shared leaves beside self-contained shape folders | Superseded by ADR-0014 |
 | [ADR-0004](ADR-0004-upstream-feedback-loop.md) | Upstream feedback loop | Accepted |
-| [ADR-0005](ADR-0005-dated-tooling-catalogue.md) | Dated tooling catalogue as a pick-and-choose extra | Accepted |
+| [ADR-0005](ADR-0005-dated-tooling-catalogue.md) | Dated tooling catalogue as a pick-and-choose extra | Superseded by ADR-0014 |
 | [ADR-0006](ADR-0006-public-community-surface.md) | Public community surface (licence, contributing, GitHub listing) | Accepted, amended by ADR-0007 and ADR-0008 |
 | [ADR-0007](ADR-0007-live-kit-by-url.md) | Follow the live kit by URL; copy is optional | Accepted |
-| [ADR-0008](ADR-0008-wiki-published-view.md) | GitHub wiki as a published view of `docs/` | Accepted, amended by ADR-0009 |
+| [ADR-0008](ADR-0008-wiki-published-view.md) | GitHub wiki as a published view of `docs/` | Superseded by ADR-0014 |
 | [ADR-0009](ADR-0009-docs-hygiene-and-optional-wiki.md) | Docs hygiene and optional wiki for consumer projects | Accepted |
 | [ADR-0010](ADR-0010-agent-working-defaults.md) | Agent working defaults (commits, code hygiene, en-GB) | Accepted |
-| [ADR-0011](ADR-0011-executor-optional-gateway.md) | Executor is an optional gateway, not the default MCP path | Accepted |
+| [ADR-0011](ADR-0011-executor-optional-gateway.md) | Executor is an optional gateway, not the default MCP path | Superseded by ADR-0014 |
 | [ADR-0012](ADR-0012-consumer-proven-references.md) | Consumer-proven references stay optional | Accepted, amended by ADR-0013 |
 | [ADR-0013](ADR-0013-session-defaults-after-consumer-references.md) | Session defaults after the consumer references | Accepted |
+| [ADR-0014](ADR-0014-lean-core-and-shipping-scope.md) | Lean core, shipping scope, and checks over prose | Accepted |
 
-## Template
-
-See [TEMPLATE.md](TEMPLATE.md).

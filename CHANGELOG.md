@@ -1,5 +1,30 @@
 # Changelog
 
+## 2026-10-21
+
+### Changed
+
+- Restructured the kit around one lean core ([ADR-0014](docs/adr/ADR-0014-lean-core-and-shipping-scope.md)). The three shape folders are replaced by `blueprint/core/` (working rules, definition of done, branches and PRs, security, where docs live, upkeep) and a five-row shape table in `blueprint/README.md`
+- New `blueprint/AGENTS.template.md` for consumer projects: read-when table, Verify, git, security, Always / Ask first / Never
+- Definition of done now requires tests, CHANGELOG, debug notes and docs in the same change, with a debug note shape
+- Agent behaviour principles, operating limits and a plan budget (3 active, stop after 4 failed attempts) in `blueprint/core/working-rules.md`
+- Cursor-only detail (rule types, the injected git rule, skills, MCP, hooks, cloud agents) gathered into `blueprint/reference/cursor.md`
+
+### Added
+
+- `blueprint/shipping/`: release pipeline (version-gated release from `main`, one version home, OIDC deploy, workflow-created tag and GitHub Release, dry run, post-deploy check, shipped-build contents, release notes) and user-facing wording, errors, user guide and first-run tour
+- `blueprint/templates/`: verify, release and post-deploy workflows; release workflow contract test; check scripts for links, en-GB, punctuation, version sync, user copy and build-time variables; git guard hook that denies force-push, `--no-verify`, never-push branches and private files; PR template. All with tests
+- CI runs the template tests, `actionlint` and the punctuation check on this repository
+- `docs/sources.md`: public guidance behind the practices and what was adopted from each
+
+### Removed
+
+- Shape folders `public/`, `private-solo/`, `private-team/`, and `minimal.md`, `docs.md` (folded into the core and the shape table)
+- Dated tooling catalogue (`extras/tooling-*.md`); tools are researched live per project
+- Wiki source `docs/wiki/` and `scripts/publish-wiki.mjs`; the README and `blueprint/` are the doors
+- References merged into fewer files: git guardrail, hooks, plugin clashes, user rule and token efficiency into `reference/cursor.md`; testing harness, coding practices and write-plan template into the core; ADR decision bar and template into `reference/adr.md`
+- Every em and en dash in the repository
+
 ## 2026-10-07
 
 ### Added
@@ -29,8 +54,8 @@
 
 ### Changed
 
-- **Commit as you go** documented as the very strong kit default across policy, bootstrap, sessions, constitution recipes, and [git-guardrail](blueprint/reference/git-guardrail.md); maintainer `AGENTS.md` aligned
-- **Coding practices** reference ([coding-practices](blueprint/reference/coding-practices.md)): file size budgets, situation-aware diff rules, glob-rule recipe, policy/philosophy/session hooks, minimal-tier `AGENTS.md` sample
+- **Commit as you go** documented as the very strong kit default across policy, bootstrap, sessions, constitution recipes, and [git-guardrail](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/reference/git-guardrail.md); maintainer `AGENTS.md` aligned
+- **Coding practices** reference ([coding-practices](https://github.com/Scralar/Agent-Workspace-Blueprint/blob/b4ba37d/blueprint/reference/coding-practices.md)): file size budgets, situation-aware diff rules, glob-rule recipe, policy/philosophy/session hooks, minimal-tier `AGENTS.md` sample
 - **British English:** [locale-en-gb](blueprint/reference/locale-en-gb.md) reference and `scripts/check-en-gb.mjs` in repo Verify and CI ([ADR-0010](docs/adr/ADR-0010-agent-working-defaults.md))
 
 ### Added

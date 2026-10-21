@@ -1,10 +1,11 @@
 ## What
 
-<!-- One or two sentences. Why this helps the kit or this GitHub repo. -->
+<!-- One or two sentences. Why this helps the kit. -->
 
 ## Check
 
-- [ ] `node scripts/check-links.mjs` and `node scripts/check-en-gb.mjs` pass
-- [ ] No `.cursor/`, secrets, or personal preferences in the diff
-- [ ] Shared kit ideas updated in **all three** shape folders if the core text changed
+- [ ] Verify commands in `AGENTS.md` pass
+- [ ] Template changes have their tests updated
+- [ ] No `.cursor/`, secrets, identifiers or personal preferences in the diff
 - [ ] ADR added if this is a hard-to-reverse kit decision
+- [ ] CHANGELOG updated if notable

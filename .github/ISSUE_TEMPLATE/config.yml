@@ -2,4 +2,4 @@ blank_issues_enabled: true
 contact_links:
   - name: Kit chooser
     url: https://github.com/Scralar/Agent-Workspace-Blueprint/blob/main/blueprint/README.md
-    about: How to pick a shape folder or the minimal tier
+    about: Where to start with the kit

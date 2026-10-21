@@ -1,57 +1,41 @@
-# Agent entry — Agent Workspace Blueprint
+# Agent entry: Agent Workspace Blueprint
 
-Public map for this GitHub repository. Humans: [`README.md`](README.md). Claude Code: [`CLAUDE.md`](CLAUDE.md) (this file). Cursor-only paths may not exist in your harness; adapt.
+Public repo. The kit is `blueprint/`; people start at `README.md`. Everything tracked must be safe to publish. Claude Code reads this through `CLAUDE.md`.
 
-## Read order
+## Read when
 
-1. This file
-2. [`blueprint/README.md`](blueprint/README.md) when changing the kit
-3. [`docs/adr/`](docs/adr/) when a decision needs why
-4. [`CONTRIBUTING.md`](CONTRIBUTING.md) when proposing a change
-
-## What this repo is
-
-The live kit is [`blueprint/`](blueprint/). Consumer agents should follow that folder **on GitHub**, not copy this repository. A local snapshot of `blueprint/` is optional. This repository's `.cursor/` tree is maintainer state and is not in a fresh clone.
-
-## Where things live
-
-| What | Where |
-|------|-------|
-| The kit | `blueprint/` |
-| Why | `docs/adr/` |
-| Wiki source | `docs/wiki/` (published to the GitHub wiki) |
-| Verify | `scripts/check-links.mjs`, `scripts/check-en-gb.mjs` |
-| Publish wiki | `scripts/publish-wiki.mjs` |
-| Contribute | `CONTRIBUTING.md` |
-| Merge access | `COLLABORATORS.md` |
-| Licence | `LICENSE` |
+| File | When |
+|------|------|
+| `blueprint/README.md` | Changing the kit |
+| `docs/adr/README.md` | Changing something an ADR governs |
+| `CONTRIBUTING.md` | The bar for kit defaults |
+| `docs/sources.md` | Adding a practice that rests on outside guidance |
 
 ## Verify
 
-```
-node scripts/check-links.mjs
-node scripts/check-en-gb.mjs
+```bash
+node --test blueprint/templates/*/*.test.mjs
+node blueprint/templates/scripts/check-links.mjs
+node blueprint/templates/scripts/check-en-gb.mjs
+node blueprint/templates/scripts/check-punctuation.mjs
 ```
 
-After edits to `blueprint/` or `docs/`. British English (en-GB) in publishable text; see [`blueprint/reference/locale-en-gb.md`](blueprint/reference/locale-en-gb.md). Report failures only. After `docs/wiki/` or `docs/adr/` changes, publish with `node scripts/publish-wiki.mjs`.
+CI also runs `actionlint` on `.github/workflows/` and `blueprint/templates/workflows/`.
 
 ## Git
 
-Work on `main`. Conventional Commits. Never commit secrets or `.cursor/`. Open a pull request unless [`COLLABORATORS.md`](COLLABORATORS.md) lists you. Do not force-push shared branches.
+Work on `main`. Commit each verified unit without being asked. Push or open a PR only when the maintainer asks in the current message. Conventional Commits (`docs(kit): ...`, `feat(templates): ...`). Never force-push. `.cursor/` is gitignored here and never committed.
 
-**Commit as you go (very strong default):** after each coherent, verified logical unit, commit tracked work locally without waiting to be asked. The project constitution is standing authorisation (see [`blueprint/reference/git-guardrail.md`](blueprint/reference/git-guardrail.md)). Never push or open a PR unless asked in the current message.
+## Rules for kit text
+
+- Lean: a new rule needs a reason a later agent would otherwise get wrong. Prefer a template script with a test over a paragraph.
+- One home per idea; link, do not restate.
+- British English, no em or en dashes (the checks enforce both).
+- No secrets, personal preferences, private repo names, account ids or IPs. Consumer lessons appear as one-line "Why" notes without identifiers.
+- Template changes need their tests updated in the same commit.
 
 ## Always / Ask first / Never
 
-Always: tracked files stay publishable.
-
-Ask first: merge to `main` if you are not in `COLLABORATORS.md`.
-
-Never: secrets; private notes in tracked files.
-
-## Workspace facts
-
-- Work on `main`. There is no production deploy.
-- Consumer agents follow the live `blueprint/` on this GitHub repository. They do not copy this repository's `.cursor/` tree.
-- A local snapshot of `blueprint/` is optional (offline or a pinned revision).
-- The GitHub wiki is a published view of `docs/`. Edit the repository, then run `node scripts/publish-wiki.mjs`.
+- Always: Verify; CHANGELOG line for notable changes; ADR when the bar in `blueprint/reference/adr.md` is met.
+- Ask first: push, PR, merge, anything sent to other people.
+- Never: secrets; force-push; private notes in tracked files.
